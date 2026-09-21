@@ -1,0 +1,78 @@
+# ALL physical values, limits, PID bounds and HV settings below are PLACEHOLDER / illustrative.
+# No motor datasheet or identification experiment has validated these numbers.
+[metadata]
+parameter_status = "PLACEHOLDER / illustrative"
+description = "Direct drive, vertical plane, point payload; NOT paper evidence"
+
+[plant]
+J_m = 0.001                  # kg m^2, rotor inertia
+J_l = 0.020                  # kg m^2, link inertia about joint (excludes rotor/payload)
+m_l = 0.5                    # kg
+r_l = 0.15                   # m, link COM distance
+r_p = 0.25                   # m, point payload distance
+b = 0.05                     # N m s/rad, combined viscous friction
+R = 1.0                      # ohm
+L = 0.010                    # H
+K_t = 1.0                    # N m/A (illustrative torque motor)
+K_e = 1.0                    # V s/rad; SI K_t = K_e for energy consistency
+g = 9.81                     # m/s^2
+gravity = true               # theta = 0 is downward vertical
+
+[simulation]
+duration = 5.0               # s
+control_dt = 0.001           # s, zero-order-held voltage
+integration_substeps = 2     # RK4 step = control_dt / integration_substeps
+theta_start = 0.0            # rad
+theta_end = 1.0471975512      # rad, illustrative 60 degree movement
+
+[noise]
+power = 1e-10                # rad^2 s; discrete variance = power/sample_dt
+sample_dt = 0.001            # s; independent Gaussian draws, held between samples
+
+[controller]
+voltage_max = 48.0           # V
+filter_tau = 0.020           # s
+antiwindup_gain = 10.0       # 1/s; integral state has units V
+
+[limits]
+current_max = 20.0           # A; constraint only, NEVER clip current
+angle_abs_max = 3.1415926536  # rad
+velocity_abs_max = 15.0      # rad/s
+numerical_abs_max = 1e8      # numerical guard, all physical states
+
+[search]
+kp = [0.0, 200.0]            # V/rad
+ki = [0.0, 100.0]            # V/(rad s)
+kd = [0.0, 20.0]             # V s/rad
+
+[experiment]
+payloads = [1.0, 2.0, 3.0]   # kg; constant within each rollout
+nominal_payload = 1.0
+repeats = 5
+base_seed = 731
+train_seed_base = 10000
+selection_seed_base = 100000
+test_seed_base = 200000
+train_replicates = 3
+selection_replicates = 5
+test_replicates = 10
+
+[mobo]
+backend = "qnehvi"           # qnehvi, qlognehvi, or explicit sobol baseline
+n_initial = 10
+n_evaluations = 40           # includes initial, infeasible, numerical-failure attempts
+mc_samples = 128
+num_restarts = 8
+raw_samples = 128
+fit_maxiter = 100
+acq_maxiter = 100
+torch_threads = 1
+observation_variance_floor = 1e-8 # in scaled GP output units
+objective_scales = [0.1, 100.0]  # fixed across payloads/repeats; JT rad, JE J
+reference_point = [1.0, 1000.0] # raw minimization units, fixed a priori
+
+[pilot]
+conservative = [20.0, 10.0, 1.0]
+balanced = [70.0, 30.0, 5.0]
+aggressive = [160.0, 70.0, 10.0]
+
