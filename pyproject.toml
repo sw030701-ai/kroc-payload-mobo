@@ -4,12 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kroc-payload-mobo"
-version = "0.1.0"
-description = "Illustrative 1-DOF joint tracking-energy MOBO and cross-payload transfer experiments"
+version = "0.2.0"
+description = "Canonical KRoC geared joint tracking-energy MOBO and cross-payload transfer experiments"
 requires-python = ">=3.11"
 dependencies = [
   "numpy>=2.1,<3", "scipy>=1.14,<2", "pandas>=2.2,<3", "matplotlib>=3.9,<4",
   "torch>=2.6,<3", "botorch==0.17.2", "gpytorch>=1.15,<1.16",
+  "numba>=0.67,<0.68",
 ]
 
 [project.optional-dependencies]
