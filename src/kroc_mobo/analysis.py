@@ -80,6 +80,33 @@ def make_analysis(root):
     else:
         ax.text(0.5, 0.5, "No feasible Pareto points", transform=ax.transAxes, ha="center")
     _save(fig, directory, "fig1_payload_pareto", status)
+    selected = pd.read_csv(root / "exp1" / "selection_all.csv")
+    result_rows = []
+    for (repeat, payload), candidates in selected.groupby(["repeat", "payload"]):
+        front = fronts.loc[(fronts.repeat == repeat) & (fronts.payload == payload)]
+        result_rows.append(
+            dict(
+                repeat=repeat,
+                payload=payload,
+                attempted=len(candidates),
+                feasible=int(candidates.feasible.sum()),
+                pareto_count=len(front),
+                JT_min=front.JT.min(),
+                JT_max=front.JT.max(),
+                JE_min=front.JE.min(),
+                JE_max=front.JE.max(),
+            )
+        )
+    result_frame = pd.DataFrame(result_rows)
+    timing_path = root / "exp1" / "condition_summary.csv"
+    if timing_path.exists():
+        timings = pd.read_csv(timing_path)[["repeat", "payload", "elapsed_seconds"]]
+        result_frame = result_frame.merge(timings, on=["repeat", "payload"])
+    save_csv(directory / "exp1_results_per_repeat.csv", result_frame)
+    summary_fields = [k for k in result_frame.columns if k not in ("repeat", "payload")]
+    stats = result_frame.groupby("payload")[summary_fields].agg(["mean", "std"])
+    stats.columns = [f"{a}_{b}" for a, b in stats.columns]
+    save_csv(directory / "exp1_results_across_repeats.csv", stats.reset_index())
     # Discrete achievable tradeoffs at common thresholds; no fitted knee or extrapolation.
     comparisons = []
     for repeat, repeated in fronts.groupby("repeat"):
@@ -122,7 +149,7 @@ def make_analysis(root):
     reps = pd.read_csv(root / "exp2" / "representative_performance.csv")
     save_csv(directory / "representative_performance.csv", reps)
     for repeat in range(c["experiment"]["repeats"]):
-        fig, axes = plt.subplots(2, 3, figsize=(12, 6), squeeze=False, sharey="row")
+        fig, axes = plt.subplots(4, 3, figsize=(12, 10), squeeze=False, sharey="row")
         diagnostic, daxes = plt.subplots(2, 3, figsize=(12, 6), squeeze=False, sharey="row")
         found = False
         for col, role in enumerate(["CT", "CB", "CE"]):
@@ -134,15 +161,18 @@ def make_analysis(root):
                 d = pd.read_csv(path)
                 if i == 0:
                     daxes[0, col].plot(d.t, d.reference, "k--", label="Reference")
-                for row, key in enumerate(["error", "energy_net"]):
+                    axes[0, col].plot(d.t, d.reference, "k--", label="Reference")
+                for row, key in enumerate(["theta", "error", "power", "energy_net"]):
                     axes[row, col].plot(d.t, d[key], color=colors(i), label=f"{payload:g} kg")
                 for row, key in enumerate(["theta", "power"]):
                     daxes[row, col].plot(d.t, d[key], color=colors(i), label=f"{payload:g} kg")
             for axs in (axes, daxes):
                 axs[0, col].set_title(role)
-                axs[1, col].set_xlabel("Time [s]")
-        axes[0, 0].set_ylabel("Tracking error [rad]")
-        axes[1, 0].set_ylabel("Net energy [J]")
+                axs[-1, col].set_xlabel("Time [s]")
+        axes[0, 0].set_ylabel("Angle [rad]")
+        axes[1, 0].set_ylabel("Tracking error [rad]")
+        axes[2, 0].set_ylabel("Terminal power [W]")
+        axes[3, 0].set_ylabel("Net energy [J]")
         daxes[0, 0].set_ylabel("Angle [rad]")
         daxes[1, 0].set_ylabel("Terminal power [W]")
         if found:

@@ -1,5 +1,6 @@
 """Run manifests, atomic tabular checkpoints, and immutable configuration snapshots."""
 
+import hashlib
 import json
 import platform
 import subprocess
@@ -66,6 +67,12 @@ def initialize_run(root, c, stage):
         platform=platform.platform(),
         packages=packages,
         git_revision=revision,
+        source_sha256={
+            str(path.relative_to(Path(__file__).resolve().parents[2])): hashlib.sha256(
+                path.read_bytes()
+            ).hexdigest()
+            for path in sorted(Path(__file__).resolve().parent.glob("*.py"))
+        },
     )
     save_json(manifest_path, manifest)
     return manifest

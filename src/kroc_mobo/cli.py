@@ -7,10 +7,10 @@ from .io import load_snapshot
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="PLACEHOLDER / illustrative KRoC experiment pipeline")
+    parser = argparse.ArgumentParser(description="Canonical Final Model — KRoC experiment pipeline")
     parser.add_argument("command", choices=["pilot", "exp1", "exp2", "plot", "all"])
-    parser.add_argument("--config", default="configs/illustrative.toml")
-    parser.add_argument("--out", default="results/illustrative")
+    parser.add_argument("--config", default="configs/canonical_final.toml")
+    parser.add_argument("--out", default="results/canonical_final")
     parser.add_argument(
         "--smoke", action="store_true", help="Reduce BO budget and repetitions, keep 5 s model"
     )

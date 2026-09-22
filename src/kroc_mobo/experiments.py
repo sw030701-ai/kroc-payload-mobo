@@ -74,10 +74,12 @@ def run_exp1(c, root):
     manifest = initialize_run(root, c, "exp1")
     start = time.perf_counter()
     all_fronts, all_selected, raw_count, optimization_count = [], [], 0, 0
+    timings = []
     for repeat in range(c["experiment"]["repeats"]):
         opt_seed = c["experiment"]["base_seed"] + repeat
         design = sobol_design(c, opt_seed)
         for payload in c["experiment"]["payloads"]:
+            condition_start = time.perf_counter()
             directory = condition_dir(root, "exp1", repeat, payload)
             history, raw = [], []
             save_json(
@@ -138,6 +140,17 @@ def run_exp1(c, root):
             save_csv(directory / "selection.csv", frame)
             save_csv(directory / "selection_rollouts.csv", validation_raw)
             save_csv(directory / "pareto.csv", front)
+            timings.append(
+                dict(
+                    repeat=repeat,
+                    payload=payload,
+                    elapsed_seconds=time.perf_counter() - condition_start,
+                    attempted=len(history),
+                    feasible=int(frame.feasible.sum()),
+                    pareto_count=len(front),
+                )
+            )
+            save_csv(Path(root) / "exp1" / "condition_summary.csv", timings)
     save_csv(Path(root) / "exp1" / "pareto_all.csv", pd.concat(all_fronts, ignore_index=True))
     save_csv(Path(root) / "exp1" / "selection_all.csv", pd.concat(all_selected, ignore_index=True))
     finish_run(

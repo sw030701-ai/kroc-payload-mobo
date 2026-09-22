@@ -39,6 +39,14 @@ def validate(c):
 
     positive("plant", ["J_m", "J_l", "R", "L", "K_t", "K_e", "r_p"])
     positive("plant", ["m_l", "r_l", "b", "g"], True)
+    p = c["plant"]
+    if "N" in p:
+        positive("plant", ["N", "eta", "l"])
+        positive("plant", ["J_g"], True)
+        if p["eta"] > 1:
+            raise ValueError("Gear efficiency must be <= 1")
+        if not math.isclose(p["J_l"], p["m_l"] * p["l"] ** 2 / 3, rel_tol=1e-12):
+            raise ValueError("Uniform link inertia must equal m_l*l^2/3")
     positive("simulation", ["duration", "control_dt", "integration_substeps"])
     positive("noise", ["sample_dt"])
     positive("noise", ["power"], True)
