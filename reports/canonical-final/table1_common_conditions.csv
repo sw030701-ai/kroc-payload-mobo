@@ -1,0 +1,18 @@
+Condition,Value
+Motor / gear,RE35 323890 / GP42C
+N / eta,126 / 0.72
+R / L,0.568 ohm / 0.000191 H
+Kt / Ke,0.0292 Nm/A / 0.0291 Vs/rad
+Jm / Jg,8.12e-6 / 1.4e-6 kg m^2
+Link l / m / COM,0.20 m / 0.50 kg / 0.10 m
+Payload / tip radius,"1, 2, 3 kg / 0.20 m"
+"Jeq (1, 2, 3 kg)","0.19780619, 0.23780619, 0.27780619 kg m^2"
+b / g,0.05 Nm s/rad / 9.81 m/s^2
+Voltage / current constraint,24 V / 3.84 A (absolute peak)
+Trajectory,"quintic, 0 to 60 degrees over full 5 s; no hold"
+Control / RK4 step,1 ms / 62.5 microseconds
+PID bounds Kp / Ki / Kd,"[0,200] / [0,100] / [0,20]"
+Noise variance / sampling,1e-7 rad^2 / 1 ms
+Acquisition / repeats / evaluations,qLogNEHVI / 5 / 40 (10 initial) per payload
+Train / selection / test seeds,3 / 5 / 10 per repeat
+HV reference / scales,"[1 rad,20 J] / [0.1 rad,10 J]"

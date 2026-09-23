@@ -1,0 +1,61 @@
+section,parameter,value,parameter_status
+metadata,parameter_status,CANONICAL FINAL | simulation,CANONICAL FINAL | simulation
+metadata,description,Maxon RE35 323890 + GP42C 126:1; user-specified constant-efficiency model,CANONICAL FINAL | simulation
+plant,N,126.0,CANONICAL FINAL | simulation
+plant,eta,0.72,CANONICAL FINAL | simulation
+plant,J_g,1.4e-06,CANONICAL FINAL | simulation
+plant,l,0.2,CANONICAL FINAL | simulation
+plant,J_m,8.12e-06,CANONICAL FINAL | simulation
+plant,J_l,0.006666666666666667,CANONICAL FINAL | simulation
+plant,m_l,0.5,CANONICAL FINAL | simulation
+plant,r_l,0.1,CANONICAL FINAL | simulation
+plant,r_p,0.2,CANONICAL FINAL | simulation
+plant,b,0.05,CANONICAL FINAL | simulation
+plant,R,0.568,CANONICAL FINAL | simulation
+plant,L,0.000191,CANONICAL FINAL | simulation
+plant,K_t,0.0292,CANONICAL FINAL | simulation
+plant,K_e,0.0291,CANONICAL FINAL | simulation
+plant,g,9.81,CANONICAL FINAL | simulation
+plant,gravity,True,CANONICAL FINAL | simulation
+simulation,duration,5.0,CANONICAL FINAL | simulation
+simulation,control_dt,0.001,CANONICAL FINAL | simulation
+simulation,integration_substeps,16,CANONICAL FINAL | simulation
+simulation,theta_start,0.0,CANONICAL FINAL | simulation
+simulation,theta_end,1.0471975512,CANONICAL FINAL | simulation
+noise,power,1e-10,CANONICAL FINAL | simulation
+noise,sample_dt,0.001,CANONICAL FINAL | simulation
+controller,voltage_max,24.0,CANONICAL FINAL | simulation
+controller,filter_tau,0.02,CANONICAL FINAL | simulation
+controller,antiwindup_gain,10.0,CANONICAL FINAL | simulation
+limits,current_max,3.84,CANONICAL FINAL | simulation
+limits,angle_abs_max,3.1415926536,CANONICAL FINAL | simulation
+limits,velocity_abs_max,15.0,CANONICAL FINAL | simulation
+limits,numerical_abs_max,100000000.0,CANONICAL FINAL | simulation
+search,kp,"[0.0, 200.0]",CANONICAL FINAL | simulation
+search,ki,"[0.0, 100.0]",CANONICAL FINAL | simulation
+search,kd,"[0.0, 20.0]",CANONICAL FINAL | simulation
+experiment,payloads,"[1.0, 2.0, 3.0]",CANONICAL FINAL | simulation
+experiment,nominal_payload,1.0,CANONICAL FINAL | simulation
+experiment,repeats,5,CANONICAL FINAL | simulation
+experiment,base_seed,731,CANONICAL FINAL | simulation
+experiment,train_seed_base,10000,CANONICAL FINAL | simulation
+experiment,selection_seed_base,100000,CANONICAL FINAL | simulation
+experiment,test_seed_base,200000,CANONICAL FINAL | simulation
+experiment,train_replicates,3,CANONICAL FINAL | simulation
+experiment,selection_replicates,5,CANONICAL FINAL | simulation
+experiment,test_replicates,10,CANONICAL FINAL | simulation
+mobo,backend,qlognehvi,CANONICAL FINAL | simulation
+mobo,n_initial,10,CANONICAL FINAL | simulation
+mobo,n_evaluations,40,CANONICAL FINAL | simulation
+mobo,mc_samples,128,CANONICAL FINAL | simulation
+mobo,num_restarts,8,CANONICAL FINAL | simulation
+mobo,raw_samples,128,CANONICAL FINAL | simulation
+mobo,fit_maxiter,100,CANONICAL FINAL | simulation
+mobo,acq_maxiter,100,CANONICAL FINAL | simulation
+mobo,torch_threads,1,CANONICAL FINAL | simulation
+mobo,observation_variance_floor,1e-06,CANONICAL FINAL | simulation
+mobo,objective_scales,"[0.1, 10.0]",CANONICAL FINAL | simulation
+mobo,reference_point,"[1.0, 20.0]",CANONICAL FINAL | simulation
+pilot,conservative,"[20.0, 10.0, 1.0]",CANONICAL FINAL | simulation
+pilot,balanced,"[70.0, 30.0, 5.0]",CANONICAL FINAL | simulation
+pilot,aggressive,"[160.0, 70.0, 10.0]",CANONICAL FINAL | simulation

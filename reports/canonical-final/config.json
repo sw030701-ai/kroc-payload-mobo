@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "parameter_status": "CANONICAL FINAL | simulation",
+    "description": "Maxon RE35 323890 + GP42C 126:1; user-specified constant-efficiency model"
+  },
+  "plant": {
+    "N": 126.0,
+    "eta": 0.72,
+    "J_g": 1.4e-06,
+    "l": 0.2,
+    "J_m": 8.12e-06,
+    "J_l": 0.006666666666666667,
+    "m_l": 0.5,
+    "r_l": 0.1,
+    "r_p": 0.2,
+    "b": 0.05,
+    "R": 0.568,
+    "L": 0.000191,
+    "K_t": 0.0292,
+    "K_e": 0.0291,
+    "g": 9.81,
+    "gravity": true
+  },
+  "simulation": {
+    "duration": 5.0,
+    "control_dt": 0.001,
+    "integration_substeps": 16,
+    "theta_start": 0.0,
+    "theta_end": 1.0471975512
+  },
+  "noise": {
+    "power": 1e-10,
+    "sample_dt": 0.001
+  },
+  "controller": {
+    "voltage_max": 24.0,
+    "filter_tau": 0.02,
+    "antiwindup_gain": 10.0
+  },
+  "limits": {
+    "current_max": 3.84,
+    "angle_abs_max": 3.1415926536,
+    "velocity_abs_max": 15.0,
+    "numerical_abs_max": 100000000.0
+  },
+  "search": {
+    "kp": [
+      0.0,
+      200.0
+    ],
+    "ki": [
+      0.0,
+      100.0
+    ],
+    "kd": [
+      0.0,
+      20.0
+    ]
+  },
+  "experiment": {
+    "payloads": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "nominal_payload": 1.0,
+    "repeats": 5,
+    "base_seed": 731,
+    "train_seed_base": 10000,
+    "selection_seed_base": 100000,
+    "test_seed_base": 200000,
+    "train_replicates": 3,
+    "selection_replicates": 5,
+    "test_replicates": 10
+  },
+  "mobo": {
+    "backend": "qlognehvi",
+    "n_initial": 10,
+    "n_evaluations": 40,
+    "mc_samples": 128,
+    "num_restarts": 8,
+    "raw_samples": 128,
+    "fit_maxiter": 100,
+    "acq_maxiter": 100,
+    "torch_threads": 1,
+    "observation_variance_floor": 1e-06,
+    "objective_scales": [
+      0.1,
+      10.0
+    ],
+    "reference_point": [
+      1.0,
+      20.0
+    ]
+  },
+  "pilot": {
+    "conservative": [
+      20.0,
+      10.0,
+      1.0
+    ],
+    "balanced": [
+      70.0,
+      30.0,
+      5.0
+    ],
+    "aggressive": [
+      160.0,
+      70.0,
+      10.0
+    ]
+  }
+}
