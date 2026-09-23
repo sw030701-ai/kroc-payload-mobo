@@ -1,3 +1,5 @@
+> Historical illustrative-model record. The canonical specification in [CANONICAL_MODEL.md](CANONICAL_MODEL.md) supersedes physical parameters and defaults below. Do not interpret legacy results as canonical-model evidence.
+
 # 실험 프로토콜
 
 모든 기본 설정은 **PLACEHOLDER / illustrative**이다. 연구 질문의 긍정적인 결과를 보장하지 않는다.

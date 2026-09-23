@@ -1,3 +1,5 @@
+> Historical illustrative-model record. The canonical specification in [CANONICAL_MODEL.md](CANONICAL_MODEL.md) supersedes physical parameters and defaults below. Do not interpret legacy results as canonical-model evidence.
+
 # Implementation validation — 2026-09-22 KST
 
 **PLACEHOLDER / illustrative. 아래는 구현 검증 기록이며 논문용 결과가 아니다.**
