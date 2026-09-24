@@ -164,6 +164,23 @@ def build(root, out, sensitivity):
     transfer = pd.read_csv(root / "analysis/table2_transfer_across_repeats.csv")
     supplementary = transfer[["payload", "R_P_mean", "R_P_std", "L_HV_mean", "L_HV_std"]]
     table(out, "supplementary_transfer", supplementary)
+    local = pd.read_csv(root / "exp2/local_retested_all.csv")
+    coverage = (
+        local.loc[local.feasible]
+        .groupby(["repeat", "payload"])
+        .JT.min()
+        .rename("local_retested_min_JT")
+        .reset_index()
+    )
+    coverage = coverage.merge(
+        reps.loc[reps.role == "CT", ["repeat", "payload", "JT"]], on=["repeat", "payload"]
+    )
+    coverage = coverage.rename(columns={"JT": "transferred_CT_JT"})
+    coverage["transfer_better_tracking"] = coverage.transferred_CT_JT < coverage.local_retested_min_JT - 1e-12
+    table(out, "local_tracking_coverage_diagnostic", coverage)
+    coverage_summary = (
+        coverage.groupby("payload")[["local_retested_min_JT", "transferred_CT_JT"]].mean().reset_index()
+    )
     # Preserve the full observed fronts, including the actually evaluated anchor.
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
     for i, payload in enumerate(c["experiment"]["payloads"]):
@@ -378,6 +395,20 @@ Nominal에서 고른 gains를 **retuning 없이 1/2/3 kg**에 적용했다. 각 
 
 응답 그림은 repeat 0의 첫 paired test seed이다. 모든 5회 그림과 raw test rollout은 함께 보존했다.
 
+### Finite-budget local tracking coverage
+
+동일한 test seeds에서 local selection front를 재평가한 최소 JT와 전이 CT의 JT를 비교했다.
+2/3 kg의 총 {len(coverage.loc[coverage.payload != 1])}개 repeat 조건 중
+{int(coverage.loc[coverage.payload != 1, "transfer_better_tracking"].sum())}개에서 전이 CT의 JT가 더 작았다.
+따라서 독립 local search의 관측 최소 JT를 해당 payload의 최적 추종 한계로 해석하면 안 된다.
+이는 40회 예산에서 tracking 쪽 탐색 coverage가 충분하지 않음을 보여준다. JE가 다르므로
+전이 controller가 local front 전체를 지배한다는 뜻도 아니다. 이 진단을 보고한 뒤 local
+front에 전이 CT를 사후 추가하거나 추가 최적화하지 않았다.
+
+{markdown(coverage_summary)}
+
+상세 paired 비교는 `local_tracking_coverage_diagnostic.csv`에 있다.
+
 ## Supplementary — retention and HV
 
 Retention/HV는 **보조지표**다. Primary evidence는 위 JT·JE·within-controller 변화율·feasibility이다.
@@ -415,6 +446,8 @@ Optimizer 오류를 Sobol로 조용히 대체하지 않는다.
   current loop 및 배터리 효율을 추가하지 않았다. JE는 signed motor-terminal energy이다.
 - **Finite-budget and residual bounds:** revised canonical CT {boundary_count}/5회가 expanded 상한에
   접한다. 전역 최적·bounds 독립성·탐색 수렴을 주장하지 않는다. 고정 40회 예산의 front coverage 한계가 있다.
+  특히 2/3 kg의 모든 반복에서 전이 CT가 local comparator의 최소 JT보다 낮았으므로
+  local front를 최적 성능 경계로 해석하지 않는다.
 - **Selection criterion:** 0.05 rad는 대표 선택을 위한 연구 설계 기준이며 payload 전이 후의
   충족을 보장하지 않는다. 이 threshold를 만족하지 못한 target 결과도 그대로 보고했다.
 - **Model scope:** 시뮬레이션 기반 1-DOF 결과이다. 3-DOF coupled system 및 실물 검증은 수행하지 않았다.
