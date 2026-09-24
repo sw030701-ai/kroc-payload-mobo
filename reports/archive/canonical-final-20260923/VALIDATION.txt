@@ -1,0 +1,21 @@
+......................                                                   [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/torch/jit/_script.py:1491
+  /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qnehvi]
+tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qlognehvi]
+  /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/gpytorch/likelihoods/noise_models.py:150: NumericalWarning: Very small noise values detected. This will likely lead to numerical instabilities. Rounding small noise values up to 1e-06.
+    warnings.warn(
+
+tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qnehvi]
+  /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/botorch/acquisition/multi_objective/monte_carlo.py:321: NumericsWarning: qNoisyExpectedHypervolumeImprovement has known numerical issues that lead to suboptimal optimization performance. It is strongly recommended to simply replace
+  
+  	 qNoisyExpectedHypervolumeImprovement 	 --> 	 qLogNoisyExpectedHypervolumeImprovement 
+  
+  instead, which fixes the issues and has the same API. See https://arxiv.org/abs/2310.20708 for details.
+    legacy_ei_numerics_warning(legacy_name=type(self).__name__)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+22 passed, 4 warnings in 4.19s

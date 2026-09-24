@@ -1,0 +1,69 @@
+{
+  "adopted": "expanded",
+  "reasons": [
+    "mean_min_JT_improvement_at_least_5pct",
+    "expanded_CT_clearly_outside_original_bounds"
+  ],
+  "min_JT_improvement_pct": 48.0365636887702,
+  "original_mean_min_JT": 0.0031232272461356597,
+  "expanded_mean_min_JT": 0.00162293620090068,
+  "expanded_CT_outside_old_count": 5,
+  "expanded_CT_at_upper_count": 4,
+  "near_overlap": false,
+  "repeats": 5,
+  "rule": {
+    "improvement_threshold_pct": 5.0,
+    "outside_range_fraction": 0.01,
+    "boundary_range_fraction": 0.001,
+    "overlap_distance": 0.05,
+    "tracking_JT_max": 0.01,
+    "practical_JT_max": 0.05
+  },
+  "optimizer_seeds": [
+    731,
+    732,
+    733,
+    734,
+    735
+  ],
+  "selection_seeds": [
+    [
+      100000,
+      100001,
+      100002,
+      100003,
+      100004
+    ],
+    [
+      101000,
+      101001,
+      101002,
+      101003,
+      101004
+    ],
+    [
+      102000,
+      102001,
+      102002,
+      102003,
+      102004
+    ],
+    [
+      103000,
+      103001,
+      103002,
+      103003,
+      103004
+    ],
+    [
+      104000,
+      104001,
+      104002,
+      104003,
+      104004
+    ]
+  ],
+  "original": "results/bounds-sensitivity-20260924/original",
+  "expanded": "results/bounds-sensitivity-20260924/expanded",
+  "limitation": "Finite-budget observed fronts; expanded boundary attachment is not resolved by this comparison."
+}

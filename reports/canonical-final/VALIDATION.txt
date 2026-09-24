@@ -1,21 +1,18 @@
-......................                                                   [100%]
-=============================== warnings summary ===============================
-.venv/lib/python3.13/site-packages/torch/jit/_script.py:1491
-  /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-    warnings.warn(
+Validation completed 2026-09-24
 
-tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qnehvi]
-tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qlognehvi]
-  /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/gpytorch/likelihoods/noise_models.py:150: NumericalWarning: Very small noise values detected. This will likely lead to numerical instabilities. Rounding small noise values up to 1e-06.
-    warnings.warn(
-
-tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qnehvi]
-  /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/botorch/acquisition/multi_objective/monte_carlo.py:321: NumericsWarning: qNoisyExpectedHypervolumeImprovement has known numerical issues that lead to suboptimal optimization performance. It is strongly recommended to simply replace
-  
-  	 qNoisyExpectedHypervolumeImprovement 	 --> 	 qLogNoisyExpectedHypervolumeImprovement 
-  
-  instead, which fixes the issues and has the same API. See https://arxiv.org/abs/2310.20708 for details.
-    legacy_ei_numerics_warning(legacy_name=type(self).__name__)
-
--- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-22 passed, 4 warnings in 4.19s
+32 automated tests passed (see TESTS.txt); lint passed.
+569 raw-data/source/seed/budget/selection/delta/archive consistency checks passed.
+All 15 initial designs include the evaluated zero anchor within the 10/40 budget.
+15 frozen CT/CB/CE selections; zero-PID representative count = 0.
+All 45/45 representative test conditions physically feasible.
+All 45/45 meet mean JT <= 0.05 rad.
+Expanded representative integration refinement (16 -> 32 RK4 substeps, same control/noise):
+max absolute JT change = 7.48880124579e-15 rad
+max absolute JE change = 8.3604770662e-08 J
+max absolute original-step energy balance residual = 1.31405706777e-06 J
+Refinement preserved feasibility in all 45 representative conditions.
+Original canonical report SHA256 archive verified; prior raw run preserved.
+Execution source snapshots match manifests; subsequent sensitivity plotting-only revision
+removes connections toward the remote zero anchor from zoom panels. Statistics are unchanged.
+The original sensitivity plot is preserved under sensitivity raw analysis/initial-plots.
+Experiment 3, hold, thermal, backlash, and detailed driver models were not added.

@@ -46,15 +46,15 @@
   "search": {
     "kp": [
       0.0,
-      200.0
+      400.0
     ],
     "ki": [
       0.0,
-      100.0
+      200.0
     ],
     "kd": [
       0.0,
-      20.0
+      40.0
     ]
   },
   "experiment": {
@@ -74,6 +74,7 @@
     "test_replicates": 10
   },
   "mobo": {
+    "include_zero_anchor": true,
     "backend": "qlognehvi",
     "n_initial": 10,
     "n_evaluations": 40,
@@ -109,5 +110,9 @@
       70.0,
       10.0
     ]
+  },
+  "selection": {
+    "practical_JT_max": 0.05,
+    "balanced_rule": "normalized_utopia_distance"
   }
 }

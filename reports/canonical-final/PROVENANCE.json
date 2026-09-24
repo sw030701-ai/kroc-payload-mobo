@@ -1,0 +1,94 @@
+{
+  "previous_local_revision": "b746dfa7b1c94a9ea1271e35da3afee55ffdb9d5",
+  "inspected_remote_main": "2f21d55fb8eadfbfed97a10e5a21e6b78594492b",
+  "local_remote_source_parity": "All tracked src/configs/analysis/docs/tests files matched remote Git blob hashes before edits.",
+  "historical_report_archive": "reports/archive/canonical-final-20260923",
+  "historical_raw_run": "results/canonical-final-qlog-v3",
+  "sensitivity_execution_sources": {
+    "original": {
+      "manifest": {
+        "stage": "exp1",
+        "status": "completed",
+        "started_utc": "2026-09-24T01:57:17.521857+00:00",
+        "config_sha256": "b2fbb98f35355ed14c65b2aa0a8ebbf542080f7dceed4c1a0639607aa2eea74d",
+        "parameter_status": "CANONICAL FINAL | simulation",
+        "python": "3.13.1",
+        "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+        "packages": {
+          "numpy": "2.5.3",
+          "scipy": "1.18.1",
+          "pandas": "2.3.3",
+          "matplotlib": "3.11.2",
+          "torch": "2.14.0",
+          "botorch": "0.17.2",
+          "gpytorch": "1.15.2"
+        },
+        "git_revision": "b746dfa7b1c94a9ea1271e35da3afee55ffdb9d5",
+        "source_sha256": {
+          "src/kroc_mobo/__init__.py": "c4f3cfe37944ea9d994f0c16a0be336f2e1de9278449ab7092b4177e84fac5d7",
+          "src/kroc_mobo/analysis.py": "ac482dd5db08d4e3bc7f0f36915ee278c25c36f963072812e5c7f5bda5d83578",
+          "src/kroc_mobo/cli.py": "d18d7d7e82f59118fdcfcb2a4ff97a238717401ec188b56ac8963df2df369531",
+          "src/kroc_mobo/config.py": "565b0493000bb621b31715b4f12a778e0a5b8cd1e0055a579a49439005ac3891",
+          "src/kroc_mobo/experiments.py": "fd4b10a0d782c3350fb65b818c3e6f82719fc586992967491e3cc9847eda5bb8",
+          "src/kroc_mobo/io.py": "8564192170211ddd9f54f570cf754cbb8bf1c675ed742870db82d3ffb9179b3b",
+          "src/kroc_mobo/kernel.py": "60e766181cf3b480631be72b5a59e5230fa966eea135c60a92d0af6e14792f79",
+          "src/kroc_mobo/metrics.py": "84f777c75dab868a6303154b7e772b085ccfb6621f8927bc1b12e0d787550a69",
+          "src/kroc_mobo/mobo.py": "5fbf2ceb14f9888a411cbf595fe6b88b5dc6b57df30dd0ccba105cb314a02e86",
+          "src/kroc_mobo/pid.py": "0e09c068639eee281ef168cd5625df7eced3543aeea075cd738b0fde21abb14d",
+          "src/kroc_mobo/plant.py": "ac1a1acc55856012616d9ce75533e26dcc042f5154c806fc1bdef6c34726c484",
+          "src/kroc_mobo/simulation.py": "81841070e1ae986b5fbdac88c5021b368a3718d53ebc07b94fb67e0ce2129ade",
+          "src/kroc_mobo/trajectory.py": "adbac16c7cc8433276dd101c7767cb6f8ec077dc0e566ee86af12cf6b71282d1"
+        },
+        "finished_utc": "2026-09-24T01:59:39.993957+00:00",
+        "optimization_rollouts": 600,
+        "selection_rollouts": 1000,
+        "elapsed_seconds": 142.44837774999905
+      },
+      "source_snapshot_matches": true
+    },
+    "expanded": {
+      "manifest": {
+        "stage": "exp1",
+        "status": "completed",
+        "started_utc": "2026-09-24T01:59:41.861856+00:00",
+        "config_sha256": "779fffbf71614b9efcfad453e7ab5e23047723e96a48ee5b79696ad3148e2424",
+        "parameter_status": "CANONICAL FINAL | simulation",
+        "python": "3.13.1",
+        "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+        "packages": {
+          "numpy": "2.5.3",
+          "scipy": "1.18.1",
+          "pandas": "2.3.3",
+          "matplotlib": "3.11.2",
+          "torch": "2.14.0",
+          "botorch": "0.17.2",
+          "gpytorch": "1.15.2"
+        },
+        "git_revision": "b746dfa7b1c94a9ea1271e35da3afee55ffdb9d5",
+        "source_sha256": {
+          "src/kroc_mobo/__init__.py": "c4f3cfe37944ea9d994f0c16a0be336f2e1de9278449ab7092b4177e84fac5d7",
+          "src/kroc_mobo/analysis.py": "ac482dd5db08d4e3bc7f0f36915ee278c25c36f963072812e5c7f5bda5d83578",
+          "src/kroc_mobo/cli.py": "d18d7d7e82f59118fdcfcb2a4ff97a238717401ec188b56ac8963df2df369531",
+          "src/kroc_mobo/config.py": "565b0493000bb621b31715b4f12a778e0a5b8cd1e0055a579a49439005ac3891",
+          "src/kroc_mobo/experiments.py": "fd4b10a0d782c3350fb65b818c3e6f82719fc586992967491e3cc9847eda5bb8",
+          "src/kroc_mobo/io.py": "8564192170211ddd9f54f570cf754cbb8bf1c675ed742870db82d3ffb9179b3b",
+          "src/kroc_mobo/kernel.py": "60e766181cf3b480631be72b5a59e5230fa966eea135c60a92d0af6e14792f79",
+          "src/kroc_mobo/metrics.py": "84f777c75dab868a6303154b7e772b085ccfb6621f8927bc1b12e0d787550a69",
+          "src/kroc_mobo/mobo.py": "5fbf2ceb14f9888a411cbf595fe6b88b5dc6b57df30dd0ccba105cb314a02e86",
+          "src/kroc_mobo/pid.py": "0e09c068639eee281ef168cd5625df7eced3543aeea075cd738b0fde21abb14d",
+          "src/kroc_mobo/plant.py": "ac1a1acc55856012616d9ce75533e26dcc042f5154c806fc1bdef6c34726c484",
+          "src/kroc_mobo/sensitivity.py": "05ce787c31a01b10d1a7d2e70f98f1775d32df0f3938543b8e517125c018a484",
+          "src/kroc_mobo/simulation.py": "81841070e1ae986b5fbdac88c5021b368a3718d53ebc07b94fb67e0ce2129ade",
+          "src/kroc_mobo/trajectory.py": "adbac16c7cc8433276dd101c7767cb6f8ec077dc0e566ee86af12cf6b71282d1"
+        },
+        "finished_utc": "2026-09-24T02:02:06.600448+00:00",
+        "optimization_rollouts": 600,
+        "selection_rollouts": 1000,
+        "elapsed_seconds": 144.71647104099975
+      },
+      "source_snapshot_matches": true
+    }
+  },
+  "canonical_execution_source_snapshot": "results/canonical-revision-20260924/source",
+  "note": "Sensitivity was run before anchor addition. Revised canonical runs use expanded bounds and initial zero anchor."
+}

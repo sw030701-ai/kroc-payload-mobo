@@ -1,0 +1,23 @@
+{
+  "practical_JT_max": 0.05,
+  "scope": "representative_selection_only; full Pareto front retained",
+  "exclude_zero_pid": true,
+  "CT": "minimum JT; ties by JE, Kp, Ki, Kd",
+  "CE": "minimum JE in practical subset; ties by JT, Kp, Ki, Kd",
+  "CB": "minimum Euclidean min/max-normalized utopia distance over practical subset",
+  "coincident_roles": "allowed and reported, no second-best substitution",
+  "primary": [
+    "JT",
+    "JE",
+    "delta_JT_pct",
+    "delta_JE_pct",
+    "feasible"
+  ],
+  "supplementary": [
+    "R_P",
+    "R_P_union",
+    "L_HV",
+    "HV_transfer",
+    "HV_local"
+  ]
+}

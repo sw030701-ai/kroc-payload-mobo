@@ -31,9 +31,9 @@ limits,current_max,3.84,CANONICAL FINAL | simulation
 limits,angle_abs_max,3.1415926536,CANONICAL FINAL | simulation
 limits,velocity_abs_max,15.0,CANONICAL FINAL | simulation
 limits,numerical_abs_max,100000000.0,CANONICAL FINAL | simulation
-search,kp,"[0.0, 200.0]",CANONICAL FINAL | simulation
-search,ki,"[0.0, 100.0]",CANONICAL FINAL | simulation
-search,kd,"[0.0, 20.0]",CANONICAL FINAL | simulation
+search,kp,"[0.0, 400.0]",CANONICAL FINAL | simulation
+search,ki,"[0.0, 200.0]",CANONICAL FINAL | simulation
+search,kd,"[0.0, 40.0]",CANONICAL FINAL | simulation
 experiment,payloads,"[1.0, 2.0, 3.0]",CANONICAL FINAL | simulation
 experiment,nominal_payload,1.0,CANONICAL FINAL | simulation
 experiment,repeats,5,CANONICAL FINAL | simulation
@@ -44,6 +44,7 @@ experiment,test_seed_base,200000,CANONICAL FINAL | simulation
 experiment,train_replicates,3,CANONICAL FINAL | simulation
 experiment,selection_replicates,5,CANONICAL FINAL | simulation
 experiment,test_replicates,10,CANONICAL FINAL | simulation
+mobo,include_zero_anchor,True,CANONICAL FINAL | simulation
 mobo,backend,qlognehvi,CANONICAL FINAL | simulation
 mobo,n_initial,10,CANONICAL FINAL | simulation
 mobo,n_evaluations,40,CANONICAL FINAL | simulation
@@ -59,3 +60,5 @@ mobo,reference_point,"[1.0, 20.0]",CANONICAL FINAL | simulation
 pilot,conservative,"[20.0, 10.0, 1.0]",CANONICAL FINAL | simulation
 pilot,balanced,"[70.0, 30.0, 5.0]",CANONICAL FINAL | simulation
 pilot,aggressive,"[160.0, 70.0, 10.0]",CANONICAL FINAL | simulation
+selection,practical_JT_max,0.05,CANONICAL FINAL | simulation
+selection,balanced_rule,normalized_utopia_distance,CANONICAL FINAL | simulation
