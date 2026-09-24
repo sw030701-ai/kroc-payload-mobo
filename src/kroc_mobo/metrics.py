@@ -72,8 +72,10 @@ def transfer_metrics(nominal_count, transferred, local, scales, reference):
     )
 
 
-def representatives(front):
-    """CT/CE extrema; CB closest normalized ideal among remaining points, not geometric knee."""
+def representatives(front, tracking_max=None):
+    """Practical rule when a threshold is supplied; preserve the historical API otherwise."""
+    if tracking_max is not None:
+        return practical_representatives(front, tracking_max)
     p = pareto(front)
     empty = p.assign(role=pd.Series(dtype=str), selection_status=pd.Series(dtype=str))
     if len(p) < 3:
@@ -92,3 +94,37 @@ def representatives(front):
     result["role"] = ["CT", "CB", "CE"]
     result["selection_status"] = "ok" if active.all() else "degenerate_objective_range"
     return result.reset_index(drop=True), result.selection_status.iloc[0]
+
+
+def practical_representatives(front, tracking_max):
+    """Select on nominal selection seeds only; keep the full Pareto front untouched.
+
+    CB minimizes Euclidean min/max-normalized utopia distance over the entire
+    practical subset. Coincident roles are reported rather than substituted.
+    """
+    if not np.isfinite(tracking_max) or tracking_max <= 0:
+        raise ValueError("Tracking criterion must be finite and positive")
+    p = pareto(front)
+    zero = (p[GAINS] == 0).all(axis=1)
+    p = p.loc[(p.JT <= tracking_max) & ~zero].copy().reset_index(drop=True)
+    empty = p.assign(role=pd.Series(dtype=str), selection_status=pd.Series(dtype=str))
+    if p.empty:
+        return empty, "no_practical_nominal_candidates"
+    lo, hi = p[OBJECTIVES].min(), p[OBJECTIVES].max()
+    span = hi - lo
+    for key in OBJECTIVES:
+        p[f"normalization_{key}_min"] = lo[key]
+        p[f"normalization_{key}_max"] = hi[key]
+        p[f"normalized_{key}"] = (p[key] - lo[key]) / span[key] if span[key] > 0 else 0.
+    p["utopia_distance"] = np.hypot(p.normalized_JT, p.normalized_JE)
+    ct = p.sort_values(["JT", "JE"] + GAINS, kind="stable").index[0]
+    ce = p.sort_values(["JE", "JT"] + GAINS, kind="stable").index[0]
+    cb = p.sort_values(["utopia_distance", "JT", "JE"] + GAINS, kind="stable").index[0]
+    result = p.loc[[ct, cb, ce]].copy()
+    result["role"] = ["CT", "CB", "CE"]
+    status = "ok" if len({ct, cb, ce}) == 3 else "coincident_roles_exact_selection_rule"
+    result["selection_status"] = status
+    result["practical_JT_max"] = tracking_max
+    result["practical_candidate_count"] = len(p)
+    result["selection_rule"] = "practical_normalized_utopia_distance"
+    return result.reset_index(drop=True), status

@@ -148,6 +148,27 @@ def make_analysis(root):
     save_csv(directory / "table2_transfer_across_repeats.csv", aggregated.reset_index())
     reps = pd.read_csv(root / "exp2" / "representative_performance.csv")
     save_csv(directory / "representative_performance.csv", reps)
+    if not reps.empty:
+        fields = ["JT", "JE", "delta_JT_pct", "delta_JE_pct", "feasible"]
+        if "practical_satisfied" in reps:
+            fields.append("practical_satisfied")
+        primary = reps.groupby(["role", "payload"])[fields].agg(["mean", "std", "count"])
+        primary.columns = [f"{a}_{b}" for a, b in primary.columns]
+        save_csv(directory / "primary_representatives_across_repeats.csv", primary.reset_index())
+        fig, axes = plt.subplots(1, 2, figsize=(9, 4))
+        for i, role in enumerate(["CT", "CB", "CE"]):
+            p = primary.loc[role].reset_index()
+            for ax, key in zip(axes, ["JT", "JE"]):
+                ax.errorbar(p.payload + (i - 1) * .035, p[f"{key}_mean"],
+                            yerr=p[f"{key}_std"], fmt="o-", capsize=3, label=role)
+        if "selection" in c:
+            axes[0].axhline(c["selection"]["practical_JT_max"], ls="--", color="grey",
+                            label="Nominal selection criterion")
+        for ax, key, unit in zip(axes, ["JT", "JE"], ["rad", "J"]):
+            ax.set(xlabel="Payload [kg]", ylabel=f"{key} [{unit}]", xticks=c["experiment"]["payloads"])
+            ax.grid(alpha=.2)
+            ax.legend(fontsize=8)
+        _save(fig, directory, "fig3_primary_transfer", status + " | mean +/- SD across 5 optimization repeats")
     for repeat in range(c["experiment"]["repeats"]):
         fig, axes = plt.subplots(4, 3, figsize=(12, 10), squeeze=False, sharey="row")
         diagnostic, daxes = plt.subplots(2, 3, figsize=(12, 6), squeeze=False, sharey="row")

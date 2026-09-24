@@ -19,11 +19,15 @@ from .config import bounds
 
 
 def sobol_design(c, seed):
-    return (
+    design = (
         torch.quasirandom.SobolEngine(3, scramble=True, seed=seed)
         .draw(c["mobo"]["n_evaluations"], dtype=torch.double)
         .numpy()
     )
+    if c["mobo"].get("include_zero_anchor", False):
+        # One of n_initial, not an additional evaluation: zero + n_initial-1 Sobol.
+        design = np.vstack([np.zeros(3), design[:-1]])
+    return design
 
 
 def decode(unit, c):

@@ -32,15 +32,24 @@ def test_real_botorch_proposal_with_constraints(config, backend):
     assert candidate.shape == (3,) and np.all((candidate >= 0) & (candidate <= 1))
 
 
-def test_end_to_end_frozen_gains_matched_seeds_and_budget(config, tmp_path):
+@pytest.mark.parametrize("anchor", [False, True])
+def test_end_to_end_frozen_gains_matched_seeds_and_budget(config, tmp_path, anchor):
     config["simulation"]["duration"] = 0.1
     config["simulation"]["theta_end"] = 0.01
     config["mobo"].update(backend="sobol", n_initial=4, n_evaluations=4)
+    config["mobo"]["include_zero_anchor"] = anchor
+    if anchor:
+        config["selection"] = {"practical_JT_max": .05, "balanced_rule": "normalized_utopia_distance"}
     run_exp1(config, tmp_path)
     run_exp2(config, tmp_path)
     manifest = json.loads((tmp_path / "exp1" / "manifest.json").read_text())
     assert manifest["optimization_rollouts"] == 3 * 4 * 2
     training = [pd.read_csv(p) for p in sorted((tmp_path / "exp1").glob("repeat_*/*/train.csv"))]
+    if anchor:
+        for condition in training:
+            assert condition.iloc[0].source == "known_zero_pid_anchor"
+            assert (condition.iloc[0][["kp", "ki", "kd"]] == 0).all()
+            assert len(condition) == 4
     for other in training[1:]:
         np.testing.assert_array_equal(training[0][["kp", "ki", "kd"]], other[["kp", "ki", "kd"]])
     transfer = pd.read_csv(tmp_path / "exp2" / "transfer_all.csv")

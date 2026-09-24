@@ -95,6 +95,12 @@ def validate(c):
             raise ValueError(f"Invalid mobo.{key}")
     if not 2 <= m["n_initial"] <= m["n_evaluations"]:
         raise ValueError("Require 2 <= n_initial <= n_evaluations")
+    if m.get("include_zero_anchor", False) and any(c["search"][key][0] != 0 for key in ("kp", "ki", "kd")):
+        raise ValueError("The zero anchor requires all gain lower bounds to be zero")
+    if "selection" in c:
+        positive("selection", ["practical_JT_max"])
+        if c["selection"].get("balanced_rule") != "normalized_utopia_distance":
+            raise ValueError("Unknown balanced selection rule")
     if m["backend"] not in ("qnehvi", "qlognehvi", "sobol"):
         raise ValueError("Unknown optimization backend")
     if (

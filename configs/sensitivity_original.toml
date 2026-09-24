@@ -46,12 +46,12 @@ velocity_abs_max = 15.0      # rad/s
 numerical_abs_max = 1e8      # numerical guard, all physical states
 
 [search]
-kp = [0.0, 400.0]            # V/rad
-ki = [0.0, 200.0]            # V/(rad s)
-kd = [0.0, 40.0]             # V s/rad
+kp = [0.0, 200.0]            # V/rad
+ki = [0.0, 100.0]            # V/(rad s)
+kd = [0.0, 20.0]             # V s/rad
 
 [experiment]
-payloads = [1.0, 2.0, 3.0]   # kg; constant within each rollout
+payloads = [1.0]   # kg; constant within each rollout
 nominal_payload = 1.0
 repeats = 5
 base_seed = 731
@@ -63,7 +63,6 @@ selection_replicates = 5
 test_replicates = 10
 
 [mobo]
-include_zero_anchor = true # first of 10 initial points; 9 Sobol, 40 total evaluations
 backend = "qlognehvi"        # log-stabilized qNEHVI; original qNEHVI failed with NaN gradients
 n_initial = 10
 n_evaluations = 40           # includes initial, infeasible, numerical-failure attempts
@@ -81,8 +80,3 @@ reference_point = [1.0, 20.0] # fixed after pilot (JE 2.57–9.98 J), before opt
 conservative = [20.0, 10.0, 1.0]
 balanced = [70.0, 30.0, 5.0]
 aggressive = [160.0, 70.0, 10.0]
-
-# Representative selection only: never truncates the Experiment 1 front.
-[selection]
-practical_JT_max = 0.05 # rad RMSE, fixed before revised results
-balanced_rule = "normalized_utopia_distance"

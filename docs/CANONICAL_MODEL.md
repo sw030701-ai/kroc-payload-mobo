@@ -49,7 +49,10 @@ be negative in reverse power flow; do not call it universally positive gear loss
 
 ## Controller, objectives and execution
 
-Voltage PID optimizes only [Kp, Ki, Kd], with bounds [0,200], [0,100], [0,20].
+Voltage PID optimizes only [Kp, Ki, Kd], with bounds [0,400], [0,200], [0,40].
+The 2026-09-24 paired nominal sensitivity found a 48.04% decrease in mean minimum
+JT, so the expanded bounds are canonical. Four of five expanded sensitivity CTs
+still touch an upper bound; this is not evidence of bound independence or global optimality.
 Derivative on filtered measured angle (tau=0.020 s), back-calculation anti-windup
 (10 /s), 1 ms control period, no feedforward. Bounds/filter/noise are research
 design choices, not motor datasheet values. Noise variance is 1e-7 rad², sampled
@@ -67,12 +70,14 @@ independent Python reference loop.
 ## Experiments
 
 1. Independently optimize each of 1/2/3 kg, five optimization repeats, 40 candidates
-   each including ten initial Sobol points. Train means use 3 seeds; all candidates
+   each including one zero-PID baseline plus nine initial Sobol points. Train means use 3 seeds; all candidates
    are re-evaluated on 5 disjoint selection seeds before forming feasible fronts.
-2. Freeze the 1 kg front and CT (minimum JT), CE (minimum JE), CB (normalized ideal
-   distance excluding endpoints). CB is a balanced representative, not a proven
-   geometric knee. Retest unchanged gains at all payloads on ten disjoint paired
-   seeds. Save JT, JE and percentage changes, plus set-level retention/HV diagnostics.
+2. Freeze the full 1 kg front. Select CT (minimum JT), CE (minimum JE), and CB
+   (minimum normalized utopia distance) only from its JT<=0.05 rad practical subset,
+   explicitly excluding zero PID. Normalization uses that subset's JT/JE min/max.
+   Coincident roles are allowed and reported; CB is not a proven geometric knee. Retest unchanged gains at all payloads on ten disjoint paired
+   seeds. Save JT, JE and percentage changes, with physical feasibility as primary outputs. Retention/HV diagnostics are supplementary.
+   The tracking criterion is for representative selection; it does not truncate any full front.
 3. Experiment 3 is not performed.
 
 Initial qNEHVI full-run attempt stopped on a NaN acquisition gradient. Final runs
@@ -98,3 +103,5 @@ is 50 and low-rank acquisition covariance caching is disabled. These regularize
 GP fitting and sampling, not physical dynamics. The full experiment restarts at
 repeat zero using one fixed implementation; failed launch directories are excluded
 from final summaries.
+
+The revision protocol and preservation details are in [REVISION_PROTOCOL.md](REVISION_PROTOCOL.md).

@@ -92,6 +92,8 @@ def run_exp1(c, root):
             )
             for index in range(c["mobo"]["n_evaluations"]):
                 source, unit = "sobol_initial", design[index]
+                if index == 0 and c["mobo"].get("include_zero_anchor", False):
+                    source = "known_zero_pid_anchor"
                 if index >= c["mobo"]["n_initial"]:
                     if c["mobo"]["backend"] == "sobol":
                         source = "sobol_baseline"
@@ -168,10 +170,22 @@ def run_exp2(c, root):
     manifest = initialize_run(root, c, "exp2")
     fronts = pd.read_csv(Path(root) / "exp1" / "pareto_all.csv")
     nominal = c["experiment"]["nominal_payload"]
+    tracking_max = c.get("selection", {}).get("practical_JT_max")
+    save_json(Path(root) / "exp2" / "selection_rule.json", {
+        "practical_JT_max": tracking_max,
+        "scope": "representative_selection_only; full Pareto front retained",
+        "exclude_zero_pid": tracking_max is not None,
+        "CT": "minimum JT; ties by JE, Kp, Ki, Kd",
+        "CE": "minimum JE in practical subset; ties by JT, Kp, Ki, Kd",
+        "CB": "minimum Euclidean min/max-normalized utopia distance over practical subset",
+        "coincident_roles": "allowed and reported, no second-best substitution",
+        "primary": ["JT", "JE", "delta_JT_pct", "delta_JE_pct", "feasible"],
+        "supplementary": ["R_P", "R_P_union", "L_HV", "HV_transfer", "HV_local"],
+    })
     summaries, all_transferred, all_local, all_raw, rep_results, frozen, statuses = [], [], [], [], [], [], []
     for repeat in range(c["experiment"]["repeats"]):
         p0 = fronts.loc[(fronts.repeat == repeat) & (fronts.payload == nominal)].copy()
-        reps, status = representatives(p0)
+        reps, status = representatives(p0, tracking_max=tracking_max)
         frozen.append(reps)
         statuses.append(dict(repeat=repeat, status=status, nominal_count=len(p0)))
         # Selection is checkpointed BEFORE any target-payload outcome is inspected.
@@ -223,12 +237,20 @@ def run_exp2(c, root):
                     payload=payload,
                     **metrics,
                     status="ok",
+                    metric_tier="supplementary",
                     parameter_status=c["metadata"]["parameter_status"],
                 )
             )
             for _, rep in reps.iterrows():
                 row = transferred.loc[transferred.controller_id == rep.controller_id].iloc[0].to_dict()
                 rep_results.append({**row, "role": rep.role})
+                if tracking_max is not None:
+                    rep_results[-1].update(
+                        practical_satisfied=bool(row["feasible"] and row["JT"] <= tracking_max),
+                        practical_JT_max=tracking_max,
+                        nominal_selection_JT=float(rep.JT), nominal_selection_JE=float(rep.JE),
+                        selection_status=rep.selection_status,
+                    )
                 trace = simulate([rep[g] for g in GAINS], payload, c, test_seeds[0], record=True)
                 save_csv(directory / f"trace_{rep.role}.csv", trace.trace)
             print(

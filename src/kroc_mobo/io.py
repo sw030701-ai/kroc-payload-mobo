@@ -43,7 +43,7 @@ def initialize_run(root, c, stage):
     if manifest_path.exists():
         raise FileExistsError(f"{stage} already exists; use a new --out directory (no silent overwrite)")
     packages = {}
-    for package in ["numpy", "scipy", "pandas", "matplotlib", "torch", "botorch", "gpytorch"]:
+    for package in ["numpy", "scipy", "pandas", "matplotlib", "torch", "botorch", "gpytorch", "numba"]:
         try:
             packages[package] = version(package)
         except PackageNotFoundError:
