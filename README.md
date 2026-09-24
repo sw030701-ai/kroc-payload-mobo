@@ -3,12 +3,20 @@
 > **Canonical Final Model — 이 작업에서 “우리 최종 모델” 또는 “final model”은 [Canonical Final Model](docs/CANONICAL_MODEL.md)만을 의미합니다. 기존 placeholder 설정으로 되돌리지 않습니다.**
 > 기본 실행 설정은 `configs/canonical_final.toml`입니다. 이전 illustrative 설정과 결과는 과거 구현 검증용이며 최종 모델의 결과가 아닙니다.
 
+> **2026-09-24 revised canonical:** 1 kg paired bound sensitivity에서 평균 최소 JT가 48.04% 감소하여
+> PID upper bounds를 **[400,200,40]**으로 확장했습니다. 모든 payload/repeat의 초기 10점에
+> zero PID 1점과 Sobol 9점을 포함하며 총 예산은 40회입니다. 대표 CT/CB/CE는
+> **JT≤0.05 rad practical nominal subset**에서만 선택합니다. 전체 front는 유지합니다.
+> [최신 결과](reports/canonical-final/REPORT.md) · [사전 revision protocol](docs/REVISION_PROTOCOL.md) ·
+> [이전 결과 보존본](reports/archive/canonical-final-20260923/REPORT.md).
+> 이 저장소의 모델은 **1-DOF joint**이며 Experiment 1·2만 실행합니다.
+
 1-DOF 로봇 관절 + DC motor + 전압 PID를 Python으로 시뮬레이션하고, BoTorch/GPyTorch의 다목적 Bayesian optimization으로 tracking RMSE와 **모터 단자 순전기 에너지**의 trade-off를 탐색합니다. 실험 설계는 연구자의 논문 초안과 최종 실험 메모를 반영했습니다. 실험 결과가 나오기 전에 trade-off, knee, payload 효과 또는 특정 controller의 우수성을 가정하지 않습니다.
 
 ## 연구 질문
 
 1. 같은 궤적·제약·탐색 예산에서 payload 변화에 따라 달성 가능한 tracking–energy 근사 Pareto front가 얼마나 달라지는가?
-2. Nominal payload에서 찾은 **Pareto controller set 전체**의 이득을 고정하여 다른 payload로 옮기면, 실행 가능성·비지배 관계·hypervolume이 얼마나 유지되는가?
+2. Nominal practical subset에서 고른 controller를 다른 payload로 옮기면 JT·JE·물리적 feasibility가 어떻게 바뀌는가? 전체 Pareto set의 retention/HV는 보조적으로 분석한다.
 3. Nominal front에서 선택한 tracking-oriented **CT**, balanced **CB**, energy-oriented **CE**의 응답은 어떻게 달라지는가?
 
 이 프로젝트는 optimizer 성능 비교 연구가 아닙니다. 유한 예산으로 얻은 front는 전역 최적 Pareto front의 근사입니다.
@@ -34,7 +42,7 @@ python -m pip install -r requirements-lock.txt
 python -m pip install --no-deps -e .
 ```
 
-`--smoke`는 1회 반복, payload당 초기 4개 + BO 2개, 각 단계 잡음 seed 2개로 줄입니다. **5초 궤적, 1 ms 제어 주기, 1/2/3 kg 조건은 그대로**입니다. 후보가 적어 대표 controller가 3개 미만일 수 있으며 이 경우 원인을 기록하고 Fig. 2를 생략합니다. 이미 사용한 단계의 결과는 덮어쓰지 않으므로 재실행 시 새 출력 경로를 사용하세요.
+`--smoke`는 1회 반복, payload당 초기 4개(anchor 1 + Sobol 3) + BO 2개, 각 단계 잡음 seed 2개로 줄입니다. **5초 궤적, 1 ms 제어 주기, 1/2/3 kg 조건은 그대로**입니다. Practical 후보가 없으면 원인을 기록하고 Fig. 2를 생략합니다. 정확한 CT/CB/CE 정의가 같은 점을 고르면 role 중복을 그대로 기록합니다. 이미 사용한 단계의 결과는 덮어쓰지 않으므로 재실행 시 새 출력 경로를 사용하세요.
 
 단계별 실행:
 
@@ -60,8 +68,8 @@ kroc-mobo all --smoke --backend sobol --out results/smoke-sobol
 | 단계 | 입력 및 동작 | 주요 출력 |
 |---|---|---|
 | Pilot | 수동 PID 3개 × payload 3개; RK4 적분 간격을 절반으로 줄인 결과 비교 | 각도·오차·전압·전류·전력·누적 에너지, 실행 가능성, 수치 수렴 |
-| Exp. 1 | payload마다 새 GP/탐색 이력; 같은 초기 Sobol points, bounds, 예산, paired noise seeds | 모든 후보와 rollout 로그, 독립 selection seed 재평가, payload별 근사 Pareto front |
-| Exp. 2 | nominal selection front 전체를 고정한 채 모든 payload에서 재평가; local front도 같은 test seeds로 재평가 | retention 두 정의, HV loss, CT/CB/CE 성능 및 시간응답 |
+| Exp. 1 | payload마다 새 GP/탐색 이력; 같은 초기 zero anchor + Sobol points, bounds, 예산, paired noise seeds | 모든 후보와 rollout 로그, 독립 selection seed 재평가, payload별 근사 Pareto front |
+| Exp. 2 | nominal selection front 전체를 고정한 채 모든 payload에서 재평가; local front도 같은 test seeds로 재평가 | primary: CT/CB/CE JT·JE·변화율·feasible 및 시간응답; supplementary: retention/HV |
 | Analysis | repeat별 결과를 유지하고 요약 | Fig. 1·2, Table 1·2 CSV, PNG 300 dpi, PDF |
 
 기본 설정: payload 1/2/3 kg, nominal 1 kg, **5개 독립 optimization repeats**, 초기 10개를 포함한 총 40개 후보, train 3·selection 5·test 10개 잡음 seed입니다. Exp. 1의 최적화 비용은 1,800 rollout, selection 비용은 3,000 rollout이며 Exp. 2와 그림용 rollout은 별도 기록합니다. 전체 실행은 smoke보다 훨씬 오래 걸립니다.
@@ -108,8 +116,8 @@ BoTorch는 최대화를 사용하므로 두 목적에 음수를 적용합니다.
 - `N_ret_union`, `R_P_union`: 전이된 집합과 대상 payload의 독립 local set을 합친 비교 집합에서 non-dominated인 전이 controller 비율입니다. 어느 쪽도 전역 Pareto 최적성의 증명은 아닙니다.
 - `L_HV = 100 (HV_local − HV_transfer)/HV_local`: 같은 고정 척도·기준점으로 계산한 정확한 2D minimization hypervolume 차이입니다. **음수 손실은 그대로 보존**합니다. 유한 탐색에서는 transfer set이 local set보다 좋을 수 있습니다. Local HV=0이면 NaN과 사유를 남깁니다. 기준점을 지배하지 못하는 점은 HV에 기여하지 않으며 개수를 보고합니다.
 - 새로운 test seed에서 nominal 내부 순위나 feasibility도 바뀔 수 있으므로 nominal `R_P`를 100%로 강제하지 않습니다. Nominal local/transfer는 같은 controller와 paired seeds로 계산하므로 유효한 경우 `L_HV=0`입니다.
-- CT는 JT 최소, CE는 JE 최소, CB는 양 끝점을 제외한 후보 중 **nominal 목적범위로 정규화한 이상점까지 거리가 최소**인 점입니다. CB를 기하학적 knee라고 부르지 않습니다. 동률은 다른 목적값과 Kp/Ki/Kd의 오름차순으로 결정합니다.
-- 유효한 서로 다른 front controller가 3개 미만이면 세 영역 비교를 만들지 않습니다. `selection_status.json`에 사유를 기록합니다. 실험을 원하는 결론에 맞춰 점을 추가하거나 controller를 다시 선택하지 않습니다.
+- 대표 선택만 nominal feasible Pareto subset **JT≤0.05 rad**로 제한하고 zero PID를 명시적으로 제외합니다. CT는 JT 최소, CE는 JE 최소, CB는 **같은 practical subset의 JT/JE min/max로 정규화한 utopia Euclidean 거리 최소**입니다. CB를 기하학적 knee라고 부르지 않습니다. CB 후보에서 endpoints를 임의 제외하지 않으며 role이 겹치면 그대로 보고합니다. 동률은 JT/JE 및 Kp/Ki/Kd 오름차순으로 재현 가능하게 처리합니다.
+- Practical subset이 비면 대표 선택을 만들지 않고 `selection_status.json`에 사유를 기록합니다. 정확한 선택식에 따른 role 중복은 기록하며, 결과를 원하는 결론에 맞춰 점을 추가하거나 다시 선택하지 않습니다.
 - 대표 controller의 단위 있는 변화량과 백분율을 기록합니다. 기준 JT/JE가 1e-9 이하이거나 순에너지가 음수면 해당 백분율은 NaN입니다. Noise 평균·표준편차와 optimization repeat 간 평균·표준편차는 별도로 취급합니다.
 
 ## 생성되는 파일
@@ -162,7 +170,7 @@ Fig. 1은 반복별 front를 별도 선으로 표시합니다. 서로 다른 rep
 
 ```bash
 # 최종 모델 전체 실험; 기존 결과와 별도 경로
-kroc-mobo all --config configs/canonical_final.toml --out results/canonical-final-v1
+kroc-mobo all --config configs/canonical_final.toml --out results/new-canonical-revision
 ```
 
 Pilot에서 관측된 약 2.57–9.98 J 범위를 참고하여, 최적화 전에 공통 HV 기준점 `[1 rad, 20 J]`와 척도 `[0.1 rad, 10 J]`를 고정했습니다. Hypervolume loss는 이 기준점에 의존하며 물리적 에너지 손실률과 다릅니다.
@@ -176,3 +184,16 @@ Pilot에서 관측된 약 2.57–9.98 J 범위를 참고하여, 최적화 전에
 - [MathWorks Band-Limited White Noise](https://www.mathworks.com/help/simulink/slref/bandlimitedwhitenoise.html).
 
 원본 논문 초안과 스크린샷 자체는 저장소에 복사하지 않았습니다. 원고의 최종 식·파라미터·지표 정의와 구현을 실제 실험 전에 대조하세요.
+
+## Revised report and raw data
+
+`reports/canonical-final/REPORT.md`는 수정된 canonical 결과입니다. `raw-results.zip`은 sensitivity
+두 arm 및 revised Experiment 1·2의 원자료/trace/로그/실행 소스를 제공합니다. 기존 run은
+`results/canonical-final-qlog-v3`, 기존 보고서는 `reports/archive/canonical-final-20260923`에 보존합니다.
+Sensitivity는 anchor 추가 전 두 bounds를 비교했고 revised canonical은 선택한 bounds에서
+anchor를 추가하여 1/2/3 kg 전체를 다시 실행했습니다. 두 단계의 성능 수치를 섞지 않습니다.
+Expanded sensitivity CT도 4/5회 새 상한에 붙으므로 bounds 독립성/전역 최적을 주장하지 않습니다.
+
+보고서와 원자료 검증의 재현 명령은 최신 REPORT의 Reproduction 절을 사용하세요.
+Retention/HV는 supplementary입니다. No hold, constant gear efficiency, no thermal/backlash/
+detailed driver model은 LIMITATIONS에 명시하고 추가 모델이나 Experiment 3은 구현하지 않았습니다.
