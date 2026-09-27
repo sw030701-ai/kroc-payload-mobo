@@ -1,14 +1,14 @@
 {
   "adopted": "expanded",
+  "protocol": "budget80",
   "reasons": [
-    "mean_min_JT_improvement_at_least_5pct",
-    "expanded_CT_clearly_outside_original_bounds"
+    "paired_mean_JT_improvement_at_least_5pct"
   ],
-  "min_JT_improvement_pct": 48.0365636887702,
-  "original_mean_min_JT": 0.0031232272461356597,
-  "expanded_mean_min_JT": 0.00162293620090068,
+  "min_JT_improvement_pct": 50.51484616737672,
+  "original_mean_min_JT": 0.00157706398644296,
+  "expanded_mean_min_JT": 0.0007804125397302,
   "expanded_CT_outside_old_count": 5,
-  "expanded_CT_at_upper_count": 4,
+  "expanded_CT_at_upper_count": 5,
   "near_overlap": false,
   "repeats": 5,
   "rule": {
@@ -63,7 +63,7 @@
       104004
     ]
   ],
-  "original": "results/bounds-sensitivity-20260924/original",
-  "expanded": "results/bounds-sensitivity-20260924/expanded",
+  "original": "results/budget80-20260927/current",
+  "expanded": "results/budget80-20260927/expanded",
   "limitation": "Finite-budget observed fronts; expanded boundary attachment is not resolved by this comparison."
 }

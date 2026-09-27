@@ -1,49 +1,16 @@
-# Change and commit summary — 2026-09-24
+# 2026-09-27 experiment revision
 
-Branch: `revision/practical-bound-sensitivity-20260924` (local; not pushed).
+- `5d05a2a`: preregister the paired 400/800-bound, 80-evaluation protocol; add immutable experiment orchestration and saturation diagnostics.
+- `9f47f4d`: adopt [800,400,80] and 80 evaluations after the observed 50.51% nominal tracking improvement; preserve the complete prior 40-evaluation report and add audit/report code.
+- `2885b5a`: add raw-result packaging, file hashes, and explicit budget/coverage reporting.
+- Final result commit: publish this report, raw ZIP, tables/figures, feasibility-aware coverage analysis, final documentation, and validation records. The enclosing Git commit identifies the exact published version.
 
-- `ef04ab6`: predeclared nominal bounds sensitivity; expanded canonical bounds
-  [400,200,40]; zero anchor as one initial evaluation; practical JT<=0.05 selection;
-  exact normalized-utopia CB; primary performance aggregation; regression tests.
-- `17da804`: data-driven revised report builder, independent raw-data and numerical
-  audit, source preservation checks, revised documentation and sensitivity zoom plots.
-- `5bc2af3`: explicit same-test-seed diagnostic showing incomplete local tracking coverage at 2/3 kg.
-- The following results commit preserves the original report bundle and records the
-  new report, tables, figures, full raw-data archive, validation and SHA256 inventory.
+Modified implementation/configuration: `configs/canonical_final.toml`, `src/kroc_mobo/sensitivity.py`, `analysis/run_budget80.py`, `analysis/report_budget80.py`, `analysis/package_budget80.py`, `tests/test_revision.py`, README and canonical/protocol documentation.
 
-## Changed implementation
+Executed 800 sensitivity candidates and 1,200 canonical candidates (2,000 total), each with three training and five selection rollouts. Experiment 2 independently tests frozen nominal gains on ten held-out noise seeds per condition. Experiment 3 was not performed; physical model and practical-selection rule are unchanged.
 
-- `configs/canonical_final.toml`: expanded bounds, initial zero anchor, explicit
-  practical threshold and balanced rule. Physical model and all budgets/seeds unchanged.
-- `configs/sensitivity_{original,expanded}.toml`: paired 1 kg pre-anchor protocols.
-- `src/kroc_mobo/sensitivity.py`: fixed branch rule, paired diagnostics, observed-front plots.
-- `src/kroc_mobo/mobo.py`: zero + 9 Sobol within the existing 10/40 evaluation budget.
-- `src/kroc_mobo/metrics.py`: practical selection excludes zero PID, preserves the full front,
-  logs normalization and exact CT/CB/CE definitions. Historical no-threshold API remains.
-- `src/kroc_mobo/experiments.py`: anchor source label; frozen selection metadata; primary
-  performance/percentage changes and separate practical satisfaction; supplementary set metrics.
-- `src/kroc_mobo/config.py`, `io.py`: selection/anchor validation and Numba version provenance.
-- `src/kroc_mobo/analysis.py`, `analysis/build_report.py`: primary tables/figures and data-derived findings.
-- `analysis/audit_revision.py`, tests: raw means, seed separation, fixed gains, minimum selection,
-  budget/anchor fairness, percentage denominators, archive integrity and RK4 refinement checks.
-- `docs/CANONICAL_MODEL.md`, `docs/REVISION_PROTOCOL.md`, `README.md`: revised protocol and limitations.
+Validation: 34 tests, lint, 680 independent data/provenance/numerical checks. At 16→32 integration substeps, maximum absolute JT change was 7.37e-15 rad and JE change 3.33e-7 J; physical feasibility was unchanged. Prior archives (57 and 90 files) passed exact SHA-256 checks.
 
-## Execution and preservation
+Important outcomes: 80 evaluations improved tracking minima but did not close the local tracking coverage gap. All eight feasible heavy-payload CT transfers had lower JT than the corresponding observed feasible local extreme. Two other 3 kg CT transfers violated the current limit (4.054780 and 3.884308 A), so their lower JT is not counted as feasible superiority. The combined feasible/practical flag holds in 43/45 conditions, while JT≤0.05 rad alone holds in all 45.
 
-Sensitivity: 2 arms x 5 repeats x 40 evaluations, 3 train + 5 selection rollouts per candidate.
-Canonical Experiment 1: 3 payloads x 5 repeats x 40 evaluations, 1,800 train + 3,000 selection rollouts.
-Canonical Experiment 2: 2,650 unique held-out test rollouts plus 45 trace rollouts.
-Representative numerical audit: 45 conditions x two RK4 resolutions, numerical checks only (not Experiment 3).
-
-Executed canonical source commit: `ef04ab6`. Complete execution source snapshots and file hashes
-are in the raw archive; current report/analysis source commit is `5bc2af3`. Subsequent changes only
-corrected reporting/auditing and a zoom-display edge, not simulation, optimizer, selection or raw metrics.
-The original sensitivity figure is also preserved under `analysis/initial-plots` in the raw archive.
-
-Old report: `reports/archive/canonical-final-20260923`, with adjacent exact SHA256 inventory.
-Old raw run: `results/canonical-final-qlog-v3`, untouched. Prior full root ZIP is also untouched.
-Inspected remote main: `2f21d55fb8eadfbfed97a10e5a21e6b78594492b`; starting local code/config/docs/tests
-matched remote Git blob hashes. No GitHub publication was performed.
-
-32 tests passed; 569 data/provenance consistency checks passed. No Experiment 3 or additional
-hold/thermal/backlash/driver model was implemented. HV/retention are supplementary.
+The previous canonical report and its raw archive remain at `reports/archive/canonical-final-20260924-budget40`; the older 2026-09-23 archive is also unchanged. New results are on branch `revision/budget80-bounds800-20260927`; no main-branch merge is performed.

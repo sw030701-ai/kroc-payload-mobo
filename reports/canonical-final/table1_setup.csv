@@ -31,9 +31,9 @@ limits,current_max,3.84,CANONICAL FINAL | simulation
 limits,angle_abs_max,3.1415926536,CANONICAL FINAL | simulation
 limits,velocity_abs_max,15.0,CANONICAL FINAL | simulation
 limits,numerical_abs_max,100000000.0,CANONICAL FINAL | simulation
-search,kp,"[0.0, 400.0]",CANONICAL FINAL | simulation
-search,ki,"[0.0, 200.0]",CANONICAL FINAL | simulation
-search,kd,"[0.0, 40.0]",CANONICAL FINAL | simulation
+search,kp,"[0.0, 800.0]",CANONICAL FINAL | simulation
+search,ki,"[0.0, 400.0]",CANONICAL FINAL | simulation
+search,kd,"[0.0, 80.0]",CANONICAL FINAL | simulation
 experiment,payloads,"[1.0, 2.0, 3.0]",CANONICAL FINAL | simulation
 experiment,nominal_payload,1.0,CANONICAL FINAL | simulation
 experiment,repeats,5,CANONICAL FINAL | simulation
@@ -47,7 +47,7 @@ experiment,test_replicates,10,CANONICAL FINAL | simulation
 mobo,include_zero_anchor,True,CANONICAL FINAL | simulation
 mobo,backend,qlognehvi,CANONICAL FINAL | simulation
 mobo,n_initial,10,CANONICAL FINAL | simulation
-mobo,n_evaluations,40,CANONICAL FINAL | simulation
+mobo,n_evaluations,80,CANONICAL FINAL | simulation
 mobo,mc_samples,128,CANONICAL FINAL | simulation
 mobo,num_restarts,8,CANONICAL FINAL | simulation
 mobo,raw_samples,128,CANONICAL FINAL | simulation

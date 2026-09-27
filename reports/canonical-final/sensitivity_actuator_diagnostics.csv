@@ -1,0 +1,3 @@
+arm,voltage_saturation_mean,voltage_saturation_max,peak_current_max_A,CT_JT_mean,CT_JE_mean
+expanded,0.0,0.0,2.73599120407286,0.0007804125397302,2.9467294826921906
+original,0.0,0.0,1.7007555800165115,0.00157706398644296,2.5984570054418397

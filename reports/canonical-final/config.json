@@ -46,15 +46,15 @@
   "search": {
     "kp": [
       0.0,
-      400.0
+      800.0
     ],
     "ki": [
       0.0,
-      200.0
+      400.0
     ],
     "kd": [
       0.0,
-      40.0
+      80.0
     ]
   },
   "experiment": {
@@ -77,7 +77,7 @@
     "include_zero_anchor": true,
     "backend": "qlognehvi",
     "n_initial": 10,
-    "n_evaluations": 40,
+    "n_evaluations": 80,
     "mc_samples": 128,
     "num_restarts": 8,
     "raw_samples": 128,

@@ -137,18 +137,21 @@ def build(root, out):
     table(out, "exp1_compact", compact)
     primary = pd.DataFrame([dict(role=role, payload=p, JT_rad=mean_sd(g.JT), JE_J=mean_sd(g.JE),
         delta_JT_pct=mean_sd(g.delta_JT_pct), delta_JE_pct=mean_sd(g.delta_JE_pct),
-        feasible=f"{g.feasible.sum()}/{len(g)}", practical=f"{g.practical_satisfied.sum()}/{len(g)}")
+        feasible=f"{g.feasible.sum()}/{len(g)}", tracking_only=f"{(g.JT <= .05).sum()}/{len(g)}",
+        feasible_and_practical=f"{g.practical_satisfied.sum()}/{len(g)}")
         for (role, p), g in reps.groupby(["role", "payload"], sort=False)])
     table(out, "table2_primary_transfer", primary)
     selection = frozen[["repeat", "role", *GAINS, "JT", "JE", "utopia_distance", "selection_status"]]
     table(out, "table_selection", selection)
     local = pd.read_csv(canonical / "exp2/local_retested_all.csv")
     coverage = local.loc[local.feasible].groupby(["repeat", "payload"]).JT.min().rename("local_JT").reset_index()
-    coverage = coverage.merge(reps.loc[reps.role == "CT", ["repeat", "payload", "JT"]], on=["repeat", "payload"])
+    coverage = coverage.merge(reps.loc[reps.role == "CT", ["repeat", "payload", "JT", "feasible"]], on=["repeat", "payload"])
     coverage["transfer_better"] = coverage.JT < coverage.local_JT - 1e-12
+    coverage["feasible_transfer_better"] = coverage.transfer_better & coverage.feasible
     table(out, "local_tracking_coverage_diagnostic", coverage)
     coverage_summary = coverage.groupby("payload").agg(local_JT=("local_JT", "mean"), transfer_JT=("JT", "mean"),
-        transfer_better_count=("transfer_better", "sum")).reset_index()
+        lower_transfer_JT_count=("transfer_better", "sum"), feasible_transfer_count=("feasible", "sum"),
+        feasible_transfer_better_count=("feasible_transfer_better", "sum")).reset_index()
     table(out, "local_tracking_coverage_summary", coverage_summary)
     fixed = pd.DataFrame([dict(repeat=r, payload=p, best_JE=g.loc[g.JT <= .01, "JE"].min())
         for (r, p), g in fronts.groupby(["repeat", "payload"])])
@@ -168,13 +171,26 @@ def build(root, out):
     axes[0].set_title("Full fronts including zero anchor")
     axes[1].set_title("Practical region (display only)")
     _save(fig, out, "fig1_full_and_zoom", "80 evaluations | 5 independent repeats per payload")
+    fig, ax = plt.subplots(figsize=(7, 4))
+    nominal_view = fronts.loc[(fronts.repeat == 0) & (fronts.payload == 1) & (fronts.JT <= .05)].sort_values("JT")
+    ax.plot(nominal_view.JT, nominal_view.JE, "o-", color="grey", label="Nominal practical subset")
+    for role, marker, color in zip(("CT", "CB", "CE"), ("s", "D", "^"), ("C0", "C1", "C2")):
+        selected = frozen.loc[(frozen.repeat == 0) & (frozen.role == role)].iloc[0]
+        ax.scatter(selected.JT, selected.JE, marker=marker, color=color, s=80, label=role, zorder=3)
+    ax.axvline(.05, color="black", ls="--", label="Selection threshold")
+    ax.set(xlabel="Selection JT [rad]", ylabel="Selection JE [J]")
+    ax.legend(fontsize=8)
+    ax.grid(alpha=.2)
+    _save(fig, out, "fig_selection_r00", "Frozen representative selection | repeat 0")
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
     for p, group in budget.groupby("payload"):
         axes[0].plot([40, 80], [group.JT_40.mean(), group.JT_80.mean()], "o-", label=f"{p:g} kg")
     axes[0].set(xlabel="Candidate budget", ylabel="Mean selection minimum JT [rad]", xticks=[40, 80])
     axes[0].legend()
     axes[1].plot(coverage_summary.payload, coverage_summary.local_JT, "o-", label="Local front min JT")
-    axes[1].plot(coverage_summary.payload, coverage_summary.transfer_JT, "s--", label="Transferred CT JT")
+    axes[1].plot(coverage_summary.payload, coverage_summary.transfer_JT, "s--", label="Transferred CT JT (all 5)")
+    count_text = "; ".join(f"{int(r.payload)} kg: {int(r.feasible_transfer_count)}/5" for r in coverage_summary.itertuples())
+    axes[1].text(.03, .97, "CT feasible: " + count_text, transform=axes[1].transAxes, va="top", fontsize=8)
     axes[1].set(xlabel="Payload [kg]", ylabel="Mean test JT [rad]", xticks=[1, 2, 3])
     axes[1].legend()
     _save(fig, out, "fig_budget_and_coverage", "Fixed-bounds nested budget comparison | identical test seeds for coverage")
@@ -183,17 +199,36 @@ def build(root, out):
     sensitivity_per = pd.read_csv(root / "sensitivity/per_repeat.csv")
     sat = pd.read_csv(root / "sensitivity/tracking_extremes.csv")
     saturation = sat.groupby("arm").agg(voltage_saturation_mean=("saturation_fraction", "mean"),
-        voltage_saturation_max=("saturation_fraction", "max"), peak_current_max_A=("max_current", "max")).reset_index()
+        voltage_saturation_max=("saturation_fraction", "max"), peak_current_max_A=("max_current", "max"),
+        CT_JT_mean=("JT", "mean"), CT_JE_mean=("JE", "mean")).reset_index()
+    ct_energy = sat.groupby("arm").JE.mean()
+    ct_energy_increase = 100 * (ct_energy["expanded"] / ct_energy["original"] - 1)
     table(out, "sensitivity_actuator_diagnostics", saturation)
     remaining = int(coverage.loc[coverage.payload > 1, "transfer_better"].sum())
+    feasible_remaining = int(coverage.loc[coverage.payload > 1, "feasible_transfer_better"].sum())
+    feasible_transfers = int(coverage.loc[coverage.payload > 1, "feasible"].sum())
+    violations = reps.loc[~reps.feasible, ["repeat", "role", "payload", "JT", "JE", "max_current", "violation"]]
+    table(out, "representative_constraint_violations", violations)
+    fig, axes = plt.subplots(2, 2, figsize=(10, 7))
+    for role, group in reps.groupby("role", sort=False):
+        grouped = group.groupby("payload")
+        for ax, metric, label in zip(axes.flat, ("JT", "JE", "delta_JT_pct", "delta_JE_pct"),
+                ("JT [rad]", "JE [J]", "JT change from nominal [%]", "JE change from nominal [%]")):
+            stats = grouped[metric].agg(["mean", "std"])
+            ax.errorbar(stats.index, stats["mean"], yerr=stats["std"], marker="o", capsize=3, label=role)
+            ax.set(xlabel="Payload [kg]", ylabel=label, xticks=[1, 2, 3])
+            ax.grid(alpha=.2)
+    axes[0, 0].legend()
+    _save(fig, out, "fig_primary_with_feasibility",
+        f"All 5 repeats, including violations | CT feasible: {count_text} | CB/CE: 5/5 at each payload")
     ct3 = reps.loc[(reps.role == "CT") & (reps.payload == 3)]
     ce3 = reps.loc[(reps.role == "CE") & (reps.payload == 3)]
     findings = [
-        f"1 kg, paired 80-evaluation bound comparison: mean minimum JT decreased from {decision['original_mean_min_JT']:.8f} to {decision['expanded_mean_min_JT']:.8f} rad ({decision['min_JT_improvement_pct']:.2f}%). Decision: {decision['adopted']} bounds; expanded CT attached to its upper bound in {decision['expanded_CT_at_upper_count']}/5 repeats.",
+        f"1 kg, paired 80-evaluation bound comparison: mean minimum JT decreased from {decision['original_mean_min_JT']:.8f} to {decision['expanded_mean_min_JT']:.8f} rad ({decision['min_JT_improvement_pct']:.2f}%), while CT energy increased {ct_energy_increase:.2f}% ({ct_energy['original']:.5f}→{ct_energy['expanded']:.5f} J). Decision: {decision['adopted']} bounds; expanded CT attached to its upper bound in {decision['expanded_CT_at_upper_count']}/5 repeats.",
         "At fixed selected bounds, extending the same candidate sequence from 40 to 80 evaluations reduced mean minimum JT by " + "; ".join(f"{p:g} kg: {100*(g.JT_40.mean()-g.JT_80.mean())/g.JT_40.mean():.2f}%" for p, g in budget.groupby('payload')) + ".",
-        f"On identical test seeds, transferred CT outperformed the observed local tracking extreme in {remaining}/10 heavy-payload comparisons. This diagnoses remaining finite-budget coverage, not payload-induced improvement or a globally optimal local front.",
-        f"Without retuning, CT at 3 kg achieved JT={mean_sd(ct3.JT)} rad and JE={mean_sd(ct3.JE)} J; changes from its own nominal response were {mean_sd(ct3.delta_JT_pct)}% and {mean_sd(ct3.delta_JE_pct)}%.",
-        f"CE at 3 kg achieved JT={mean_sd(ce3.JT)} rad and JE={mean_sd(ce3.JE)} J. Physical feasibility held in {int(reps.feasible.sum())}/45 representative conditions; the practical tracking criterion held in {int(reps.practical_satisfied.sum())}/45. Zero PID was selected for 0/15 representative roles.",
+        f"On identical test seeds, transferred CT had lower JT in {remaining}/10 heavy-payload comparisons, but only {feasible_transfers}/10 transfers were feasible. All {feasible_remaining}/{feasible_transfers} feasible transfers beat the observed feasible local tracking extreme; infeasible transfers are excluded from this coverage-gap evidence.",
+        f"Without retuning, CT at 3 kg had JT={mean_sd(ct3.JT)} rad and JE={mean_sd(ct3.JE)} J across all five repeats, including two current-limit violations; these are not five feasible outcomes. Changes from its own nominal response were {mean_sd(ct3.delta_JT_pct)}% and {mean_sd(ct3.delta_JE_pct)}%.",
+        f"CE at 3 kg achieved JT={mean_sd(ce3.JT)} rad and JE={mean_sd(ce3.JE)} J. Physical feasibility held in {int(reps.feasible.sum())}/45 representative conditions; JT≤0.05 rad alone held in {int((reps.JT <= .05).sum())}/45, and both requirements held in {int(reps.practical_satisfied.sum())}/45. CT at 3 kg was feasible in {int(ct3.feasible.sum())}/5 repeats. Zero PID was selected for 0/15 representative roles.",
     ]
     (out / "QUANTITATIVE_FINDINGS.md").write_text("# Quantitative findings\n\nMean ± sample SD across five independent optimization repeats; each test value averages ten noise seeds.\n\n" + "\n\n".join(f"{i+1}. {s}" for i, s in enumerate(findings)) + "\n")
     upper = [c["search"][k][1] for k in ("kp", "ki", "kd")]
@@ -243,17 +278,27 @@ The following comparison uses the first 40 candidates versus all 80 in each new 
 
 Remaining local-versus-transfer reversals, if any, must remain visible. Eighty evaluations do not establish global optimality or guarantee adequate tracking-side coverage. Local observed fronts and transfer fronts are finite-budget observations.
 
+Only feasible transfers provide valid evidence of better feasible tracking than the local front. Two infeasible 3 kg CT transfers have low JT but cannot support that comparison. Coverage counts above therefore separate raw lower-JT counts from feasible lower-JT counts.
+
 ## Representative selection and Experiment 2
 
 The practical criterion JT≤0.05 rad is predefined **only for representative selection; it does not truncate the Pareto front**. Exclude [0,0,0]. CT minimizes JT; CE minimizes JE within the practical subset; CB minimizes Euclidean distance to utopia after min/max normalization of JT and JE over that subset. Ties use objectives then gains as recorded in `selection_rule.json`; coincident roles are allowed and explicitly reported. Gains are frozen from nominal selection data before target testing. Selection JT/JE below differ legitimately from disjoint test estimates.
 
 {markdown(selection)}
 
+![Nominal representative selection](fig_selection_r00.png)
+
 Primary test results (mean ± SD across five optimization repeats; deltas calculated per controller against its own 1 kg test response before averaging):
 
 {markdown(primary)}
 
-![Primary transfer](fig3_primary_transfer.png)
+![Primary transfer with feasibility](fig_primary_with_feasibility.png)
+
+**Constraint violations are retained, not removed or retuned:**
+
+{markdown(violations)}
+
+The 3.84 A peak-current criterion is evaluated across all ten test rollouts in each condition. Both violations occurred without voltage saturation. The JT-only requirement holds in all 45 conditions, whereas physical feasibility and the combined practical flag hold in 43/45. Reported CT 3 kg mean/SD include the two violations and must not be presented as five feasible controllers. All CB/CE conditions remained feasible. Nominal feasible selection therefore does not guarantee cross-payload current feasibility.
 
 `representative_performance.csv` preserves all 45 conditions and feasibility. Per-repeat angle/current/voltage/power plots accompany the report. Retention and HV are in `table2_transfer_across_repeats.csv` and related figures as **supplementary metrics**, not primary evidence for payload ordering or robustness.
 

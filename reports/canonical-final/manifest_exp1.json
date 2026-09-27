@@ -1,8 +1,8 @@
 {
   "stage": "exp1",
   "status": "completed",
-  "started_utc": "2026-09-24T02:03:01.286668+00:00",
-  "config_sha256": "17919d5b47544ee8bf2848f597848061a0c0e4f7da1ad592bd4dd2131a99fa5f",
+  "started_utc": "2026-09-27T00:35:02.853951+00:00",
+  "config_sha256": "eda613246c3b374a9096897bb6f88d526fa1577d97bd3b2a9a0fca68679baaef",
   "parameter_status": "CANONICAL FINAL | simulation",
   "python": "3.13.1",
   "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
@@ -16,7 +16,7 @@
     "gpytorch": "1.15.2",
     "numba": "0.67.0"
   },
-  "git_revision": "ef04ab65afdda6eb9093d451c917484af1e56d30",
+  "git_revision": "5d05a2afc11ca75a6e32334a117b17021b53b0a4",
   "source_sha256": {
     "src/kroc_mobo/__init__.py": "c4f3cfe37944ea9d994f0c16a0be336f2e1de9278449ab7092b4177e84fac5d7",
     "src/kroc_mobo/analysis.py": "710e72c629633d12432a9369d0eaa0f05ee83300e356e6cdf63fe0d2e98df1cc",
@@ -29,12 +29,12 @@
     "src/kroc_mobo/mobo.py": "4cdd317092a2b0998d19f9ad346f19a7ac3a87a4786fe1fb758a9c393f42fce1",
     "src/kroc_mobo/pid.py": "0e09c068639eee281ef168cd5625df7eced3543aeea075cd738b0fde21abb14d",
     "src/kroc_mobo/plant.py": "ac1a1acc55856012616d9ce75533e26dcc042f5154c806fc1bdef6c34726c484",
-    "src/kroc_mobo/sensitivity.py": "05ce787c31a01b10d1a7d2e70f98f1775d32df0f3938543b8e517125c018a484",
+    "src/kroc_mobo/sensitivity.py": "a0211bedc7335d223e7b9bfc7b4b1dfbb709bb432c981224ef1302a7f38d15b0",
     "src/kroc_mobo/simulation.py": "81841070e1ae986b5fbdac88c5021b368a3718d53ebc07b94fb67e0ce2129ade",
     "src/kroc_mobo/trajectory.py": "adbac16c7cc8433276dd101c7767cb6f8ec077dc0e566ee86af12cf6b71282d1"
   },
-  "finished_utc": "2026-09-24T02:16:10.097684+00:00",
-  "optimization_rollouts": 1800,
-  "selection_rollouts": 3000,
-  "elapsed_seconds": 788.8093952499912
+  "finished_utc": "2026-09-27T01:04:58.515430+00:00",
+  "optimization_rollouts": 3600,
+  "selection_rollouts": 6000,
+  "elapsed_seconds": 1795.6594642910059
 }

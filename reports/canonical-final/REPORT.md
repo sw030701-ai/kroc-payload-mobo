@@ -1,289 +1,137 @@
-# Canonical Final Model — revised Experiment 1·2
+# Canonical final — 80-evaluation follow-up (2026-09-27)
 
-2026-09-24 revision. **Step 1 판정: expanded bounds 채택**. Experiment 1·2를 모두 새로 실행했다.
-Experiment 3은 수행하지 않았다. 모델은 기존 **1-DOF geared joint**이며, 참고 대화 제목의
-3-DOF 시스템에 대한 결과로 해석하지 않는다. 물리값은 사용자 지정 연구 모델이다.
+## Decision and primary findings
 
-- Run: `results/canonical-revision-20260924`
-- Config SHA256: `17919d5b47544ee8bf2848f597848061a0c0e4f7da1ad592bd4dd2131a99fa5f`
-- 실험 code commit: `ef04ab65afdda6eb9093d451c917484af1e56d30`; manifest의 source SHA256으로 실행 코드를 식별한다.
-- 이전 보고서 전체: [2026-09-23 archive](../archive/canonical-final-20260923/REPORT.md).
-  이전 raw run `results/canonical-final-qlog-v3`와 원본 ZIP도 그대로 보존했다.
-- 사전 고정한 설계: [REVISION_PROTOCOL.md](../../docs/REVISION_PROTOCOL.md).
+- 1 kg, paired 80-evaluation bound comparison: mean minimum JT decreased from 0.00157706 to 0.00078041 rad (50.51%), while CT energy increased 13.40% (2.59846→2.94673 J). Decision: expanded bounds; expanded CT attached to its upper bound in 5/5 repeats.
+- At fixed selected bounds, extending the same candidate sequence from 40 to 80 evaluations reduced mean minimum JT by 1 kg: 1.05%; 2 kg: 10.63%; 3 kg: 17.43%.
+- On identical test seeds, transferred CT had lower JT in 10/10 heavy-payload comparisons, but only 8/10 transfers were feasible. All 8/8 feasible transfers beat the observed feasible local tracking extreme; infeasible transfers are excluded from this coverage-gap evidence.
+- Without retuning, CT at 3 kg had JT=0.0009673 ± 1.3301e-06 rad and JE=10.134 ± 0.0022272 J across all five repeats, including two current-limit violations; these are not five feasible outcomes. Changes from its own nominal response were 23.834 ± 0.059293% and 244.41 ± 0.32102%.
+- CE at 3 kg achieved JT=0.011664 ± 0.0079572 rad and JE=9.5221 ± 0.16161 J. Physical feasibility held in 43/45 representative conditions; JT≤0.05 rad alone held in 45/45, and both requirements held in 43/45. CT at 3 kg was feasible in 3/5 repeats. Zero PID was selected for 0/15 representative roles.
 
-## Step 1 — 1 kg gain-bound sensitivity
+The >=5% threshold was fixed before the new data in `docs/BUDGET80_PROTOCOL.md`. Adopted upper bounds: **[800.0, 400.0, 80.0]**. Both sensitivity arms used 80 evaluations, 10 initial points (one zero-PID anchor plus nine Sobol), qLogNEHVI, and five paired optimizer repeats. All three gain bounds changed together, so this comparison does not isolate the effect of Kp alone. The canonical experiment was then rerun from scratch at the chosen bounds for all three payloads. The runs were executed locally against the GitHub repository; manifests identify the actual platform and source revision.
 
-두 arm 모두 5 repeats × 40 evaluations (10 initial Sobol), train/selection noise seeds 3/5개로
-동일하게 실행했다. Bounds 이외의 모델·optimizer·seed는 동일하다. 이 비교는 Step 2 전
-프로토콜을 사용하므로 두 arm 모두 새 zero anchor를 강제하지 않았다. 이후 canonical
-재실행은 anchor를 포함하므로 sensitivity arm 결과와 canonical 결과를 섞지 않는다.
+## Model and evaluation protocol
 
-Primary improvement는 **repeat별 최소 JT의 평균** 사이 상대 감소율이다. 기준은 개선 ≥5%
-또는 expanded CT의 어느 gain이든 기존 상한을 기존 범위의 1%보다 크게 초과하면 expanded 채택이다.
-기존 bounds 유지는 개선 <5%, 명백한 범위 이탈 없음, front near-overlap을 모두 만족할 때만 허용한다.
-Near-overlap은 tracking(JT≤0.01) 및 practical(JT≤0.05) 구간의 paired pooled-range 정규화
-bidirectional discrete Hausdorff 거리 ≤0.05가 모든 반복에서 성립하는 것으로 사전 정의했다.
-기준 미충족 시 보수적으로 expanded를 채택한다. 이는 통계적 유의성 검정이 아니다.
+This is the canonical **1-DOF geared-joint simulation**, not a coupled 3-DOF hardware experiment. Physical values remain unchanged: Maxon RE35 323890, GP42C N=126, constant eta=0.72; R=0.568 ohm, L=0.000191 H, Kt=0.0292 Nm/A, Ke=0.0291 Vs/rad; Jm=8.12e-6, Jg=1.4e-6 kg m² (input-side); 0.20 m / 0.50 kg link, COM=0.10 m, tip payload radius=0.20 m; b=0.05, g=9.81. These are user-specified model parameters, not hardware identification results.
 
-**결과: 0.00312323 → 0.00162294 rad,
-48.04% 개선. 5/5회가 기존 bounds 밖.**
-따라서 canonical upper bounds를 **[400,200,40]**으로 바꾸고 모든 payload를 재실행했다.
-새 CT가 expanded 상한 0.1% 이내인 반복도 4/5회다.
-이 확인은 기존 bounds의 영향을 입증하지만, 확장 후 bounds 독립성이나 전역 최적을 입증하지 않는다.
+Full 5 s quintic 0→60° trajectory, no hold. JT is true-angle RMSE [rad]; JE is signed integral V i dt [J]. Voltage clips at ±24 V; |current|≤3.84 A is a feasibility constraint, **not current clipping**. Numerical settings: 1 ms control interval, RK4 16 substeps, PID filter 20 ms, antiwindup gain 10/s. Noise power=1e-10 rad²s, sample period=1 ms. Train/selection/test replicates are 3/5/10 with disjoint phase seeds; the full frozen configuration and every seed are saved.
 
-| repeat | original_min_JT | expanded_min_JT | improvement_pct | expanded_CT_outside_old | expanded_CT_at_upper |
-| --- | --- | --- | --- | --- | --- |
-| 0 | 0.00309563 | 0.00154512 | 50.0871 | True | True |
-| 1 | 0.00310139 | 0.00178778 | 42.3555 | True | False |
-| 2 | 0.00309842 | 0.00167449 | 45.9565 | True | True |
-| 3 | 0.00309665 | 0.00154615 | 50.0703 | True | True |
-| 4 | 0.00322405 | 0.00156114 | 51.5783 | True | True |
+Experiment 1 uses 5×3×80=1,200 candidates, including infeasible attempts; all are independently reevaluated on selection seeds. No nominal controller is inserted post hoc into a target local front. HV and retention are supplementary only.
 
-![Sensitivity](sensitivity/bounds_sensitivity.png)
+## Bounds: performance and actuator evidence
 
-점 사이 선은 관측 연결선이다. 상세 gains는 `sensitivity/tracking_extremes.csv`,
-고정 JT 예산 0.005/0.01/0.02/0.05 rad의 관측 최소 JE는
-`sensitivity/tracking_budget_comparison.csv`에 기록했다. Practical front coverage 및
-에너지 극점은 유한 예산 때문에 달라질 수 있다. 빠른 tracking 개선을 front 전체 우월성으로 해석하지 않는다.
-자동 분기와 모든 기준은 `sensitivity/decision.json`에 보존했다.
+![Bounds comparison](sensitivity/bounds_sensitivity.png)
 
-Practical 영역의 coverage와 관측 최소 JE는 다음과 같다. 에너지 쪽 개선을 일괄 주장하지 않는다.
-
-| arm | practical_count_mean | practical_min_JE_mean | practical_min_JE_std |
-| --- | --- | --- | --- |
-| original | 11.4 | 2.42667 | 0.0306441 |
-| expanded | 8.4 | 2.4578 | 0.0278998 |
-
-Tracking-side 정규화 Hausdorff 거리는 0.491–0.739,
-practical-region 거리는 0.283–0.902였다.
-모두 사전 near-overlap 기준 0.05를 넘었다. 개별 반복 값은 `sensitivity/per_repeat.csv`에 있다.
-
-## Table 1 — common conditions
-
-| Condition | Value |
-| --- | --- |
-| Model | 1-DOF geared joint; RE35 323890 / GP42C |
-| N / eta | 126 / 0.72 |
-| R / L | 0.568 ohm / 0.000191 H |
-| Kt / Ke | 0.0292 Nm/A / 0.0291 Vs/rad |
-| Jm / Jg | 8.12e-6 / 1.4e-6 kg m^2 |
-| Link l / mass / COM / payload radius | 0.20 m / 0.50 kg / 0.10 m / 0.20 m |
-| Payloads / nominal | 1, 2, 3 kg / 1 kg |
-| Jeq (1, 2, 3 kg) | 0.19780619, 0.23780619, 0.27780619 kg m^2 |
-| b / g | 0.05 Nm s/rad / 9.81 m/s^2 |
-| Voltage / current | ±24 V saturation / ±3.84 A peak feasibility, no current clipping |
-| Trajectory / horizon | quintic 0→60 deg over full 5 s, no hold |
-| Control / RK4 step | 1 ms / 62.5 microseconds |
-| PID bounds Kp / Ki / Kd | [0.0, 400.0] / [0.0, 200.0] / [0.0, 40.0] |
-| Noise variance / sampling | 1e-7 rad^2 / 1 ms |
-| Acquisition / repeats / evaluations | qLogNEHVI / 5 / 40 per payload |
-| Initial design | 1 zero-PID anchor + 9 Sobol = 10 included in 40 |
-| Train / selection / test replicates | 3 / 5 / 10; disjoint phase seeds, paired payload seeds |
-| Representative tracking criterion | JT <= 0.05 rad; selection only |
-| HV reference / scales (supplementary) | [1 rad,20 J] / [0.1 rad,10 J] |
-
-전류는 clipping하지 않고 한계 위반 여부를 기록한다. `feasible`은 평가한 모든 noise rollout에서
-전류·각도·속도 및 수치 유효성 제약을 만족했다는 뜻이다. 무한시간 안정성 보증은 아니다.
-
-## Experiment 1 — independent payload fronts
-
-각 payload를 독립 최적화했다. 각 repeat의 initial 10점은 **zero PID 1점 + Sobol 9점**이다.
-Anchor도 40회 평가 예산에 포함하며 train/selection에 똑같이 평가한다. 이미 끝난 front에 사후 추가하지 않았다.
-Full Pareto front는 practical criterion으로 잘라내지 않는다.
-최적화 rollout 1,800개,
-독립 selection 재평가 3,000개.
-실행시간 788.8초. 아래 SD는 optimization repeats n=5의 변동이다.
-
-| payload | Pareto_mean | Pareto_std | feasible_mean | feasible_std | min_JT_mean | min_JT_std | seconds_mean |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 10.2 | 2.86356 | 36 | 0.707107 | 0.00157706 | 5.63203e-05 | 32.5448 |
-| 2 | 10 | 2 | 35.4 | 0.547723 | 0.00293355 | 0.00072544 | 55.1385 |
-| 3 | 14.4 | 1.94936 | 33.8 | 0.83666 | 0.00335781 | 0.000476147 | 70.0754 |
-
-![Figure 1](fig1_full_and_zoom.png)
-
-별표는 실제 초기 설계에서 평가한 zero anchor이다. 각 선은 하나의 독립 반복이며 pooled super-front가 아니다.
-JT=약 0.65546 rad, JE=0인 zero PID는 움직이지 않는 baseline으로 남기되 CT/CB/CE 후보에서는 제외했다.
-
-JT≤0.01 rad라는 공통 tracking 예산에서의 관측 최소 JE:
-
-| payload | mean | std | count |
-| --- | --- | --- | --- |
-| 1 | 2.48348 | 0.00309609 | 5 |
-| 2 | 5.56684 | 0.0298563 | 5 |
-| 3 | 9.67701 | 0.0418919 | 5 |
-
-이 예산은 결과 설명용이며 대표 선택 기준 0.05 rad와 다르다. 정확히 같은 JT에서의 보간이나
-연속 front의 추정이 아니다. 빈 구간은 관측 coverage 부족이며 물리적 불가능의 증거가 아니다.
-
-## Steps 3–4 — practical CT/CB/CE selection
-
-**JT≤0.05 rad RMSE(약 2.865°)**를 revised run 전에 설정했다.
-이는 **대표 controller 선택용 practical criterion이며 Pareto front 자체를 잘라내지 않는다**.
-하드웨어에서 검증한 허용오차는 아니다. Nominal 1 kg의 feasible selection Pareto front에서
-이 조건을 만족하고 gains가 [0,0,0]이 아닌 subset만 사용한다.
-
-- CT: minimum JT; ties by JE, Kp, Ki, Kd.
-- CE: minimum JE subject to JT≤0.05; ties by JT, Kp, Ki, Kd.
-- CB: 같은 practical subset의 min/max로 JT와 JE를 각각 [0,1]에 정규화하고,
-  utopia (0,0)까지 Euclidean distance가 최소인 점. Zero-range 축은 0으로 둔다.
-  Ties by JT, JE, Kp, Ki, Kd. 기하학적 knee로 주장하지 않는다.
-
-정확한 정의가 같은 점을 고르면 role 중복을 그대로 보고한다. 이번 선택의 상태:
-`{0: 'ok', 1: 'ok', 2: 'ok', 3: 'ok', 4: 'ok'}`. 모든 gains·selection JT/JE·정규화 경계·거리·후보 수는
-`representatives_frozen.csv`에 저장했고, 해당 repeat의 target test 평가 전에 동결했다.
-Selection 값과 아래의 독립 test 성능은 구별한다.
-
-| repeat | role | kp | ki | kd | JT | JE | utopia_distance | practical_candidate_count | selection_status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | CT | 400 | 194.599 | 0 | 0.00156159 | 2.59871 | 1 | 7 | ok |
-| 0 | CB | 0 | 192.023 | 0 | 0.00415469 | 2.48054 | 0.140984 | 7 | ok |
-| 0 | CE | 0 | 41.0828 | 0 | 0.0214289 | 2.47388 | 1 | 7 | ok |
-| 1 | CT | 400 | 200 | 0 | 0.00155089 | 2.5992 | 1 | 9 | ok |
-| 1 | CB | 0 | 200 | 0 | 0.00401421 | 2.4866 | 0.302433 | 9 | ok |
-| 1 | CE | 65.5307 | 0 | 0 | 0.0174118 | 2.44714 | 1 | 9 | ok |
-| 2 | CT | 400 | 161.487 | 0 | 0.00167728 | 2.59944 | 1 | 9 | ok |
-| 2 | CB | 64.4925 | 200 | 0 | 0.00314472 | 2.50239 | 0.245126 | 9 | ok |
-| 2 | CE | 110.341 | 0 | 1.02599 | 0.0127173 | 2.47721 | 1 | 9 | ok |
-| 3 | CT | 400 | 200 | 0 | 0.00154615 | 2.59786 | 1 | 14 | ok |
-| 3 | CB | 0 | 190.22 | 0 | 0.00420439 | 2.47987 | 0.140921 | 14 | ok |
-| 3 | CE | 0 | 40.9094 | 0 | 0.021548 | 2.47407 | 1 | 14 | ok |
-| 4 | CT | 400 | 200 | 0 | 0.00154942 | 2.59707 | 1 | 7 | ok |
-| 4 | CB | 51.4489 | 197.75 | 0 | 0.0032635 | 2.50085 | 0.311357 | 7 | ok |
-| 4 | CE | 147.41 | 0 | 0 | 0.00777183 | 2.48452 | 1 | 7 | ok |
-
-![Selection](fig_selection_r00.png)
-
-## Step 5 / Table 2 — primary cross-payload results
-
-Nominal에서 고른 gains를 **retuning 없이 1/2/3 kg**에 적용했다. 각 repeat의 성능은
-10개 독립 test seed 평균이며 아래 ±는 그 평균들의 반복 간 SD(n=5)이다.
-변화율은 먼저 각 repeat/controller의 1 kg 대비 계산한 뒤 평균했다.
-`delta_J_pct = 100*(J(payload)-J(1kg))/J(1kg)`; 0 분모는 undefined로 둔다.
-`practical_satisfied`는 test 평균 JT와 물리적 feasibility를 함께 확인하는 별도 진단이다.
-
-| role | payload | JT_rad | JE_J | delta_JT_pct | delta_JE_pct | feasible | practical_satisfied |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| CT | 1 | 0.0015778 ± 5.6065e-05 | 2.5975 ± 0.00086243 | 0 ± 0 | 0 ± 0 | 5/5 | 5/5 |
-| CB | 1 | 0.003749 ± 0.00050324 | 2.4901 ± 0.010769 | 0 ± 0 | 0 ± 0 | 5/5 | 5/5 |
-| CE | 1 | 0.016174 ± 0.0059277 | 2.4713 ± 0.014171 | 0 ± 0 | 0 ± 0 | 5/5 | 5/5 |
-| CT | 2 | 0.0017574 ± 7.1597e-05 | 5.6933 ± 0.001178 | 11.365 ± 0.55555 | 119.19 ± 0.038757 | 5/5 | 5/5 |
-| CB | 2 | 0.0039184 ± 0.00051556 | 5.5841 ± 0.018954 | 4.55 ± 0.31827 | 124.25 ± 0.2091 | 5/5 | 5/5 |
-| CE | 2 | 0.017473 ± 0.0055545 | 5.5165 ± 0.064085 | 10.011 ± 8.2641 | 123.22 ± 1.8728 | 5/5 | 5/5 |
-| CT | 3 | 0.0019688 ± 8.7624e-05 | 9.7796 ± 0.0021075 | 24.752 ± 1.0723 | 276.51 ± 0.087584 | 5/5 | 5/5 |
-| CB | 3 | 0.004132 ± 0.00052514 | 9.6714 ± 0.027434 | 10.303 ± 0.86204 | 288.4 ± 0.579 | 5/5 | 5/5 |
-| CE | 3 | 0.018952 ± 0.0054871 | 9.5165 ± 0.16217 | 21.036 ± 16.113 | 285.07 ± 5.3904 | 5/5 | 5/5 |
-
-![Primary transfer](fig3_primary_transfer.png)
-
-### Repeat 0 — preselected example
-
-실행 순서상 첫 repeat를 예시로 고정했다. 다른 repeat보다 유리해서 고른 것이 아니다.
-
-| role | payload | kp | ki | kd | JT | JE | delta_JT_pct | delta_JE_pct | feasible | practical_satisfied |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| CT | 1 | 400 | 194.599 | 0 | 0.00156676 | 2.5976 | 0 | 0 | True | True |
-| CB | 1 | 0 | 192.023 | 0 | 0.00416146 | 2.48046 | 0 | 0 | True | True |
-| CE | 1 | 0 | 41.0828 | 0 | 0.0214335 | 2.4738 | 0 | 0 | True | True |
-| CT | 2 | 400 | 194.599 | 0 | 0.00174311 | 5.69377 | 11.2561 | 119.194 | True | True |
-| CB | 2 | 0 | 192.023 | 0 | 0.00433848 | 5.56699 | 4.25374 | 124.433 | True | True |
-| CE | 2 | 0 | 41.0828 | 0 | 0.0216695 | 5.57193 | 1.10102 | 125.237 | True | True |
-| CT | 3 | 400 | 194.599 | 0 | 0.00195117 | 9.78055 | 24.5359 | 276.523 | True | True |
-| CB | 3 | 0 | 192.023 | 0 | 0.00455749 | 9.64655 | 9.51673 | 288.901 | True | True |
-| CE | 3 | 0 | 41.0828 | 0 | 0.0222244 | 9.66776 | 3.68994 | 290.805 | True | True |
-
-![Representative responses](fig2_representative_r00.png)
-
-응답 그림은 repeat 0의 첫 paired test seed이다. 모든 5회 그림과 raw test rollout은 함께 보존했다.
-
-### Finite-budget local tracking coverage
-
-동일한 test seeds에서 local selection front를 재평가한 최소 JT와 전이 CT의 JT를 비교했다.
-2/3 kg의 총 10개 repeat 조건 중
-10개에서 전이 CT의 JT가 더 작았다.
-따라서 독립 local search의 관측 최소 JT를 해당 payload의 최적 추종 한계로 해석하면 안 된다.
-이는 40회 예산에서 tracking 쪽 탐색 coverage가 충분하지 않음을 보여준다. JE가 다르므로
-전이 controller가 local front 전체를 지배한다는 뜻도 아니다. 이 진단을 보고한 뒤 local
-front에 전이 CT를 사후 추가하거나 추가 최적화하지 않았다.
-
-| payload | local_retested_min_JT | transferred_CT_JT |
-| --- | --- | --- |
-| 1 | 0.00157781 | 0.00157781 |
-| 2 | 0.00293424 | 0.00175738 |
-| 3 | 0.00335813 | 0.00196882 |
-
-상세 paired 비교는 `local_tracking_coverage_diagnostic.csv`에 있다.
-
-## Supplementary — retention and HV
-
-Retention/HV는 **보조지표**다. Primary evidence는 위 JT·JE·within-controller 변화율·feasibility이다.
-전체 nominal front를 전이한 집합을 사용하므로 zero anchor도 포함된다. 모든 local front 역시
-같은 anchor를 초기 설계에 포함해 baseline coverage 비대칭을 줄였다. 이것만으로 나머지 front
-coverage나 유한 탐색 예산에 따른 불확실성까지 제거되지는 않는다.
-
-| payload | R_P_mean | R_P_std | L_HV_mean | L_HV_std |
+| repeat | original_min_JT | expanded_min_JT | improvement_pct | expanded_CT_at_upper |
 | --- | --- | --- | --- | --- |
-| 1 | 100 | 0 | 0 | 0 |
-| 2 | 96.1667 | 5.63964 | 2.87435 | 1.41772 |
-| 3 | 94.1667 | 5.71305 | 15.6569 | 1.19203 |
+| 0 | 0.00156159 | 0.000777666 | 50.2003 | True |
+| 1 | 0.00155089 | 0.000783377 | 49.4884 | True |
+| 2 | 0.00167728 | 0.000780528 | 53.4646 | True |
+| 3 | 0.00154615 | 0.000778803 | 49.6295 | True |
+| 4 | 0.00154942 | 0.000781688 | 49.5496 | True |
 
-R_P는 전이 집합 내부 비지배 유지율, L_HV는 같은 기준점으로 계산한 local 대비 상대 HV 차이(%)다.
-음수 L_HV는 유한 예산 local comparator보다 transfer set의 관측 HV가 컸다는 뜻이다.
-3 kg HV 변동이나 작은 평균 loss를 강건성 증명의 주 근거로 사용하지 않는다.
-기존 `table2_transfer_*` 파일명은 호환용이며 그 내용도 모두 supplementary이다.
+| arm | voltage_saturation_mean | voltage_saturation_max | peak_current_max_A | CT_JT_mean | CT_JE_mean |
+| --- | --- | --- | --- | --- | --- |
+| expanded | 0 | 0 | 2.73599 | 0.000780413 | 2.94673 |
+| original | 0 | 0 | 1.70076 | 0.00157706 | 2.59846 |
 
-## Paper-ready quantitative findings
+Voltage saturation was absent in all ten selected sensitivity CTs. The bound effect cannot be attributed to voltage saturation. Peak current is compared with 3.84 A, not interpreted as an implemented current limiter. Expanded-bound attachment remains a limitation; this is not proof of gain convergence. Regional front distances and practical-region energy are reported in the sensitivity CSVs; all fronts retain the zero-PID point.
 
-1. 1 kg paired bounds 비교에서 5회 평균 최소 JT는 0.0031232→0.0016229 rad로 48.04% 감소했다. Expanded CT 5/5회가 기존 범위 밖이며 4/5회는 새 상한에 접했다.
+The mean minimum observed energy subject to JT≤0.05 rad was 2.440106 J at current bounds and 2.471374 J at expanded bounds. Tracking improvement does **not** establish uniform dominance of the practical front. Finite-budget exploration over a larger search domain can alter energy-side coverage.
 
-2. Revised independent fronts에서 JT≤0.01 rad를 만족하는 관측 최소 JE의 평균±SD는 1 kg: 2.4835±0.0031 J; 2 kg: 5.5668±0.0299 J; 3 kg: 9.6770±0.0419 J. 이는 공통 tracking 예산 비교이며 같은 JT에서의 보간값이 아니다.
+## Experiment 1 and budget effect
 
-3. Retuning 없는 CT의 3 kg JT는 0.0019688 ± 8.7624e-05 rad이고, 같은 controller의 1 kg 대비 JT 변화율은 24.75 ± 1.072%, JE 변화율은 276.5 ± 0.08758%였다.
+| payload | min_JT_mean | min_JT_SD | feasible_mean | pareto_mean |
+| --- | --- | --- | --- | --- |
+| 1 | 0.000780413 | 2.26724e-06 | 72.8 | 14.6 |
+| 2 | 0.000987971 | 9.5676e-05 | 71.6 | 14.6 |
+| 3 | 0.00304995 | 0.00111659 | 71 | 16.4 |
 
-4. CE의 3 kg JT는 0.018952 ± 0.0054871 rad였다. 3 kg에서 CT 대비 CE 에너지 절감률은 2.691 ± 1.653%였다. Practical criterion 충족은 5/5회로 별도 보고한다.
+![Full and practical fronts](fig1_full_and_zoom.png)
 
-5. 모든 payload/repeat의 초기 설계 15/15개에 zero-PID anchor가 포함되었고 대표 선택의 zero PID는 0개였다. 대표 test 조건의 물리적 feasibility는 45/45, JT≤0.05 rad까지 충족한 조건은 45/45였다.
+The following comparison uses the first 40 candidates versus all 80 in each new canonical run, at the **same bounds and selection seeds**. It isolates the extra search budget within this run; old 400-bound/40-evaluation results are archived separately and are not confounded with a simultaneous bound change. The table's improvement_pct is the mean of repeat-level percentages; headline budget percentages are computed from the two repeat means. Neither is a statistical significance claim.
 
-## Validation and provenance
+| payload | JT_40 | JT_80 | improvement_pct |
+| --- | --- | --- | --- |
+| 1 | 0.000788722 | 0.000780413 | 1.0391 |
+| 2 | 0.0011055 | 0.000987971 | 9.89343 |
+| 3 | 0.00369384 | 0.00304995 | 17.2265 |
 
-Pilot의 적분 간격을 절반으로 줄인 비교에서 최대 |delta JE|는
-2.26e-07 J였다. Expanded 대표 gains의 추가 수치 점검,
-raw-result cross-check 및 archive checksum 검증은 `VALIDATION.txt`와 `audit/`에 기록한다.
-실험 source manifest, config snapshot, seed 목록과 train/selection/test 원자료를 보존한다.
-상세 로그에 남은 GP의 small-noise 경고는 고정 variance floor의 수치 경고이며 숨기지 않는다.
-Optimizer 오류를 Sobol로 조용히 대체하지 않는다.
+![Budget and coverage](fig_budget_and_coverage.png)
 
-## LIMITATIONS
+| payload | local_JT | transfer_JT | lower_transfer_JT_count | feasible_transfer_count | feasible_transfer_better_count |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 0.000781123 | 0.000781123 | 0 | 5 | 0 |
+| 2 | 0.000988772 | 0.000866285 | 5 | 5 | 5 |
+| 3 | 0.00305118 | 0.000967295 | 5 | 3 | 3 |
 
-- **No hold:** 5초 전체가 이동이며 종료 후 hold는 없다. Settling time, 정상상태 유지 전력,
-  장시간 운전을 평가하지 않는다.
-- **Constant gear efficiency:** eta=0.72의 지정 식을 사용한다. 부하·속도 의존 손실과
-  GP42C의 실제 역구동 손실/torque rating을 검증하지 않았다.
-- **No thermal/backlash/detailed driver model:** 열, backlash, elasticity, 상세 드라이버,
-  current loop 및 배터리 효율을 추가하지 않았다. JE는 signed motor-terminal energy이다.
-- **Finite-budget and residual bounds:** revised canonical CT 5/5회가 expanded 상한에
-  접한다. 전역 최적·bounds 독립성·탐색 수렴을 주장하지 않는다. 고정 40회 예산의 front coverage 한계가 있다.
-  특히 2/3 kg의 모든 반복에서 전이 CT가 local comparator의 최소 JT보다 낮았으므로
-  local front를 최적 성능 경계로 해석하지 않는다.
-- **Selection criterion:** 0.05 rad는 대표 선택을 위한 연구 설계 기준이며 payload 전이 후의
-  충족을 보장하지 않는다. 이 threshold를 만족하지 못한 target 결과도 그대로 보고했다.
-- **Model scope:** 시뮬레이션 기반 1-DOF 결과이다. 3-DOF coupled system 및 실물 검증은 수행하지 않았다.
+Remaining local-versus-transfer reversals, if any, must remain visible. Eighty evaluations do not establish global optimality or guarantee adequate tracking-side coverage. Local observed fronts and transfer fronts are finite-budget observations.
 
-## Reproduction and deliverables
+Only feasible transfers provide valid evidence of better feasible tracking than the local front. Two infeasible 3 kg CT transfers have low JT but cannot support that comparison. Coverage counts above therefore separate raw lower-JT counts from feasible lower-JT counts.
 
-```sh
-# Step 1 uses the preserved pre-anchor configs (include_zero_anchor is absent/false).
-kroc-mobo exp1 --config configs/sensitivity_original.toml --out results/new-sensitivity/original
-kroc-mobo exp1 --config configs/sensitivity_expanded.toml --out results/new-sensitivity/expanded
-python -m kroc_mobo.sensitivity --original results/new-sensitivity/original --expanded results/new-sensitivity/expanded --out results/new-sensitivity/analysis
-# Current canonical config records the observed expanded decision and the new anchor/selection rule.
-kroc-mobo all --config configs/canonical_final.toml --out results/new-canonical
-python analysis/build_report.py --out results/new-canonical --sensitivity results/new-sensitivity/analysis --report reports/new-canonical
-python analysis/audit_revision.py --out results/new-canonical --audit reports/new-canonical/audit
-```
+## Representative selection and Experiment 2
 
-실행/보고서 디렉터리의 기존 결과를 덮어쓰지 않도록 보호한다.
-`raw-results.zip`에는 sensitivity 두 arm과 revised canonical의 원자료·traces·logs·source snapshot이 포함된다.
-`ARTIFACTS.sha256.json`은 최종 전달 파일 inventory다. 이전 run은 archive와 별도 원본 디렉터리에 보존한다.
+The practical criterion JT≤0.05 rad is predefined **only for representative selection; it does not truncate the Pareto front**. Exclude [0,0,0]. CT minimizes JT; CE minimizes JE within the practical subset; CB minimizes Euclidean distance to utopia after min/max normalization of JT and JE over that subset. Ties use objectives then gains as recorded in `selection_rule.json`; coincident roles are allowed and explicitly reported. Gains are frozen from nominal selection data before target testing. Selection JT/JE below differ legitimately from disjoint test estimates.
 
-변경 파일과 커밋 요약: [CHANGE_SUMMARY.md](CHANGE_SUMMARY.md). 원자료: [raw-results.zip](raw-results.zip).
+| repeat | role | kp | ki | kd | JT | JE | utopia_distance | selection_status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | CT | 800 | 400 | 0 | 0.000777666 | 2.94889 | 1 | ok |
+| 0 | CB | 281.907 | 364.002 | 0 | 0.00138254 | 2.54672 | 0.222846 | ok |
+| 0 | CE | 0 | 185.823 | 0 | 0.00426191 | 2.4814 | 1 | ok |
+| 1 | CT | 800 | 400 | 0 | 0.000783377 | 2.95004 | 1 | ok |
+| 1 | CB | 133.132 | 333.044 | 0 | 0.00181513 | 2.5081 | 0.133827 | ok |
+| 1 | CE | 68.6112 | 0 | 0 | 0.0166363 | 2.44958 | 1 | ok |
+| 2 | CT | 800 | 400 | 0 | 0.000780528 | 2.95099 | 1 | ok |
+| 2 | CB | 138.23 | 400 | 0 | 0.00154243 | 2.50841 | 0.112959 | ok |
+| 2 | CE | 90.2263 | 0 | 0 | 0.0126709 | 2.46302 | 1 | ok |
+| 3 | CT | 800 | 400 | 0 | 0.000778803 | 2.94378 | 1 | ok |
+| 3 | CB | 320.27 | 400 | 0 | 0.00124137 | 2.5609 | 0.27246 | ok |
+| 3 | CE | 0 | 346.108 | 0 | 0.00315833 | 2.47056 | 1 | ok |
+| 4 | CT | 800 | 400 | 0 | 0.000781688 | 2.93995 | 1 | ok |
+| 4 | CB | 191.461 | 339.612 | 0 | 0.00165007 | 2.51942 | 0.128185 | ok |
+| 4 | CE | 0 | 83.8031 | 0 | 0.00947956 | 2.48265 | 1 | ok |
+
+![Nominal representative selection](fig_selection_r00.png)
+
+Primary test results (mean ± SD across five optimization repeats; deltas calculated per controller against its own 1 kg test response before averaging):
+
+| role | payload | JT_rad | JE_J | delta_JT_pct | delta_JE_pct | feasible | tracking_only | feasible_and_practical |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| CT | 1 | 0.00078112 ± 1.1734e-06 | 2.9425 ± 0.0033398 | 0 ± 0 | 0 ± 0 | 5/5 | 5/5 | 5/5 |
+| CB | 1 | 0.0015278 ± 0.00022283 | 2.5286 ± 0.02407 | 0 ± 0 | 0 ± 0 | 5/5 | 5/5 | 5/5 |
+| CE | 1 | 0.0092125 ± 0.0057004 | 2.4697 ± 0.013782 | 0 ± 0 | 0 ± 0 | 5/5 | 5/5 | 5/5 |
+| CT | 2 | 0.00086629 ± 1.2534e-06 | 6.0416 ± 0.0027968 | 10.902 ± 0.0304 | 105.32 ± 0.1387 | 5/5 | 5/5 | 5/5 |
+| CB | 2 | 0.0016139 ± 0.0002273 | 5.6291 ± 0.023563 | 5.6959 ± 0.67125 | 122.63 ± 1.183 | 5/5 | 5/5 | 5/5 |
+| CE | 2 | 0.010387 ± 0.0068062 | 5.5167 ± 0.065491 | 11.322 ± 7.4589 | 123.37 ± 1.4359 | 5/5 | 5/5 | 5/5 |
+| CT | 3 | 0.0009673 ± 1.3301e-06 | 10.134 ± 0.0022272 | 23.834 ± 0.059293 | 244.41 ± 0.32102 | 3/5 | 5/5 | 3/5 |
+| CB | 3 | 0.0017255 ± 0.00023397 | 9.7244 ± 0.022742 | 13.08 ± 1.4891 | 284.6 ± 2.7515 | 5/5 | 5/5 | 5/5 |
+| CE | 3 | 0.011664 ± 0.0079572 | 9.5221 ± 0.16161 | 24.307 ± 15.343 | 285.53 ± 4.4592 | 5/5 | 5/5 | 5/5 |
+
+![Primary transfer with feasibility](fig_primary_with_feasibility.png)
+
+**Constraint violations are retained, not removed or retuned:**
+
+| repeat | role | payload | JT | JE | max_current | violation |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0 | CT | 3 | 0.000969385 | 10.135 | 4.05478 | current |
+| 1 | CT | 3 | 0.000966094 | 10.1366 | 3.88431 | current |
+
+The 3.84 A peak-current criterion is evaluated across all ten test rollouts in each condition. Both violations occurred without voltage saturation. The JT-only requirement holds in all 45 conditions, whereas physical feasibility and the combined practical flag hold in 43/45. Reported CT 3 kg mean/SD include the two violations and must not be presented as five feasible controllers. All CB/CE conditions remained feasible. Nominal feasible selection therefore does not guarantee cross-payload current feasibility.
+
+`representative_performance.csv` preserves all 45 conditions and feasibility. Per-repeat angle/current/voltage/power plots accompany the report. Retention and HV are in `table2_transfer_across_repeats.csv` and related figures as **supplementary metrics**, not primary evidence for payload ordering or robustness.
+
+## Verification and provenance
+
+680 independent consistency checks passed: full candidate counts, anchor placement, raw-to-aggregate objective reproduction, execution-source hashes, reproducible selection, frozen gains and nominal-relative deltas. See `audit.json`; test-suite results and numerical refinement checks are saved separately. These checks validate implementation consistency, not hardware validity.
+
+The prior canonical report is preserved at `reports/archive/canonical-final-20260924-budget40`; the original 2026-09-23 archive is also retained. `raw-results.zip` contains both sensitivity arms, the selected canonical run, raw rollouts, traces, config/seed/manifest files, and the exact execution-source snapshot. `PROVENANCE.json` and `ARTIFACTS.sha256.json` identify paths and content hashes. No Experiment 3 was performed.
+
+Reproduce with `python analysis/run_budget80.py --out results/new-budget80`, then `python analysis/report_budget80.py --root results/new-budget80 --out reports/new-budget80`. Existing destinations are refused. The runner explicitly reconstructs both 400 and 800 arms irrespective of the final canonical bound setting.
+
+## Limitations
+
+- No hold segment: conclusions cover only the finite 5 s movement, not long-term holding energy or settling after 5 s.
+- Constant gear efficiency eta=0.72; no speed/load-dependent efficiency map.
+- No thermal, backlash, or detailed driver model; no current-clipping implementation or hardware validation.
+- One-DOF simulation, fixed trajectory and prescribed noise model; no coupled 3-DOF validation.
+- Finite optimization budget and five repeats. Upper-bound attachment and local tracking coverage must not be presented as resolved unless the data demonstrate this. No statistical significance claim from the 5% engineering threshold.

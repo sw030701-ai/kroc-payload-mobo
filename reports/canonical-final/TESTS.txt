@@ -1,4 +1,4 @@
-................................                                         [100%]
+..................................                                       [100%]
 =============================== warnings summary ===============================
 .venv/lib/python3.13/site-packages/torch/jit/_script.py:1491
   /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
@@ -18,4 +18,4 @@ tests/test_pipeline.py::test_real_botorch_proposal_with_constraints[qnehvi]
     legacy_ei_numerics_warning(legacy_name=type(self).__name__)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-32 passed, 4 warnings in 6.03s
+34 passed, 4 warnings in 6.49s

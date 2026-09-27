@@ -106,4 +106,5 @@ GP fitting and sampling, not physical dynamics. The full experiment restarts at
 repeat zero using one fixed implementation; failed launch directories are excluded
 from final summaries.
 
-The revision protocol and preservation details are in [REVISION_PROTOCOL.md](REVISION_PROTOCOL.md).
+The current bound/budget protocol is [BUDGET80_PROTOCOL.md](BUDGET80_PROTOCOL.md).
+The earlier 2026-09-24 protocol remains at [REVISION_PROTOCOL.md](REVISION_PROTOCOL.md).
