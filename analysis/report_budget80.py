@@ -113,6 +113,12 @@ def build(root, out):
     check("numerical/JT", numerical.delta_JT.abs().max() < 1e-7)
     check("numerical/JE", numerical.delta_JE.abs().max() < 1e-5)
     check("numerical/feasibility", numerical.same_feasibility.all())
+    for archive_name in ("canonical-final-20260923", "canonical-final-20260924-budget40"):
+        archive = Path("reports/archive") / archive_name
+        inventory = json.loads(archive.with_suffix(".sha256.json").read_text())
+        for relative, expected in inventory.items():
+            check("preserved/" + archive_name + "/" + relative,
+                hashlib.sha256((archive / relative).read_bytes()).hexdigest() == expected)
     table(out, "representative_integration_convergence", numerical)
     save_json(out / "audit.json", dict(passed=True, checks=checks, count=len(checks)))
 
@@ -174,6 +180,7 @@ def build(root, out):
     _save(fig, out, "fig_budget_and_coverage", "Fixed-bounds nested budget comparison | identical test seeds for coverage")
 
     decision = json.loads((root / "sensitivity/decision.json").read_text())
+    sensitivity_per = pd.read_csv(root / "sensitivity/per_repeat.csv")
     sat = pd.read_csv(root / "sensitivity/tracking_extremes.csv")
     saturation = sat.groupby("arm").agg(voltage_saturation_mean=("saturation_fraction", "mean"),
         voltage_saturation_max=("saturation_fraction", "max"), peak_current_max_A=("max_current", "max")).reset_index()
@@ -198,7 +205,7 @@ def build(root, out):
 
 {chr(10).join('- ' + s for s in findings)}
 
-The >=5% threshold was fixed before the new data in `docs/BUDGET80_PROTOCOL.md`. Adopted upper bounds: **{upper}**. Both sensitivity arms used 80 evaluations, 10 initial points (one zero-PID anchor plus nine Sobol), qLogNEHVI, and five paired optimizer repeats. The canonical experiment was then rerun from scratch at the chosen bounds for all three payloads. The runs were executed locally against the GitHub repository; manifests identify the actual platform and source revision.
+The >=5% threshold was fixed before the new data in `docs/BUDGET80_PROTOCOL.md`. Adopted upper bounds: **{upper}**. Both sensitivity arms used 80 evaluations, 10 initial points (one zero-PID anchor plus nine Sobol), qLogNEHVI, and five paired optimizer repeats. All three gain bounds changed together, so this comparison does not isolate the effect of Kp alone. The canonical experiment was then rerun from scratch at the chosen bounds for all three payloads. The runs were executed locally against the GitHub repository; manifests identify the actual platform and source revision.
 
 ## Model and evaluation protocol
 
@@ -212,11 +219,13 @@ Experiment 1 uses 5×3×80=1,200 candidates, including infeasible attempts; all 
 
 ![Bounds comparison](sensitivity/bounds_sensitivity.png)
 
-{markdown(pd.read_csv(root / 'sensitivity/per_repeat.csv'))}
+{markdown(sensitivity_per[['repeat', 'original_min_JT', 'expanded_min_JT', 'improvement_pct', 'expanded_CT_at_upper']])}
 
 {markdown(saturation)}
 
 {saturation_text} Peak current is compared with 3.84 A, not interpreted as an implemented current limiter. Expanded-bound attachment remains a limitation; this is not proof of gain convergence. Regional front distances and practical-region energy are reported in the sensitivity CSVs; all fronts retain the zero-PID point.
+
+The mean minimum observed energy subject to JT≤0.05 rad was {sensitivity_per.original_practical_min_JE.mean():.6f} J at current bounds and {sensitivity_per.expanded_practical_min_JE.mean():.6f} J at expanded bounds. Tracking improvement does **not** establish uniform dominance of the practical front. Finite-budget exploration over a larger search domain can alter energy-side coverage.
 
 ## Experiment 1 and budget effect
 
@@ -224,7 +233,7 @@ Experiment 1 uses 5×3×80=1,200 candidates, including infeasible attempts; all 
 
 ![Full and practical fronts](fig1_full_and_zoom.png)
 
-The following comparison uses the first 40 candidates versus all 80 in each new canonical run, at the **same bounds and selection seeds**. It isolates the extra search budget within this run; old 400-bound/40-evaluation results are archived separately and are not confounded with a simultaneous bound change.
+The following comparison uses the first 40 candidates versus all 80 in each new canonical run, at the **same bounds and selection seeds**. It isolates the extra search budget within this run; old 400-bound/40-evaluation results are archived separately and are not confounded with a simultaneous bound change. The table's improvement_pct is the mean of repeat-level percentages; headline budget percentages are computed from the two repeat means. Neither is a statistical significance claim.
 
 {markdown(budget.groupby('payload')[['JT_40', 'JT_80', 'improvement_pct']].mean().reset_index())}
 
