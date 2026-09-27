@@ -41,7 +41,7 @@ def choose_bounds(improvement_pct, outside_old, overlap):
     return ("expanded" if reasons else "original"), (reasons or ["under_5pct_and_near_overlap"])
 
 
-def analyze(original, expanded, out):
+def analyze(original, expanded, out, protocol="legacy"):
     original, expanded, out = Path(original), Path(expanded), Path(out)
     if (out / "decision.json").exists():
         raise FileExistsError("Sensitivity decision already exists; use a new output directory")
@@ -84,6 +84,8 @@ def analyze(original, expanded, out):
                     arm=name,
                     repeat=repeat,
                     **{k: ct[k] for k in GAINS + OBJECTIVES},
+                    saturation_fraction=float(ct.saturation_fraction),
+                    max_current=float(ct.max_current),
                     **{f"{g}_at_upper": bool(v) for g, v in zip(GAINS, at_upper)},
                     outside_original=outside if name == "expanded" else False,
                 )
@@ -110,8 +112,13 @@ def analyze(original, expanded, out):
     distances = table[["tracking_hausdorff", "practical_hausdorff"]].to_numpy()
     overlap = bool(np.isfinite(distances).all() and np.all(distances <= OVERLAP_DISTANCE))
     adopted, reasons = choose_bounds(improvement, bool(table.expanded_CT_outside_old.any()), overlap)
+    if protocol == "budget80":
+        adopted = "expanded" if improvement >= IMPROVEMENT_THRESHOLD_PCT else "original"
+        reasons = ["paired_mean_JT_improvement_at_least_5pct" if adopted == "expanded"
+                   else "paired_mean_JT_improvement_below_5pct; saturation_requires_separate_evidence"]
     decision = dict(
         adopted=adopted,
+        protocol=protocol,
         reasons=reasons,
         min_JT_improvement_pct=improvement,
         original_mean_min_JT=float(table.original_min_JT.mean()),
@@ -139,12 +146,15 @@ def analyze(original, expanded, out):
     save_csv(out / "tracking_extremes.csv", controllers)
     # Persist the machine-readable branching decision, including all thresholds.
     save_json(out / "decision.json", decision)
-    plot_fronts(fronts, out)
+    plot_fronts(fronts, out, title=(
+        f"Nominal 1 kg | {len(table)} paired repeats | {c0['mobo']['n_evaluations']} evaluations"
+        f" | zero anchor: {c0['mobo'].get('include_zero_anchor', False)}"
+    ))
     print(decision)
     return decision
 
 
-def plot_fronts(fronts, out):
+def plot_fronts(fronts, out, title="Nominal 1 kg | paired bound comparison"):
     """Zoom only observed regional points; never draw an edge toward the remote zero anchor."""
     from .analysis import _save, plt
 
@@ -167,7 +177,7 @@ def plot_fronts(fronts, out):
     for ax in axes[1:]:
         ax.set_ylim(practical_y.min() - 0.05, practical_y.max() + 0.05)
     axes[0].legend()
-    _save(fig, out, "bounds_sensitivity", "Nominal 1 kg | 5 paired repeats | 40 evaluations | pre-anchor")
+    _save(fig, out, "bounds_sensitivity", title)
 
 
 if __name__ == "__main__":
