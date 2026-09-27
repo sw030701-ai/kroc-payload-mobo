@@ -49,10 +49,12 @@ be negative in reverse power flow; do not call it universally positive gear loss
 
 ## Controller, objectives and execution
 
-Voltage PID optimizes only [Kp, Ki, Kd], with bounds [0,400], [0,200], [0,40].
-The 2026-09-24 paired nominal sensitivity found a 48.04% decrease in mean minimum
-JT, so the expanded bounds are canonical. Four of five expanded sensitivity CTs
-still touch an upper bound; this is not evidence of bound independence or global optimality.
+Voltage PID optimizes only [Kp, Ki, Kd], with bounds [0,800], [0,400], [0,80].
+The 2026-09-27 paired nominal sensitivity (80 evaluations, five repeats per arm)
+found a 50.51% decrease in mean minimum JT relative to [400,200,40].
+All five expanded CTs still touch an upper bound, with no voltage saturation;
+this is not evidence of bound independence or global optimality. The prior
+2026-09-24 comparison and its [400,200,40] runs remain archived.
 Derivative on filtered measured angle (tau=0.020 s), back-calculation anti-windup
 (10 /s), 1 ms control period, no feedforward. Bounds/filter/noise are research
 design choices, not motor datasheet values. Noise variance is 1e-7 rad², sampled
@@ -69,7 +71,7 @@ independent Python reference loop.
 
 ## Experiments
 
-1. Independently optimize each of 1/2/3 kg, five optimization repeats, 40 candidates
+1. Independently optimize each of 1/2/3 kg, five optimization repeats, 80 candidates
    each including one zero-PID baseline plus nine initial Sobol points. Train means use 3 seeds; all candidates
    are re-evaluated on 5 disjoint selection seeds before forming feasible fronts.
 2. Freeze the full 1 kg front. Select CT (minimum JT), CE (minimum JE), and CB

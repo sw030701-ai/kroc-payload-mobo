@@ -46,9 +46,9 @@ velocity_abs_max = 15.0      # rad/s
 numerical_abs_max = 1e8      # numerical guard, all physical states
 
 [search]
-kp = [0.0, 400.0]            # V/rad
-ki = [0.0, 200.0]            # V/(rad s)
-kd = [0.0, 40.0]             # V s/rad
+kp = [0.0, 800.0]            # V/rad; paired 80-evaluation sensitivity: 50.51% JT improvement
+ki = [0.0, 400.0]            # V/(rad s)
+kd = [0.0, 80.0]             # V s/rad
 
 [experiment]
 payloads = [1.0, 2.0, 3.0]   # kg; constant within each rollout
@@ -63,10 +63,10 @@ selection_replicates = 5
 test_replicates = 10
 
 [mobo]
-include_zero_anchor = true # first of 10 initial points; 9 Sobol, 40 total evaluations
+include_zero_anchor = true # first of 10 initial points; 9 Sobol, 80 total evaluations
 backend = "qlognehvi"        # log-stabilized qNEHVI; original qNEHVI failed with NaN gradients
 n_initial = 10
-n_evaluations = 40           # includes initial, infeasible, numerical-failure attempts
+n_evaluations = 80           # includes initial, infeasible, numerical-failure attempts
 mc_samples = 128
 num_restarts = 8
 raw_samples = 128

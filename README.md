@@ -3,12 +3,12 @@
 > **Canonical Final Model — 이 작업에서 “우리 최종 모델” 또는 “final model”은 [Canonical Final Model](docs/CANONICAL_MODEL.md)만을 의미합니다. 기존 placeholder 설정으로 되돌리지 않습니다.**
 > 기본 실행 설정은 `configs/canonical_final.toml`입니다. 이전 illustrative 설정과 결과는 과거 구현 검증용이며 최종 모델의 결과가 아닙니다.
 
-> **2026-09-24 revised canonical:** 1 kg paired bound sensitivity에서 평균 최소 JT가 48.04% 감소하여
-> PID upper bounds를 **[400,200,40]**으로 확장했습니다. 모든 payload/repeat의 초기 10점에
-> zero PID 1점과 Sobol 9점을 포함하며 총 예산은 40회입니다. 대표 CT/CB/CE는
+> **2026-09-27 revised canonical:** 80회 예산의 1 kg paired bound sensitivity에서 평균 최소 JT가 50.51% 감소하여
+> PID upper bounds를 **[800,400,80]**으로 확장했습니다. 모든 payload/repeat의 초기 10점에
+> zero PID 1점과 Sobol 9점을 포함하며 총 예산은 **80회**입니다. CT는 새 상한에 5/5회 접했고 전압 포화는 없으므로 bounds 독립성을 주장하지 않습니다. 대표 CT/CB/CE는
 > **JT≤0.05 rad practical nominal subset**에서만 선택합니다. 전체 front는 유지합니다.
-> [최신 결과](reports/canonical-final/REPORT.md) · [사전 revision protocol](docs/REVISION_PROTOCOL.md) ·
-> [이전 결과 보존본](reports/archive/canonical-final-20260923/REPORT.md).
+> [최신 결과](reports/canonical-final/REPORT.md) · [사전 실험 protocol](docs/BUDGET80_PROTOCOL.md) ·
+> [직전 40회 결과 보존본](reports/archive/canonical-final-20260924-budget40/REPORT.md).
 > 이 저장소의 모델은 **1-DOF joint**이며 Experiment 1·2만 실행합니다.
 
 1-DOF 로봇 관절 + DC motor + 전압 PID를 Python으로 시뮬레이션하고, BoTorch/GPyTorch의 다목적 Bayesian optimization으로 tracking RMSE와 **모터 단자 순전기 에너지**의 trade-off를 탐색합니다. 실험 설계는 연구자의 논문 초안과 최종 실험 메모를 반영했습니다. 실험 결과가 나오기 전에 trade-off, knee, payload 효과 또는 특정 controller의 우수성을 가정하지 않습니다.
@@ -72,7 +72,7 @@ kroc-mobo all --smoke --backend sobol --out results/smoke-sobol
 | Exp. 2 | nominal selection front 전체를 고정한 채 모든 payload에서 재평가; local front도 같은 test seeds로 재평가 | primary: CT/CB/CE JT·JE·변화율·feasible 및 시간응답; supplementary: retention/HV |
 | Analysis | repeat별 결과를 유지하고 요약 | Fig. 1·2, Table 1·2 CSV, PNG 300 dpi, PDF |
 
-기본 설정: payload 1/2/3 kg, nominal 1 kg, **5개 독립 optimization repeats**, 초기 10개를 포함한 총 40개 후보, train 3·selection 5·test 10개 잡음 seed입니다. Exp. 1의 최적화 비용은 1,800 rollout, selection 비용은 3,000 rollout이며 Exp. 2와 그림용 rollout은 별도 기록합니다. 전체 실행은 smoke보다 훨씬 오래 걸립니다.
+기본 설정: payload 1/2/3 kg, nominal 1 kg, **5개 독립 optimization repeats**, 초기 10개를 포함한 총 80개 후보, train 3·selection 5·test 10개 잡음 seed입니다. Exp. 1의 최적화 비용은 3,600 rollout, selection 비용은 6,000 rollout이며 sensitivity, Exp. 2와 그림용 rollout은 별도 기록합니다. 전체 실행은 smoke보다 훨씬 오래 걸립니다.
 
 ## 모델과 목적함수
 
@@ -106,7 +106,7 @@ BoTorch는 최대화를 사용하므로 두 목적에 음수를 적용합니다.
 
 최종 실행 acquisition은 **constrained qLogNEHVI, q=1**입니다. 원래 qNEHVI 실행이 NaN 기울기로 중단되어 별도 새 실행에서 수치 안정화 버전을 사용합니다. BoTorch의 알려진 수치 문제 안내에 따라 `qlognehvi`도 선택할 수 있습니다. 선택한 알고리즘은 config와 CSV에 기록하며 자동으로 바꾸지 않습니다. 유효 목적값이 2개 미만이거나 중복 제안인 경우만 명시적으로 표기한 Sobol recovery 후보를 평가합니다. GP fitting이나 프로그램 오류는 실행을 중단하며 성공 결과로 숨기지 않습니다.
 
-실패 후보도 40개 예산에 포함합니다. 모든 후보를 독립 **selection seeds**로 재평가한 후 feasible non-dominated set을 구성합니다. 반복 간에는 seed가 다르며, 같은 반복에서는 payload와 controller 사이에 동일 잡음열을 사용합니다. Exp. 2는 selection에 쓰지 않은 **test seeds**를 사용하고 local·transfer set 모두 같은 조건으로 평가합니다. Raw rollout 값, seed 목록, 설정 hash, 패키지 버전, Git revision을 기록합니다.
+실패 후보도 80개 예산에 포함합니다. 모든 후보를 독립 **selection seeds**로 재평가한 후 feasible non-dominated set을 구성합니다. 반복 간에는 seed가 다르며, 같은 반복에서는 payload와 controller 사이에 동일 잡음열을 사용합니다. Exp. 2는 selection에 쓰지 않은 **test seeds**를 사용하고 local·transfer set 모두 같은 조건으로 평가합니다. Raw rollout 값, seed 목록, 설정 hash, 패키지 버전, Git revision을 기록합니다.
 
 ## Exp. 2 지표의 정확한 의미
 
