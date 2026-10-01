@@ -3,6 +3,7 @@
 import argparse
 import json
 import shutil
+from copy import deepcopy
 from pathlib import Path
 
 import numpy as np
@@ -15,6 +16,7 @@ from kroc_mobo.config import seeds
 from kroc_mobo.heavy_diagnostics import best_feasible, confirm_seeds, read, sha
 from kroc_mobo.io import load_snapshot, require_complete, save_json
 from kroc_mobo.metrics import GAINS, pareto
+from kroc_mobo.simulation import simulate
 
 
 def build(parent, root, out):
@@ -45,6 +47,8 @@ def build(parent, root, out):
                 check(label + "/bounds", all(((train[k] >= v[0]) & (train[k] <= v[1])).all()
                     for k, v in c["search"].items()))
                 manifest = json.loads((d / "diagnostic/manifest.json").read_text())
+                heldout_start = json.loads((root / "heldout/manifest.json").read_text())["started_utc"]
+                check(label + "/freeze_before_test", manifest["finished_utc"] <= heldout_start)
                 for file, expected in manifest["parent_hashes"].items():
                     check(label + "/parent/" + file, sha(original / file) == expected)
                 for file, expected in manifest["source_sha256"].items():
@@ -65,6 +69,9 @@ def build(parent, root, out):
                 check(label + "/frozen_winner", winner.controller_id == expected.controller_id)
                 if mode == "so40":
                     check(label + "/warmstart", train.iloc[1].source == "frozen_nominal_CT_warm_start")
+                    nominal = read(parent / "exp2/representatives_frozen.csv")
+                    ct = nominal.loc[(nominal.repeat == repeat) & (nominal.role == "CT")].iloc[0]
+                    check(label + "/warmstart_gains", np.array_equal(train.iloc[1][GAINS].to_numpy(float), ct[GAINS].to_numpy(float)))
                     check(label + "/single_objective", train.iloc[10:].source.str.contains("qlognei_tracking|recovery").all())
                 else:
                     base = read(original / "selection.csv")
@@ -137,6 +144,22 @@ def build(parent, root, out):
     table(out, "heldout_all_conditions", heldout)
     table(out, "frozen_candidates", frozen)
 
+    fine = deepcopy(c)
+    fine["simulation"]["integration_substeps"] *= 2
+    refined = []
+    for row in frozen.to_dict("records"):
+        gain = [row[g] for g in GAINS]
+        seed = confirm_seeds(int(row["repeat"]))[0]
+        a = simulate(gain, row["payload"], c, seed).metrics
+        b = simulate(gain, row["payload"], fine, seed).metrics
+        refined.append(dict(mode=row["mode"], repeat=row["repeat"], payload=row["payload"],
+            delta_JT=b["JT"]-a["JT"], delta_JE=b["JE"]-a["JE"], same_feasible=a["feasible"]==b["feasible"]))
+    refined = pd.DataFrame(refined)
+    check("numerical/JT", refined.delta_JT.abs().max() < 1e-7)
+    check("numerical/JE", refined.delta_JE.abs().max() < 1e-5)
+    check("numerical/feasibility", refined.same_feasible.all())
+    table(out, "integration_refinement", refined)
+
     for archive_name in ("canonical-final-20260923", "canonical-final-20260924-budget40", "canonical-final-20260927-budget80"):
         archive = Path("reports/archive") / archive_name
         for name, expected in json.loads(archive.with_suffix(".sha256.json").read_text()).items():
@@ -149,7 +172,7 @@ def build(parent, root, out):
         search_bounds=c["search"], decision_threshold_pct=5, execution="local repository, two independent processes"))
     shutil.copy2(root / "protocol.md", out / "PROTOCOL.md")
     shutil.copy2(root / "config.json", out / "main_config.json")
-    shutil.copy2("docs/REVISION_HISTORY.md", out / "REVISION_HISTORY.md")
+    (out / "REVISION_HISTORY.md").write_text(Path("docs/REVISION_HISTORY.md").read_text().replace("(../reports/", "(../"))
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
     for ax, (payload, group) in zip(axes, budget.groupby("payload")):
@@ -223,6 +246,8 @@ The original test set uses ten paired seeds; confirmation uses ten newly reserve
 `frozen_candidates.csv` records all gains. For CT, the frozen JT/JE columns are its **nominal 1 kg selection values**, while payload denotes the target; other modes' frozen values are target selection values. Actual target JT/JE, peak current, voltage saturation and feasibility are in `heldout_all_conditions.csv`. No test-dependent retuning or replacement of the main CT/CB/CE is performed.
 
 ## Cost, audit and interpretation
+
+qLogNEHVI allocates proposals to joint tracking–energy hypervolume improvement under constraints; it does not spend every evaluation minimizing JT alone. A transferred aggressive nominal controller can therefore have lower JT than the best observed target-local point without a logical contradiction. The nominal CT gains were [800,400,0] in all five parent repeats, so these data do not establish that its discovery was merely accidental. Search allocation and finite sampled coverage are plausible explanations; they do not by themselves establish causality or prove that no better feasible controller exists.
 
 MOBO continuation adds 800 candidates across 2 payloads×5 repeats; SO40 adds 400. New training/selection rollouts are 3,600/6,000. Comparison testing adds 800 rollouts. Inherited 80-candidate costs are not counted as newly executed. These costs are supplementary; the main paper budget remains 80. An efficiency advantage over other optimizers is not established by these experiments.
 

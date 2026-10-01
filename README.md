@@ -11,6 +11,12 @@
 > [직전 40회 결과 보존본](reports/archive/canonical-final-20260924-budget40/REPORT.md).
 > 이 저장소의 모델은 **1-DOF joint**이며 Experiment 1·2만 실행합니다.
 
+> **수정 4 (2026-10-01):** bounds [800,400,80]과 main budget 80을 유지합니다.
+> 2/3 kg에만 160회 MOBO continuation 및 40회 constrained JT-only BO를 보조 진단으로 추가합니다.
+> [진단 protocol](docs/HEAVY_DIAGNOSTIC_PROTOCOL.md) · [수정 1–4 전체 이력](docs/REVISION_HISTORY.md) ·
+> [추가 진단 결과](reports/heavy-diagnostics-20261001/REPORT.md).
+> 5% 미만 개선도 전역 최적이나 실제 Pareto front의 충분한 탐색을 입증하지 않습니다.
+
 1-DOF 로봇 관절 + DC motor + 전압 PID를 Python으로 시뮬레이션하고, BoTorch/GPyTorch의 다목적 Bayesian optimization으로 tracking RMSE와 **모터 단자 순전기 에너지**의 trade-off를 탐색합니다. 실험 설계는 연구자의 논문 초안과 최종 실험 메모를 반영했습니다. 실험 결과가 나오기 전에 trade-off, knee, payload 효과 또는 특정 controller의 우수성을 가정하지 않습니다.
 
 ## 연구 질문

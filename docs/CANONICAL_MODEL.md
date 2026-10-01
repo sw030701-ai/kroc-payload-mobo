@@ -55,6 +55,11 @@ found a 50.51% decrease in mean minimum JT relative to [400,200,40].
 All five expanded CTs still touch an upper bound, with no voltage saturation;
 this is not evidence of bound independence or global optimality. The prior
 2026-09-24 comparison and its [400,200,40] runs remain archived.
+As of revision 4 (2026-10-01), these bounds are fixed for the study. Peak-current
+violations in some 3 kg transfers demonstrate a feasibility limitation on
+aggressive gains, not a globally optimal constrained performance boundary.
+Only 2/3 kg receive supplementary 80→160 MOBO and short tracking-only diagnostics;
+the main 80-evaluation results and nominal representative gains remain unchanged.
 Derivative on filtered measured angle (tau=0.020 s), back-calculation anti-windup
 (10 /s), 1 ms control period, no feedforward. Bounds/filter/noise are research
 design choices, not motor datasheet values. Noise variance is 1e-7 rad², sampled
@@ -107,4 +112,6 @@ repeat zero using one fixed implementation; failed launch directories are exclud
 from final summaries.
 
 The current bound/budget protocol is [BUDGET80_PROTOCOL.md](BUDGET80_PROTOCOL.md).
+Supplementary diagnostics use [HEAVY_DIAGNOSTIC_PROTOCOL.md](HEAVY_DIAGNOSTIC_PROTOCOL.md).
+The complete user-confirmed stages are recorded in [REVISION_HISTORY.md](REVISION_HISTORY.md).
 The earlier 2026-09-24 protocol remains at [REVISION_PROTOCOL.md](REVISION_PROTOCOL.md).
