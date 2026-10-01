@@ -1,0 +1,80 @@
+{
+  "run": "results/budget80-20260927",
+  "canonical": "results/budget80-20260927/canonical",
+  "prior_report": "reports/archive/canonical-final-20260924-budget40",
+  "selected_upper": [
+    800.0,
+    400.0,
+    80.0
+  ],
+  "sensitivity_decision": {
+    "adopted": "expanded",
+    "protocol": "budget80",
+    "reasons": [
+      "paired_mean_JT_improvement_at_least_5pct"
+    ],
+    "min_JT_improvement_pct": 50.51484616737672,
+    "original_mean_min_JT": 0.00157706398644296,
+    "expanded_mean_min_JT": 0.0007804125397302,
+    "expanded_CT_outside_old_count": 5,
+    "expanded_CT_at_upper_count": 5,
+    "near_overlap": false,
+    "repeats": 5,
+    "rule": {
+      "improvement_threshold_pct": 5.0,
+      "outside_range_fraction": 0.01,
+      "boundary_range_fraction": 0.001,
+      "overlap_distance": 0.05,
+      "tracking_JT_max": 0.01,
+      "practical_JT_max": 0.05
+    },
+    "optimizer_seeds": [
+      731,
+      732,
+      733,
+      734,
+      735
+    ],
+    "selection_seeds": [
+      [
+        100000,
+        100001,
+        100002,
+        100003,
+        100004
+      ],
+      [
+        101000,
+        101001,
+        101002,
+        101003,
+        101004
+      ],
+      [
+        102000,
+        102001,
+        102002,
+        102003,
+        102004
+      ],
+      [
+        103000,
+        103001,
+        103002,
+        103003,
+        103004
+      ],
+      [
+        104000,
+        104001,
+        104002,
+        104003,
+        104004
+      ]
+    ],
+    "original": "results/budget80-20260927/current",
+    "expanded": "results/budget80-20260927/expanded",
+    "limitation": "Finite-budget observed fronts; expanded boundary attachment is not resolved by this comparison."
+  },
+  "execution": "local repository run; pushed to GitHub"
+}

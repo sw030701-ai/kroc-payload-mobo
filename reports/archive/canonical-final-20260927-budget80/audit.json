@@ -1,0 +1,2726 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "current/0/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "current/0/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "current/1/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "current/2/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "current/3/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "current/4/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "check": "current/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/0/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/1/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/2/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/3/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "expanded/4/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "check": "expanded/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/2.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/0/3.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/2.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/1/3.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/2.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/2/3.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/2.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/3/3.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/1.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/2.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0/budget",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0/anchor",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0/initial",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0/BO",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0train/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0trainJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0trainJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0selection/raw_count",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0selectionJT",
+      "passed": true
+    },
+    {
+      "check": "canonical/4/3.0selectionJE",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "check": "canonical/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "check": "representative_conditions",
+      "passed": true
+    },
+    {
+      "check": "zero_excluded",
+      "passed": true
+    },
+    {
+      "check": "practical_selection",
+      "passed": true
+    },
+    {
+      "check": "selection/0",
+      "passed": true
+    },
+    {
+      "check": "frozen/0/CT",
+      "passed": true
+    },
+    {
+      "check": "delta/0/CT/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/0/CT/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/0/CB",
+      "passed": true
+    },
+    {
+      "check": "delta/0/CB/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/0/CB/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/0/CE",
+      "passed": true
+    },
+    {
+      "check": "delta/0/CE/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/0/CE/JE",
+      "passed": true
+    },
+    {
+      "check": "selection/1",
+      "passed": true
+    },
+    {
+      "check": "frozen/1/CT",
+      "passed": true
+    },
+    {
+      "check": "delta/1/CT/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/1/CT/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/1/CB",
+      "passed": true
+    },
+    {
+      "check": "delta/1/CB/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/1/CB/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/1/CE",
+      "passed": true
+    },
+    {
+      "check": "delta/1/CE/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/1/CE/JE",
+      "passed": true
+    },
+    {
+      "check": "selection/2",
+      "passed": true
+    },
+    {
+      "check": "frozen/2/CT",
+      "passed": true
+    },
+    {
+      "check": "delta/2/CT/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/2/CT/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/2/CB",
+      "passed": true
+    },
+    {
+      "check": "delta/2/CB/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/2/CB/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/2/CE",
+      "passed": true
+    },
+    {
+      "check": "delta/2/CE/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/2/CE/JE",
+      "passed": true
+    },
+    {
+      "check": "selection/3",
+      "passed": true
+    },
+    {
+      "check": "frozen/3/CT",
+      "passed": true
+    },
+    {
+      "check": "delta/3/CT/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/3/CT/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/3/CB",
+      "passed": true
+    },
+    {
+      "check": "delta/3/CB/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/3/CB/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/3/CE",
+      "passed": true
+    },
+    {
+      "check": "delta/3/CE/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/3/CE/JE",
+      "passed": true
+    },
+    {
+      "check": "selection/4",
+      "passed": true
+    },
+    {
+      "check": "frozen/4/CT",
+      "passed": true
+    },
+    {
+      "check": "delta/4/CT/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/4/CT/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/4/CB",
+      "passed": true
+    },
+    {
+      "check": "delta/4/CB/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/4/CB/JE",
+      "passed": true
+    },
+    {
+      "check": "frozen/4/CE",
+      "passed": true
+    },
+    {
+      "check": "delta/4/CE/JT",
+      "passed": true
+    },
+    {
+      "check": "delta/4/CE/JE",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CT/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CB/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/0/CE/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CT/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CB/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/1/CE/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CT/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CB/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/2/CE/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CT/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CB/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/3/CE/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/1.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/1.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/1.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/2.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/2.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/2.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CT/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CB/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/3.0/seeds",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/3.0/means",
+      "passed": true
+    },
+    {
+      "check": "test/4/CE/3.0/feasible",
+      "passed": true
+    },
+    {
+      "check": "numerical/JT",
+      "passed": true
+    },
+    {
+      "check": "numerical/JE",
+      "passed": true
+    },
+    {
+      "check": "numerical/feasibility",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/VALIDATION.txt",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/canonical-results-and-source.zip",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/canonical-traces-r00-r02.zip",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/common_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/config.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r01.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r01.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r02.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r02.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r03.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r03.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r04.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/diagnostic_angle_power_r04.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/exp1_compact.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/exp1_results_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/exp1_results_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig1_full_and_zoom.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig1_full_and_zoom.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig1_payload_pareto.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig1_payload_pareto.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r01.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r01.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r02.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r02.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r03.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r03.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r04.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/fig2_representative_r04.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/manifest_exp1.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/manifest_exp2.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/manifest_pilot.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/representative_performance.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table1_common_conditions.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table1_common_conditions.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table1_setup.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table2_transfer.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table2_transfer_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table2_transfer_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table_representatives_repeat00.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/table_representatives_repeat00.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/tracking_budget_001rad.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r01.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r01.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r02.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r02.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r03.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r03.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r04.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260923/transfer_vs_local_r04.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/ARTIFACTS.sha256.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/CE_energy_saving_vs_CT.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/CE_energy_saving_vs_CT.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/CHANGE_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/LINT.txt",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/QUANTITATIVE_FINDINGS.md",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/REPORT.md",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/TESTS.txt",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/VALIDATION.txt",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/audit/audit.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/audit/representative_integration_convergence.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/common_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/config.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r01.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r01.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r02.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r02.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r03.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r03.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r04.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/diagnostic_angle_power_r04.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/exp1_compact.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/exp1_compact.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/exp1_results_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/exp1_results_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig1_full_and_zoom.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig1_full_and_zoom.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig1_payload_pareto.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig1_payload_pareto.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r01.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r01.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r02.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r02.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r03.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r03.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r04.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig2_representative_r04.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig3_primary_transfer.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig3_primary_transfer.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig_selection_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/fig_selection_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/local_tracking_coverage_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/local_tracking_coverage_diagnostic.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/manifest_exp1.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/manifest_exp2.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/manifest_pilot.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/primary_representatives_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/raw-results.zip",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/representative_performance.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/representatives_frozen.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/selection_rule.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/selection_status.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity/bounds_sensitivity.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity/bounds_sensitivity.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity/decision.json",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity/per_repeat.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity/tracking_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity/tracking_extremes.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity_practical_impact.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/sensitivity_practical_impact.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/supplementary_transfer.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/supplementary_transfer.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table1_common_conditions.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table1_common_conditions.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table1_setup.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table2_primary_transfer.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table2_primary_transfer.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table2_transfer_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table2_transfer_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table_representatives_repeat00.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table_representatives_repeat00.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table_selection.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/table_selection.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/tracking_budget_001rad.csv",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/tracking_budget_001rad.tex",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r00.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r00.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r01.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r01.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r02.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r02.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r03.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r03.png",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r04.pdf",
+      "passed": true
+    },
+    {
+      "check": "preserved/canonical-final-20260924-budget40/transfer_vs_local_r04.png",
+      "passed": true
+    }
+  ],
+  "count": 680
+}

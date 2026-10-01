@@ -1,0 +1,27 @@
+[
+  {
+    "repeat": 0,
+    "status": "ok",
+    "nominal_count": 15
+  },
+  {
+    "repeat": 1,
+    "status": "ok",
+    "nominal_count": 13
+  },
+  {
+    "repeat": 2,
+    "status": "ok",
+    "nominal_count": 15
+  },
+  {
+    "repeat": 3,
+    "status": "ok",
+    "nominal_count": 12
+  },
+  {
+    "repeat": 4,
+    "status": "ok",
+    "nominal_count": 18
+  }
+]
