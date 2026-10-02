@@ -7,7 +7,7 @@
 | 수정 1 — 첫 물리모델 설정 | 2026-09-23 | RE35/GP42C 1-DOF 모델, full 5 s quintic, qLogNEHVI, 5×40회, bounds [200,100,20] | nominal min JT 평균 0.0031232 rad. CE가 zero PID로 퇴화하고 CT가 상한에 접함 | [원 보고서](../reports/archive/canonical-final-20260923/REPORT.md), GitHub `2f21d55` |
 | 수정 2 — 대표 선택과 baseline 공정성 | 2026-09-24 | paired bounds 비교 후 [400,200,40]; zero+9 Sobol 초기점; 대표 선택만 JT≤0.05; CT/CB/CE 재선정; Exp.1/2 재실행 | bounds 비교 min JT 48.04% 감소. CE 퇴화 제거. HV/retention 보조지표화 | CT 상한, 2/3 kg에서 transfer가 local tracking보다 우수한 coverage 문제 남음. [보고서](../reports/archive/canonical-final-20260924-budget40/REPORT.md), `8618d58`–`87a9826` |
 | 수정 3 — 800 bounds와 80회 | 2026-09-27 | 두 bounds 모두 80회로 400/800 비교; [800,400,80] 채택; 전체 Exp.1/2를 5×80회로 재실행 | nominal JT 50.51% 감소, CT JE 13.40% 증가. 동일 bounds 40→80회 JT 개선: 1/2/3 kg 1.05/10.63/17.43% | CT 5/5 상한; 3 kg CT 2/5 전류 초과(4.054780, 3.884308 A). Feasible heavy transfer 8/8이 local min JT보다 낮음. [보존 보고서](../reports/archive/canonical-final-20260927-budget80/REPORT.md), `5d05a2a`–`83e8883` |
-| 수정 4 — bounds 고정, 탐색 충분성 보조 진단 | 2026-10-01 | main budget 80과 bounds [800,400,80] 유지. 2/3 kg만 기존 80→160 continuation; 40회 tracking-only constrained BO; 새 확인 seed 평가 | 실행 결과는 [진단 보고서](../reports/heavy-diagnostics-20261001/REPORT.md)에 기록 | 5% 미만도 관측 예산 민감도만 판정. 전역 최적/실제 Pareto front 수렴을 주장하지 않음. 사전 protocol commit `37412f7` |
+| 수정 4 — bounds 고정, 탐색 충분성 보조 진단 | 2026-10-01 | main budget 80과 bounds [800,400,80] 유지. 2/3 kg만 기존 80→160 continuation; 40회 tracking-only constrained BO; 새 확인 seed 평가 | 80→160 min JT 개선: 2 kg 9.16%, 3 kg 26.93%. SO40 fresh confirmation에서 CT보다 좋은 feasible 후보 0/5씩. [진단 보고서](../reports/heavy-diagnostics-20261001/REPORT.md) | 5% 미만도 관측 예산 민감도만 판정. 전역 최적/실제 Pareto front 수렴을 주장하지 않음. 사전 protocol commit `37412f7` |
 
 ## 각 단계에 함께 수행한 변경과 실험
 
@@ -42,6 +42,8 @@
 - 2/3 kg에만 40회×5반복의 constrained JT-only BO를 추가한다(신규 400 candidate). Zero+nominal CT+8 Sobol initial design으로 targeted warm-start 진단임을 명시한다. JE는 최적화하지 않지만 결과로 저장한다.
 - MOBO80/MOBO160/SO40/기존 CT를 기존 test 10 seeds와 새 confirmation 10 seeds에서 동일하게 평가한다(800 held-out rollout). 선택 후 gains를 고정하며, 제약과 paired JT 차이/조건부 95% interval을 함께 보고한다.
 - 이 단계의 결과·비교표·그림·검증·raw archive는 독립 진단 보고서에 저장하고 main report에는 연결된 보조 결과로만 추가한다. 별도의 Experiment 3, 1 kg MOBO 재탐색, CT/CB/CE 재선정 또는 전체 전이 실험 교체는 하지 않는다.
+
+- 완료 결과: 두 payload 모두 평균 최소 JT 개선이 5% 이상이므로 80회 tracking coverage에 예산 민감도가 남는다. 160회 수렴도 입증되지 않았다. Fresh confirmation에서 기존 CT와 SO40은 3 kg에서 각각 3/5만 feasible하며, SO40에서 CT보다 좋은 feasible tracking 후보를 발견하지 못했다. 이는 더 좋은 PID의 부재를 뜻하지 않는다. 실험은 2026-10-01 완료, 최종 자료 정리는 2026-10-03 수행했다.
 
 ## 수정 4의 해석 원칙
 

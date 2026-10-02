@@ -76,5 +76,13 @@
     "expanded": "results/budget80-20260927/expanded",
     "limitation": "Finite-budget observed fronts; expanded boundary attachment is not resolved by this comparison."
   },
-  "execution": "local repository run; pushed to GitHub"
+  "execution": "local repository run; pushed to GitHub",
+  "supplementary_revision4": {
+    "report": "reports/heavy-diagnostics-20261001/REPORT.md",
+    "run": "results/heavy-diagnostics-20261001",
+    "experiment_date": "2026-10-01",
+    "packaged_date": "2026-10-03",
+    "main_results_replaced": false,
+    "prior_main_archive": "reports/archive/canonical-final-20260927-budget80"
+  }
 }

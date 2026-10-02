@@ -14,3 +14,5 @@ Validation: 34 tests, lint, 680 independent data/provenance/numerical checks. At
 Important outcomes: 80 evaluations improved tracking minima but did not close the local tracking coverage gap. All eight feasible heavy-payload CT transfers had lower JT than the corresponding observed feasible local extreme. Two other 3 kg CT transfers violated the current limit (4.054780 and 3.884308 A), so their lower JT is not counted as feasible superiority. The combined feasible/practical flag holds in 43/45 conditions, while JT≤0.05 rad alone holds in all 45.
 
 The previous canonical report and its raw archive remain at `reports/archive/canonical-final-20260924-budget40`; the older 2026-09-23 archive is also unchanged. New results are on branch `revision/budget80-bounds800-20260927`; no main-branch merge is performed.
+
+Revision 4 (2026-10-03): added a separately identified supplementary results section and provenance link. Main raw data, tables, figures, configuration and frozen gains are unchanged. The complete prior main report is preserved in `reports/archive/canonical-final-20260927-budget80`. See `../heavy-diagnostics-20261001/CHANGE_SUMMARY.md`.

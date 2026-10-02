@@ -251,7 +251,7 @@ qLogNEHVI allocates proposals to joint tracking–energy hypervolume improvement
 
 MOBO continuation adds 800 candidates across 2 payloads×5 repeats; SO40 adds 400. New training/selection rollouts are 3,600/6,000. Comparison testing adds 800 rollouts. Inherited 80-candidate costs are not counted as newly executed. These costs are supplementary; the main paper budget remains 80. An efficiency advantage over other optimizers is not established by these experiments.
 
-{len(checks)} data/provenance checks passed, including exact inherited numeric values, candidate budgets, raw means and feasibility, seed sets, source hashes, frozen winners/gains, and all prior report archives. See `AUDIT.json`. Raw ZIP includes source snapshots, immutable configs/manifests, every candidate/rollout, frozen selections and execution logs. The run was executed locally against the GitHub repository, using two separate worker processes with one Torch thread each.
+{len(checks)} data/provenance checks passed, including exact inherited numeric values, candidate budgets, raw means and feasibility, seed sets, source hashes, frozen winners/gains, and all prior report archives. See `AUDIT.json`. Raw ZIP includes source snapshots, immutable configs/manifests, every candidate/rollout, frozen selections and checkpoint records. Temporary console stdout was not retained; all candidate/rollout data and completion manifests are preserved. The run was executed locally against the GitHub repository, using two separate worker processes with one Torch thread each.
 
 ## Revision history and limitations
 

@@ -135,3 +135,19 @@ Reproduce with `python analysis/run_budget80.py --out results/new-budget80`, the
 - No thermal, backlash, or detailed driver model; no current-clipping implementation or hardware validation.
 - One-DOF simulation, fixed trajectory and prescribed noise model; no coupled 3-DOF validation.
 - Finite optimization budget and five repeats. Upper-bound attachment and local tracking coverage must not be presented as resolved unless the data demonstrate this. No statistical significance claim from the 5% engineering threshold.
+
+
+## Revision 4 supplementary diagnostics (completed 2026-10-01; packaged 2026-10-03)
+
+The main 80-evaluation Experiment 1/2 results and frozen representatives above remain the primary run. Bounds are retained at [800,400,80] as a scope/budget decision. The complete [supplementary report](../heavy-diagnostics-20261001/REPORT.md) and [revision 1–4 history](../../docs/REVISION_HISTORY.md) record the added experiments.
+
+| Payload | Mean feasible selection min JT at 80 [rad] | At 160 [rad] | Improvement |
+|---|---:|---:|---:|
+| 2 kg | 0.000987971 | 0.000897435 | 9.16% |
+| 3 kg | 0.003049954 | 0.002228699 | 26.93% |
+
+Both improvements exceed the predeclared 5% threshold: tracking coverage remains sensitive to budget at 80 evaluations. The 160-evaluation observations do not establish convergence or the true Pareto front. These are continuations of the original five 80-evaluation histories per payload (800 new candidates total).
+
+A separate 40-candidate constrained JT-only diagnostic, warm-started with nominal CT, found no feasible candidate with lower paired mean JT than CT on fresh confirmation seeds (0/5 repeats at each payload). This finite-budget null result does not show that a better feasible PID does not exist. CT and SO40 each pass feasibility in only 3/5 fresh 3 kg conditions; infeasible low-JT transfers are not evidence of feasible superiority.
+
+Actuator current constraints limit the applicability of aggressive controllers; neither voltage-saturation convergence nor a constrained global optimum is established. The current constraint is evaluated without current clipping. No hold, constant gear efficiency, and no thermal/backlash/detailed driver model remain limitations. No Experiment 3 was performed. The prior main report is preserved in [the 80-evaluation archive](../archive/canonical-final-20260927-budget80/REPORT.md).

@@ -1,0 +1,5174 @@
+{
+  "passed": true,
+  "count": 1292,
+  "checks": [
+    {
+      "name": "mobo160/0/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/2.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/0/3.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/2.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/1/3.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/2.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/2/3.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/2.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/3/3.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/2.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE', 'x0', 'x1', 'x2']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/inherited_values/['kp', 'ki', 'kd', 'JT', 'JE']",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/inherited_ids",
+      "passed": true
+    },
+    {
+      "name": "mobo160/4/3.0/nested_minimum",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/0/2.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/0/3.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/1/2.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/1/3.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/2/2.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/2/3.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/3/2.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/3/3.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/4/2.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/budget",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/zero",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/bounds",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/freeze_before_test",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/parent/train.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/parent/train_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/parent/selection.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/parent/selection_rollouts.csv",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/analysis.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/cli.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/config.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/experiments.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/heavy_diagnostics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/io.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/kernel.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/mobo.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/pid.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/plant.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/sensitivity.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/simulation.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/source/src/kroc_mobo/trajectory.py",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0train/count",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0train/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0train/means",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0train/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0selection/count",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0selection/seed_sets",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0selection/means",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0selection/feasibility",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/frozen_winner",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/warmstart",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/warmstart_gains",
+      "passed": true
+    },
+    {
+      "name": "so40/4/3.0/single_objective",
+      "passed": true
+    },
+    {
+      "name": "heldout/count",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/0/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/1/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/2/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/3/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/CT/4/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/0/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/1/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/2/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/3/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo160/4/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/0/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/1/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/2/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/3/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/mobo80/4/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/0/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/1/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/2/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/3/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/2.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/confirm/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/confirm/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/confirm/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/confirm/feasibility",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/test/seeds",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/test/frozen",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/test/means",
+      "passed": true
+    },
+    {
+      "name": "heldout/so40/4/3.0/test/feasibility",
+      "passed": true
+    },
+    {
+      "name": "numerical/JT",
+      "passed": true
+    },
+    {
+      "name": "numerical/JE",
+      "passed": true
+    },
+    {
+      "name": "numerical/feasibility",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/VALIDATION.txt",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/canonical-results-and-source.zip",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/common_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/config.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/diagnostic_angle_power_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/exp1_compact.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/exp1_results_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/exp1_results_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig1_full_and_zoom.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig1_full_and_zoom.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig1_payload_pareto.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig1_payload_pareto.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/fig2_representative_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/manifest_exp1.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/manifest_exp2.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/manifest_pilot.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/representative_performance.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table1_common_conditions.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table1_common_conditions.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table1_setup.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table2_transfer.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table2_transfer_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table2_transfer_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table_representatives_repeat00.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/table_representatives_repeat00.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/tracking_budget_001rad.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260923/transfer_vs_local_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/ARTIFACTS.sha256.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/CE_energy_saving_vs_CT.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/CE_energy_saving_vs_CT.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/CHANGE_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/LINT.txt",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/QUANTITATIVE_FINDINGS.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/TESTS.txt",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/VALIDATION.txt",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/audit/audit.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/audit/representative_integration_convergence.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/common_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/config.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/diagnostic_angle_power_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/exp1_compact.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/exp1_compact.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/exp1_results_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/exp1_results_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig1_full_and_zoom.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig1_full_and_zoom.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig1_payload_pareto.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig1_payload_pareto.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig2_representative_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig3_primary_transfer.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig3_primary_transfer.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig_selection_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/fig_selection_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/local_tracking_coverage_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/local_tracking_coverage_diagnostic.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/manifest_exp1.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/manifest_exp2.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/manifest_pilot.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/primary_representatives_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/raw-results.zip",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/representative_performance.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/representatives_frozen.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/selection_rule.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/selection_status.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity/bounds_sensitivity.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity/bounds_sensitivity.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity/decision.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity/per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity/tracking_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity/tracking_extremes.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity_practical_impact.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/sensitivity_practical_impact.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/supplementary_transfer.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/supplementary_transfer.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table1_common_conditions.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table1_common_conditions.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table1_setup.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table2_primary_transfer.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table2_primary_transfer.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table2_transfer_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table2_transfer_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table_representatives_repeat00.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table_representatives_repeat00.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/table_selection.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/tracking_budget_001rad.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/tracking_budget_001rad.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260924-budget40/transfer_vs_local_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/ARTIFACTS.sha256.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/CHANGE_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/LINT.txt",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/PROVENANCE.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/QUANTITATIVE_FINDINGS.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/TESTS.txt",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/audit.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/budget40_vs80_paired.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/budget40_vs80_paired.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/budget40_vs80_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/common_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/config.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/diagnostic_angle_power_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/exp1_compact.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/exp1_compact.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/exp1_results_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/exp1_results_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig1_full_and_zoom.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig1_full_and_zoom.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig1_payload_pareto.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig1_payload_pareto.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig2_representative_r04.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig3_primary_transfer.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig3_primary_transfer.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig_budget_and_coverage.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig_budget_and_coverage.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig_primary_with_feasibility.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig_primary_with_feasibility.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig_selection_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/fig_selection_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/local_tracking_coverage_diagnostic.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/local_tracking_coverage_diagnostic.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/local_tracking_coverage_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/local_tracking_coverage_summary.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/manifest_exp1.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/manifest_exp2.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/manifest_pilot.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/primary_representatives_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/raw-results.zip",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/representative_constraint_violations.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/representative_constraint_violations.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/representative_integration_convergence.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/representative_integration_convergence.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/representative_performance.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/representatives_frozen.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/selection_rule.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/selection_status.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity/bounds_sensitivity.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity/bounds_sensitivity.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity/decision.json",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity/per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity/tracking_budget_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity/tracking_extremes.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity_actuator_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/sensitivity_actuator_diagnostics.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table1_setup.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table2_primary_transfer.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table2_primary_transfer.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table2_transfer_across_repeats.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table2_transfer_per_repeat.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table_selection.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/table_selection.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_aggressive_1kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_aggressive_1kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_aggressive_2kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_aggressive_2kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_aggressive_3kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_aggressive_3kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_balanced_1kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_balanced_1kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_balanced_2kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_balanced_2kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_balanced_3kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_balanced_3kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_conservative_1kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_conservative_1kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_conservative_2kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_conservative_2kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_conservative_3kg.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/trace_conservative_3kg.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/tracking_budget_001rad.csv",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/tracking_budget_001rad.tex",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r00.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r00.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r01.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r01.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r02.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r02.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r03.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r03.png",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r04.pdf",
+      "passed": true
+    },
+    {
+      "name": "archive/canonical-final-20260927-budget80/transfer_vs_local_r04.png",
+      "passed": true
+    }
+  ]
+}

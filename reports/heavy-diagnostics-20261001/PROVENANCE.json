@@ -1,0 +1,28 @@
+{
+  "parent": "results/budget80-20260927/canonical",
+  "root": "results/heavy-diagnostics-20261001",
+  "parent_commit": "83e88835e127d456e3a06233cd1ec6605016b1a1",
+  "main_budget": 80,
+  "supplementary_mobo_total": 160,
+  "supplementary_mobo_new": 800,
+  "supplementary_so_new": 400,
+  "total_new_train_rollouts": 3600,
+  "total_new_selection_rollouts": 6000,
+  "heldout_rollouts": 800,
+  "search_bounds": {
+    "kp": [
+      0.0,
+      800.0
+    ],
+    "ki": [
+      0.0,
+      400.0
+    ],
+    "kd": [
+      0.0,
+      80.0
+    ]
+  },
+  "decision_threshold_pct": 5,
+  "execution": "local repository, two independent processes"
+}
