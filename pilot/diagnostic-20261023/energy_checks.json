@@ -1,0 +1,7 @@
+{
+  "new_rollouts": 940,
+  "net_decomposition_max_abs": 3.4958147487884617e-14,
+  "balance_residual_max_abs": 1.425039473929024e-05,
+  "returned_max": 0.2902652027238698,
+  "transmission_exchange_min": 0.469407954709118
+}

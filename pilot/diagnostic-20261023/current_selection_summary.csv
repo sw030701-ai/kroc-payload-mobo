@@ -1,0 +1,10 @@
+payload,role,changed,canonical_pass,ignore_current_pass
+1.0,CB,0,5,5
+1.0,CE,0,5,5
+1.0,CT,0,5,5
+2.0,CB,0,5,5
+2.0,CE,0,5,5
+2.0,CT,0,5,5
+3.0,CB,1,5,5
+3.0,CE,0,5,5
+3.0,CT,1,5,4

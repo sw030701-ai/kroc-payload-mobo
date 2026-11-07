@@ -1,205 +1,82 @@
-# KRoC: Payload별 Tracking–Energy Pareto 실험
+# Payload MOBO
 
-> **Canonical Final Model — 이 작업에서 “우리 최종 모델” 또는 “final model”은 [Canonical Final Model](docs/CANONICAL_MODEL.md)만을 의미합니다. 기존 placeholder 설정으로 되돌리지 않습니다.**
-> 기본 실행 설정은 `configs/canonical_final.toml`입니다. 이전 illustrative 설정과 결과는 과거 구현 검증용이며 최종 모델의 결과가 아닙니다.
+**Payload 변화에 따른 1자유도 관절의 추종–에너지 상충 관계와 PID 전이**
 
-> **2026-09-27 revised canonical:** 80회 예산의 1 kg paired bound sensitivity에서 평균 최소 JT가 50.51% 감소하여
-> PID upper bounds를 **[800,400,80]**으로 확장했습니다. 모든 payload/repeat의 초기 10점에
-> zero PID 1점과 Sobol 9점을 포함하며 총 예산은 **80회**입니다. CT는 새 상한에 5/5회 접했고 전압 포화는 없으므로 bounds 독립성을 주장하지 않습니다. 대표 CT/CB/CE는
-> **JT≤0.05 rad practical nominal subset**에서만 선택합니다. 전체 front는 유지합니다.
-> [최신 결과](reports/canonical-final/REPORT.md) · [사전 실험 protocol](docs/BUDGET80_PROTOCOL.md) ·
-> [직전 40회 결과 보존본](reports/archive/canonical-final-20260924-budget40/REPORT.md).
-> 이 저장소의 모델은 **1-DOF joint**이며 Experiment 1·2만 실행합니다.
+Maxon RE35 323890 + GP42C를 참고한 감속기 구동 관절 시뮬레이션입니다. PID gain을 제약부 qLogNEHVI로 탐색해 tracking RMSE와 부호 있는 모터 단자 에너지를 동시에 최소화합니다.
 
-> **수정 4 (2026-10-01):** bounds [800,400,80]과 main budget 80을 유지합니다.
-> 2/3 kg에만 160회 MOBO continuation 및 40회 constrained JT-only BO를 보조 진단으로 추가합니다.
-> [진단 protocol](docs/HEAVY_DIAGNOSTIC_PROTOCOL.md) · [수정 1–4 전체 이력](docs/REVISION_HISTORY.md) ·
-> [추가 진단 결과](reports/heavy-diagnostics-20261001/REPORT.md).
-> 5% 미만 개선도 전역 최적이나 실제 Pareto front의 충분한 탐색을 입증하지 않습니다.
+## 먼저 보기
 
-1-DOF 로봇 관절 + DC motor + 전압 PID를 Python으로 시뮬레이션하고, BoTorch/GPyTorch의 다목적 Bayesian optimization으로 tracking RMSE와 **모터 단자 순전기 에너지**의 trade-off를 탐색합니다. 실험 설계는 연구자의 논문 초안과 최종 실험 메모를 반영했습니다. 실험 결과가 나오기 전에 trade-off, knee, payload 효과 또는 특정 controller의 우수성을 가정하지 않습니다.
+| 자료 | 내용 |
+|---|---|
+| [논문 초안](paper/KRoC_Payload_MOBO_4p.docx) | 사용자가 제공한 최신 4페이지 형식 원고, 원본 내용 유지 |
+| [교수님 설명용 정리](docs/PROFESSOR_BRIEF.md) | 연구 질문 → 모델 → 시뮬레이션 → 최적화 → 두 실험 → 결과·한계 |
+| [본실험 결과](reports/canonical-final/REPORT.md) | 80회 후보 × 5반복, payload 1/2/3 kg |
+| [80→160회 보조 진단](reports/heavy-diagnostics-20261001/REPORT.md) | Heavy payload 예산 민감성 및 원자료 감사 |
+| [추가 gain-bound pilot](pilot/diagnostic-20261023/README.md) | 논문 본실험과 구분한 10월 23일 진단 |
+| [물리 모델](docs/CANONICAL_MODEL.md) · [설정](configs/canonical_final.toml) | 수치·단위·가정·파라미터 출처 상태 |
 
-## 연구 질문
+## 주요 결과
 
-1. 같은 궤적·제약·탐색 예산에서 payload 변화에 따라 달성 가능한 tracking–energy 근사 Pareto front가 얼마나 달라지는가?
-2. Nominal practical subset에서 고른 controller를 다른 payload로 옮기면 JT·JE·물리적 feasibility가 어떻게 바뀌는가? 전체 Pareto set의 retention/HV는 보조적으로 분석한다.
-3. Nominal front에서 선택한 tracking-oriented **CT**, balanced **CB**, energy-oriented **CE**의 응답은 어떻게 달라지는가?
+| Payload | 최소 JT 평균 [mrad] | JT≤0.01 rad 아래 최소 JE 평균 [J] |
+|---|---:|---:|
+| 1 kg | 0.7804 | 2.4782 |
+| 2 kg | 0.9880 | 5.5534 |
+| 3 kg | 3.0500 | 9.5923 |
 
-이 프로젝트는 optimizer 성능 비교 연구가 아닙니다. 유한 예산으로 얻은 front는 전역 최적 Pareto front의 근사입니다.
+위 값은 선택 seed에서 얻은 5회 평균입니다. 정확히 같은 JT에서 보간한 값이 아니라 공통 허용오차 아래의 관측 최소값입니다.
 
-## 설치와 빠른 실행
+Nominal 1 kg에서 고른 CT·CB·CE를 재튜닝 없이 전이했을 때, **CT는 3 kg에서 작은 추종 오차를 유지했지만 전류 기준은 3/5만 통과**했습니다. CB·CE는 모든 payload에서 5/5 통과했습니다. 따라서 추종 성능만으로 제어기 전이의 실행 가능성을 판단할 수 없습니다.
 
-Python 3.11 이상이 필요합니다. 실제 검증 환경은 Python 3.13, macOS ARM64이며 정확한 설치 버전은 `requirements-lock.txt`에 기록했습니다. 다른 운영체제에서는 `pyproject.toml`의 호환 범위로 설치할 수 있습니다. GPU 없이 CPU double precision으로 실행합니다.
+![대표 제어기의 성능과 feasibility](reports/canonical-final/fig_primary_with_feasibility.png)
+
+## 실험 조건
+
+- 5초 quintic 이동, 0→π/3 rad, 목표각 유지 구간 없음.
+- 1 ms 센서·PID 갱신, RK4 16 substeps, 센서 잡음 분산 10⁻⁷ rad².
+- Gain 범위 [0,800] / [0,400] / [0,80], 후보 80개에 Zero-PID와 Sobol 초기 10개 포함.
+- 학습 3개 / 선택 5개 / 시험 10개 잡음 seed 분리, payload별 독립 최적화 5회.
+- 전류 3.84 A, 위치 π rad, 속도 15 rad/s를 sampled peak feasibility 기준으로 사용. 전류 clipping 없음.
+- 대표 선정은 JT≤0.05 rad의 nominal feasible 집합에서 Zero-PID를 제외. 전체 Pareto 집합은 유지.
+
+JE는 signed motor-terminal net energy이며 배터리 총소비량이 아닙니다. 3.84 A는 연속전류 참고값을 peak 판정에 사용한 연구상 가정입니다. 실제 하드웨어 안전성과 전역 최적성은 주장하지 않습니다. Kd=0의 원인도 아직 확인된 결론이 아닙니다.
+
+## 실행 및 검증
+
+Python 3.13 환경과 기록된 의존성으로 실행한 연구입니다. 새 결과는 반드시 새 출력 경로를 사용합니다.
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
+python -m pip install -r requirements-lock.txt
 python -m pip install -e '.[dev]'
 pytest -q
+ruff check src tests experiments analysis
 
-# 기본 qLogNEHVI로 pilot → exp1 → exp2 → 그림/표 생성
-kroc-mobo all --smoke --out results/smoke
+# 간단한 실행 확인: 연구 수치로 사용하지 않음
+kroc-mobo all --config configs/canonical_final.toml --out results/new-smoke --smoke
+
+# 본실험 재실행: 새 경로, 총 1,200개 후보 + 선택·시험 비용
+kroc-mobo all --config configs/canonical_final.toml --out results/new-main
 ```
 
-검증 환경의 버전을 재설치하려면:
+실험 1은 payload별 독립 최적화이고 실험 2는 nominal 집합·대표 gain을 고정한 전이입니다. `all`의 기본 plot과 논문용 요약표 생성기는 구분합니다. 논문 표 재생성에는 저장된 원자료와 아래 문서를 참고하세요.
 
-```bash
-python -m pip install -r requirements-lock.txt
-python -m pip install --no-deps -e .
-```
+- [본실험 프로토콜](docs/BUDGET80_PROTOCOL.md)
+- [보조 진단 프로토콜](docs/HEAVY_DIAGNOSTIC_PROTOCOL.md)
+- [정리·원자료·이전 보고서 복구](docs/REPOSITORY_GUIDE.md)
 
-`--smoke`는 1회 반복, payload당 초기 4개(anchor 1 + Sobol 3) + BO 2개, 각 단계 잡음 seed 2개로 줄입니다. **5초 궤적, 1 ms 제어 주기, 1/2/3 kg 조건은 그대로**입니다. Practical 후보가 없으면 원인을 기록하고 Fig. 2를 생략합니다. 정확한 CT/CB/CE 정의가 같은 점을 고르면 role 중복을 그대로 기록합니다. 이미 사용한 단계의 결과는 덮어쓰지 않으므로 재실행 시 새 출력 경로를 사용하세요.
-
-단계별 실행:
-
-```bash
-kroc-mobo pilot --config configs/canonical_final.toml --out results/pilot
-kroc-mobo plot --out results/pilot
-
-kroc-mobo exp1 --config configs/canonical_final.toml --out results/full
-kroc-mobo exp2 --out results/full
-kroc-mobo plot --out results/full
-
-# 수치적으로 개선된 acquisition을 명시적으로 선택 가능
-kroc-mobo exp1 --smoke --backend qlognehvi --out results/smoke-log
-
-# 실행 경로만 확인하는 Sobol 기준선; MOBO 결과로 표기하지 않음
-kroc-mobo all --smoke --backend sobol --out results/smoke-sobol
-```
-
-동일한 기능을 `python experiments/pilot_test.py`, `python experiments/exp1_pareto.py`, `python experiments/exp2_transfer.py`, `python analysis/make_figures.py`로도 실행할 수 있습니다. 옵션은 CLI와 같습니다. `exp2`와 `plot`은 `--out/config.json`의 동결된 설정을 읽으므로 `--smoke`를 다시 전달하지 않습니다.
-
-## 실험 구조
-
-| 단계 | 입력 및 동작 | 주요 출력 |
-|---|---|---|
-| Pilot | 수동 PID 3개 × payload 3개; RK4 적분 간격을 절반으로 줄인 결과 비교 | 각도·오차·전압·전류·전력·누적 에너지, 실행 가능성, 수치 수렴 |
-| Exp. 1 | payload마다 새 GP/탐색 이력; 같은 초기 zero anchor + Sobol points, bounds, 예산, paired noise seeds | 모든 후보와 rollout 로그, 독립 selection seed 재평가, payload별 근사 Pareto front |
-| Exp. 2 | nominal selection front 전체를 고정한 채 모든 payload에서 재평가; local front도 같은 test seeds로 재평가 | primary: CT/CB/CE JT·JE·변화율·feasible 및 시간응답; supplementary: retention/HV |
-| Analysis | repeat별 결과를 유지하고 요약 | Fig. 1·2, Table 1·2 CSV, PNG 300 dpi, PDF |
-
-기본 설정: payload 1/2/3 kg, nominal 1 kg, **5개 독립 optimization repeats**, 초기 10개를 포함한 총 80개 후보, train 3·selection 5·test 10개 잡음 seed입니다. Exp. 1의 최적화 비용은 3,600 rollout, selection 비용은 6,000 rollout이며 sensitivity, Exp. 2와 그림용 rollout은 별도 기록합니다. 전체 실행은 smoke보다 훨씬 오래 걸립니다.
-
-## 모델과 목적함수
-
-RE35 323890 + GP42C 126:1 감속 구동, 수직 회전면, 아래쪽 수직을 θ=0으로 하는 단일 관절입니다. Payload는 반경 rₚ의 점질량이며 한 rollout 동안 일정합니다.
+## 저장소 구조
 
 ```text
-Jl = ml l²/3
-Ja = N²(Jm + Jg)
-Ieq = Ja + Jl + mp rp²
-Ieq θ̈ = η N Kt i − b θ̇ − (ml rl + mp rp) g sin θ
-L i̇ = V − R i − Ke N θ̇
-
-θd(t) = θ0 + (θf − θ0)(10s³ − 15s⁴ + 6s⁵), s = t/T
-JT = sqrt((1/T) ∫ [θd(t) − θ(t)]² dt)         [rad]
-JE = ∫ V(t) i(t) dt                          [J]
+paper/       제공된 논문 원본
+src/         plant, PID, RK4, 목적함수, MOBO, 실험 파이프라인
+configs/     최종 설정 및 회귀 테스트용 설정
+experiments/ 실행 진입점
+analysis/    표·그림 생성과 원자료 감사
+reports/     본실험 및 heavy-payload 진단 결과·원자료 ZIP
+pilot/       본실험에 섞지 않은 추가 진단
+ docs/       모델, 프로토콜, 설명본, 재현·보존 안내
+ tests/      수치·선택·제약·최적화 검증
 ```
 
-- JT는 **잡음이 없는 실제 각도**에 대한 시간 적분 RMSE입니다.
-- JE는 **포화 후 실제 전압**의 부호 있는 순에너지입니다. 음의 전력을 회생으로 공제하므로 비회생 전원의 소비량과 동일하지 않습니다. `energy_drawn = ∫max(Vi,0)dt`, `energy_returned = ∫max(−Vi,0)dt`도 보관합니다. 드라이버 손실은 모델에 없습니다.
-- 사용자 지정 Kt=0.0292, Ke=0.0291을 그대로 사용합니다. 전기 입력에서 저장 에너지·저항·점성 항과 `∫N(Ke−ηKt)iωdt`를 뺀 수치 잔차를 검증합니다. 마지막 항은 지정 방정식의 signed transmission exchange이며 모든 동작에서 양의 실제 감속기 손실을 뜻하지 않습니다. 일정 효율식은 실제 역구동/회생 효율을 검증한 모델이 아닙니다.
-- 제어는 1 ms마다 갱신하고 전압을 zero-order hold합니다. Plant와 목적함수의 적분 상태를 함께 RK4로 계산합니다. 기본 내부 적분 간격은 0.0625 ms (16 substeps)입니다. 한계 감시는 내부 적분 완료 지점에서 수행하므로 연속시간 한계의 수학적 보증이 아닙니다.
-- PID는 측정각의 저역통과 미분, 전압 saturation, back-calculation anti-windup을 사용합니다. 적분 상태는 V 단위이며 `z_dot = Ki*e + Kaw*(V-u)`입니다. 미분 필터는 sample hold 입력에 대한 정확한 1차 상태 갱신, 적분 상태는 전진 Euler입니다. Feedforward는 없습니다.
-- 잡음은 독립 Gaussian sample을 설정 주기 동안 유지합니다. `variance = noise.power / noise.sample_dt`. 기본값은 1e-7 rad²입니다. 특정 Simulink 난수열과 비트 단위로 같은 구현은 아닙니다.
-- 전류·속도·각도 한계 초과를 feasibility로 기록합니다. **전류나 토크를 clip하지 않습니다.** 한계 위반 후에도 유한 시뮬레이션은 끝까지 계산합니다. 수치 실패는 목적값 NaN으로 남기고 목적 GP에서 제외합니다.
-
-## MOBO와 공정한 평가
-
-`[Kp, Ki, Kd]`를 같은 경계로 [0,1]³에 정규화합니다. 각 목적과 집계 제약에 독립적인 Matérn 5/2 ARD GP를 둡니다. Train seed 평균의 SEM²를 목적 관측 잡음으로 사용하고, 매우 작은 분산은 고정 floor를 적용합니다. 모든 train seed에서의 최대 정규화 한계 초과량을 하나의 제약으로 모델링합니다. 이것은 표본에서 관측한 실행 가능성이며 확률적 안전 보증은 아닙니다.
-
-BoTorch는 최대화를 사용하므로 두 목적에 음수를 적용합니다. `objective_scales`와 `reference_point`는 raw 단위로 config에 고정하고 모든 payload/repeat에 공유합니다. GP의 `Standardize`는 posterior의 raw GP 출력 단위로 역변환되며 보고용 목적 축·HV 척도와 구분됩니다.
-
-최종 실행 acquisition은 **constrained qLogNEHVI, q=1**입니다. 원래 qNEHVI 실행이 NaN 기울기로 중단되어 별도 새 실행에서 수치 안정화 버전을 사용합니다. BoTorch의 알려진 수치 문제 안내에 따라 `qlognehvi`도 선택할 수 있습니다. 선택한 알고리즘은 config와 CSV에 기록하며 자동으로 바꾸지 않습니다. 유효 목적값이 2개 미만이거나 중복 제안인 경우만 명시적으로 표기한 Sobol recovery 후보를 평가합니다. GP fitting이나 프로그램 오류는 실행을 중단하며 성공 결과로 숨기지 않습니다.
-
-실패 후보도 80개 예산에 포함합니다. 모든 후보를 독립 **selection seeds**로 재평가한 후 feasible non-dominated set을 구성합니다. 반복 간에는 seed가 다르며, 같은 반복에서는 payload와 controller 사이에 동일 잡음열을 사용합니다. Exp. 2는 selection에 쓰지 않은 **test seeds**를 사용하고 local·transfer set 모두 같은 조건으로 평가합니다. Raw rollout 값, seed 목록, 설정 hash, 패키지 버전, Git revision을 기록합니다.
-
-## Exp. 2 지표의 정확한 의미
-
-`N0`는 nominal **selection front**의 controller 수입니다. 모든 payload에서 gain과 필터·anti-windup·한계를 고정합니다.
-
-- `N_ret`, `R_P = 100 N_ret/N0`: 전이된 집합 내부에서 실행 가능하고 non-dominated로 남는 controller 비율입니다. 모든 전이 controller가 local front에 밀려도 이 값이 클 수 있습니다.
-- `N_ret_union`, `R_P_union`: 전이된 집합과 대상 payload의 독립 local set을 합친 비교 집합에서 non-dominated인 전이 controller 비율입니다. 어느 쪽도 전역 Pareto 최적성의 증명은 아닙니다.
-- `L_HV = 100 (HV_local − HV_transfer)/HV_local`: 같은 고정 척도·기준점으로 계산한 정확한 2D minimization hypervolume 차이입니다. **음수 손실은 그대로 보존**합니다. 유한 탐색에서는 transfer set이 local set보다 좋을 수 있습니다. Local HV=0이면 NaN과 사유를 남깁니다. 기준점을 지배하지 못하는 점은 HV에 기여하지 않으며 개수를 보고합니다.
-- 새로운 test seed에서 nominal 내부 순위나 feasibility도 바뀔 수 있으므로 nominal `R_P`를 100%로 강제하지 않습니다. Nominal local/transfer는 같은 controller와 paired seeds로 계산하므로 유효한 경우 `L_HV=0`입니다.
-- 대표 선택만 nominal feasible Pareto subset **JT≤0.05 rad**로 제한하고 zero PID를 명시적으로 제외합니다. CT는 JT 최소, CE는 JE 최소, CB는 **같은 practical subset의 JT/JE min/max로 정규화한 utopia Euclidean 거리 최소**입니다. CB를 기하학적 knee라고 부르지 않습니다. CB 후보에서 endpoints를 임의 제외하지 않으며 role이 겹치면 그대로 보고합니다. 동률은 JT/JE 및 Kp/Ki/Kd 오름차순으로 재현 가능하게 처리합니다.
-- Practical subset이 비면 대표 선택을 만들지 않고 `selection_status.json`에 사유를 기록합니다. 정확한 선택식에 따른 role 중복은 기록하며, 결과를 원하는 결론에 맞춰 점을 추가하거나 다시 선택하지 않습니다.
-- 대표 controller의 단위 있는 변화량과 백분율을 기록합니다. 기준 JT/JE가 1e-9 이하이거나 순에너지가 음수면 해당 백분율은 NaN입니다. Noise 평균·표준편차와 optimization repeat 간 평균·표준편차는 별도로 취급합니다.
-
-## 생성되는 파일
-
-```text
-kroc-payload-mobo/
-├── configs/canonical_final.toml       # 최종 모델, 단위, seeds, budget, HV 설정
-├── src/kroc_mobo/
-│   ├── plant.py / pid.py / trajectory.py / simulation.py
-│   ├── mobo.py                    # BoTorch/GPyTorch
-│   ├── metrics.py                 # Pareto, retention, HV, representatives
-│   ├── experiments.py / analysis.py / cli.py
-│   └── config.py / io.py
-├── experiments/                   # pilot / exp1 / exp2 실행 스크립트
-├── analysis/                      # 그림·분석 실행 스크립트
-├── tests/                         # 물리 수지, 목적, HV, 실제 acquisition, E2E
-├── docs/                          # 실험 실행·실제 파라미터 교체 안내
-├── requirements-lock.txt
-└── results/<run>/                 # Git에서 제외
-    ├── config.json                # 동결 설정
-    ├── pilot/                     # 수동 제어기·적분 수렴·시간응답
-    ├── exp1/
-    │   ├── manifest.json
-    │   ├── pareto_all.csv / selection_all.csv
-    │   └── repeat_00/payload_1kg/  # train, selection, raw rollouts, seeds, pareto
-    ├── exp2/
-    │   ├── representatives_frozen.csv / selection_status.json
-    │   ├── transfer_summary.csv / representative_performance.csv
-    │   ├── test_rollouts.csv / transfer_all.csv / local_retested_all.csv
-    │   └── repeat_00/payload_1kg/  # transfer, local_retested, trace_CT/CB/CE
-    └── analysis/
-        ├── fig1_payload_pareto.png/.pdf
-        ├── fig2_representative_r00.png/.pdf
-        ├── transfer_vs_local_r00.png/.pdf
-        ├── diagnostic_angle_power_r00.png/.pdf
-        ├── table1_setup.csv
-        ├── table2_transfer_per_repeat.csv / table2_transfer_across_repeats.csv
-        └── common_budget_comparison.csv
-```
-
-Fig. 1은 반복별 front를 별도 선으로 표시합니다. 서로 다른 repeat를 합친 front를 반복 실험 결과처럼 제시하지 않습니다. Fig. 2는 CT/CB/CE별 tracking angle·error·power·누적 순에너지를 합친 4×3 그림이며 **첫 번째 paired test seed의 예시 응답**입니다. 별도 그림에서 각도와 전력을 확인할 수 있습니다. 공통 budget 표는 front의 겹치는 범위 안에서 실제 관측한 점만 비교하고 외삽하지 않습니다.
-
-현재는 중간 CSV checkpoint를 남기지만 중단 실행 자동 재개는 지원하지 않습니다. 실패한 run을 보관하고 새 출력 경로로 다시 실행하세요. 미완료 manifest에서는 후속 단계를 실행할 수 없습니다. 자동 병렬화는 하지 않으며 비교용 random state를 명시적으로 고정합니다.
-
-## 최종 모델 및 결과 해석
-
-물리값과 단위 환산, 모델 한계는 [최종 모델 명세](docs/CANONICAL_MODEL.md)를 따릅니다. Experiment 1·2만 수행하며 Experiment 3은 수행하지 않습니다. 3.84 A는 연속전류 참고치를 보수적인 **순간 전류 feasibility 상한**으로 적용한 연구 설정입니다. 실제 전류제어기/열모델 또는 제조사 peak-current rating을 뜻하지 않습니다.
-
-5초 전체에 걸쳐 0→60° quintic 운동을 수행하며 별도 hold 구간은 없습니다. Noise, PID 탐색 경계, 필터/anti-windup, 각도·속도 수치 한계, 최적화 예산은 데이터시트 값이 아닌 공개된 실험 설계입니다. 이 설정으로 검증되지 않은 하드웨어 성능을 주장하지 않습니다.
-
-```bash
-# 최종 모델 전체 실험; 기존 결과와 별도 경로
-kroc-mobo all --config configs/canonical_final.toml --out results/new-canonical-revision
-```
-
-Pilot에서 관측된 약 2.57–9.98 J 범위를 참고하여, 최적화 전에 공통 HV 기준점 `[1 rad, 20 J]`와 척도 `[0.1 rad, 10 J]`를 고정했습니다. Hypervolume loss는 이 기준점에 의존하며 물리적 에너지 손실률과 다릅니다.
-
-## 참고 구현 자료
-
-- [BoTorch constrained multi-objective tutorial](https://botorch.org/docs/tutorials/constrained_multi_objective_bo): objective/constraint GP와 qNEHVI API.
-- [BoTorch 0.17.2 multi-objective tutorial](https://botorch.org/docs/v0.17.2/tutorials/multi_objective_bo): 최대화 convention, noise-aware hypervolume acquisition.
-- [Daulton et al., qNEHVI (2021)](https://arxiv.org/abs/2105.08195).
-- [DC motor model, University of Michigan CTMS](https://ctms.engin.umich.edu/CTMS/?example=MotorPosition&section=SimulinkSimscape).
-- [MathWorks Band-Limited White Noise](https://www.mathworks.com/help/simulink/slref/bandlimitedwhitenoise.html).
-
-원본 논문 초안과 스크린샷 자체는 저장소에 복사하지 않았습니다. 원고의 최종 식·파라미터·지표 정의와 구현을 실제 실험 전에 대조하세요.
-
-## Revised report and raw data
-
-`reports/canonical-final/REPORT.md`는 수정된 canonical 결과입니다. `raw-results.zip`은 sensitivity
-두 arm 및 revised Experiment 1·2의 원자료/trace/로그/실행 소스를 제공합니다. 기존 run은
-`results/canonical-final-qlog-v3`, 기존 보고서는 `reports/archive/canonical-final-20260923`에 보존합니다.
-Sensitivity는 anchor 추가 전 두 bounds를 비교했고 revised canonical은 선택한 bounds에서
-anchor를 추가하여 1/2/3 kg 전체를 다시 실행했습니다. 두 단계의 성능 수치를 섞지 않습니다.
-Expanded sensitivity CT도 4/5회 새 상한에 붙으므로 bounds 독립성/전역 최적을 주장하지 않습니다.
-
-보고서와 원자료 검증의 재현 명령은 최신 REPORT의 Reproduction 절을 사용하세요.
-Retention/HV는 supplementary입니다. No hold, constant gear efficiency, no thermal/backlash/
-detailed driver model은 LIMITATIONS에 명시하고 추가 모델이나 Experiment 3은 구현하지 않았습니다.
+`illustrative.toml`은 회귀 테스트용이며 최종 모델이 아닙니다. 과거 보고서 중복본은 `archive/pre-final-20261107` 태그로 보존하고 main에서는 제거했습니다. 제공 원고는 저자·소속 placeholder가 남은 검토 초안이며 제출 완료본을 의미하지 않습니다.
