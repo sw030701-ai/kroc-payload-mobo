@@ -1,0 +1,8 @@
+{
+  "expected_candidates": 384,
+  "actual_candidates": 384,
+  "paired_initial_population": true,
+  "metric_identities_passed": true,
+  "test_feasible": 39,
+  "test_total": 39
+}

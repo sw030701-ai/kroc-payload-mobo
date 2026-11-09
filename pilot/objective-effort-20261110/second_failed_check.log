@@ -1,0 +1,13 @@
+CAV seed=731: 64 evaluations, 42 feasible
+torque2_integral seed=731: 64 evaluations, 42 feasible
+CAV seed=732: 64 evaluations, 40 feasible
+torque2_integral seed=732: 64 evaluations, 40 feasible
+CAV seed=733: 64 evaluations, 45 feasible
+torque2_integral seed=733: 64 evaluations, 45 feasible
+WARNING: The directory '/Users/seong-uuimac/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Selected pairs: 6 ; test paired rows: 18 ; matched test rows: 11
+Traceback (most recent call last):
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/objective-pilot/pilot/objective-effort-20261110/run.py", line 133, in <module>
+    assert all(np.isclose(T.torque_rms**2*T.trajectory.map({x[0]:x[1] for x in SPEC['tests']}),T.torque2_integral))
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

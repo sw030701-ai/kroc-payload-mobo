@@ -1,0 +1,20 @@
+[
+  {
+    "optimizer_seed": 731,
+    "identical_initial": 16,
+    "identical_later": 12,
+    "total": 64
+  },
+  {
+    "optimizer_seed": 732,
+    "identical_initial": 16,
+    "identical_later": 32,
+    "total": 64
+  },
+  {
+    "optimizer_seed": 733,
+    "identical_initial": 16,
+    "identical_later": 32,
+    "total": 64
+  }
+]

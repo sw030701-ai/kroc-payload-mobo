@@ -1,0 +1,44 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Matplotlib is building the font cache; this may take a moment.
+Traceback (most recent call last):
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/objective-pilot/pilot/objective-effort-20261110/run.py", line 71, in <module>
+    minimize(p,NSGA2(pop_size=16,sampling=LHS(),crossover=SBX(prob=0.9,eta=15),mutation=PM(eta=20),eliminate_duplicates=True),('n_gen',4),seed=seed,verbose=False)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/optimize.py", line 67, in minimize
+    res = algorithm.run()
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/core/algorithm.py", line 138, in run
+    self.next()
+    ~~~~~~~~~^^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/core/algorithm.py", line 159, in next
+    self.advance(infills=infills)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/core/algorithm.py", line 225, in advance
+    val = self._advance(infills=infills, **kwargs)
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/algorithms/base/genetic.py", line 109, in _advance
+    self.pop = self.survival.do(self.problem, pop, n_survive=self.pop_size, algorithm=self, **kwargs)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/core/survival.py", line 45, in do
+    survivors = self._do(problem, pop[feas], *args, n_survive=min(len(feas), n_survive), **kwargs)
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/operators/survival/rank_and_crowding/classes.py", line 91, in _do
+    self.crowding_func.do(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        F[front, :],
+        ^^^^^^^^^^^^
+        n_remove=0
+        ^^^^^^^^^^
+    )
+    ^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/operators/survival/rank_and_crowding/metrics.py", line 34, in do
+    return self._do(F, n_remove=n_remove)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/operators/survival/rank_and_crowding/metrics.py", line 66, in _do
+    _d = self.function(_F, **kwargs)
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/pymoo/operators/survival/rank_and_crowding/metrics.py", line 97, in calc_crowding_distance
+    dist = np.row_stack([F, np.full(n_obj, np.inf)]) - np.row_stack([np.full(n_obj, -np.inf), F])
+           ^^^^^^^^^^^^
+  File "/Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af/kroc-payload-mobo/.venv/lib/python3.13/site-packages/numpy/__init__.py", line 769, in __getattr__
+    raise AttributeError(f"module {__name__!r} has no attribute {attr!r}")
+AttributeError: module 'numpy' has no attribute 'row_stack'
