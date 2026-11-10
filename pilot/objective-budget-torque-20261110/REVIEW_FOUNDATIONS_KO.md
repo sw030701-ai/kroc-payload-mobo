@@ -35,3 +35,13 @@ train[1,.5]rad 계단, held-out[.8,.7]rad 계단, held-out[1.2,.3]rad/2초 quint
 조건을 붙였다는 것만으로는 약하다. 기존 연구에 objective 비교와 torque constraint가 이미 있다. 유용한 기여는 공정한 예산으로 반복한 목적함수 선택의 조건부 효과, held-out성능과 불확실성, 실용적인 실패/포화 기록, 모델 일관성을 검증한 공개 artifact이다. 다만 재현성 개선은 방법론적 장점이며 단독으로 새 제어 기법을 제안한 것과 같지 않다. 모든 로봇에서 동일한 추천을 도출했다거나 최신 모든 논문에 없는 최초 결과라고 주장하지 않는다. 본 문헌 점검은 핵심4편을 확인한 것이며 체계적 전체 문헌조사가 아니다.
 
 최종 판정은 결과를 보고 별도 REPORT_KO.md에 기록한다. 증거가 약하면 새 objective를 억지로 골라 유리한 결과를 만드는 pivot을 하지 않고 보류/축소를 권한다. Torque-aware objective는 오차와 토크의 명시적 운용 tradeoff가 필요한 별도 후속 질문으로 삼아야 하며, 이번4종 실험의 음성 결과를 숨기는 대체 결과가 되어서는 안 된다.
+
+## 추가 중복성 점검 (실험 조건 변경 없음)
+
+[van Niekerk et al.,2026](https://doi.org/10.1016/j.conengprac.2026.106847)의 대학 repository 원문 PDF도 다운로드해6.8절을 직접 확인했다. 실제로 nonlinear ore milling MIMO plant에서40function evaluations를 현실적 예산으로 삼아 PSO/PPO/BO를 비교하고, performance–actuator 사용 weighting을 다룬다. 이전 대화의 이 문헌은 존재하며40회 주장은 맞지만, plant와질문은 이번 robot objective선택과 다르다. 낮은 평가예산 자체가 신규성은 아니라는 근거다.
+
+[Joyo et al.,2019](https://www.mdpi.com/2079-9292/8/8/826)는 더 직접적인 중복 가능성이 있다. Publisher에서 검색으로 확인되는5절 텍스트에 두 선형화 관절의 independent control with saturation limits와 IAE/ISE/ITAE/ITSE4종, PSO/ABC 비교가 명시되어 있다. 원문 전체 페이지429/PDF403으로 상세 saturation수치와 실험파일을 회수하지 못했다. 따라서 선행연구가 동일한 budget×objective×torque 실험까지 완료했다고 단정하지 않지만, ‘포화가 있는 관절에서4목적함수 비교’라는 넓은 주장은 이미 중복된다.
+
+[Mishra et al.,2026 preprint](https://arxiv.org/html/2601.18639v1)는 HTML원문4.5절·5절을 확인했다. Saturated discrete-time joint, back-calculation antiwindup, robust IAE+overshoot/saturation-duty/effort penalties와 BO certification을 다룬다. 본 비교4종과 동일한 실험은 아니며, peerreview 여부와 저자 성능 주장 자체의 외부 재현은 확인하지 않았다. 단순 torque-aware objective로 바꾸는 것만으로도 자동으로 차별성이 생기지는 않는다.
+
+최종 문헌 범위는 핵심4편+추가3편의 선택적 점검이다. 모든 최신 논문을 망라한 체계적 문헌조사는 아니다. 이 추가 검토를 이유로 이번 물리조건·objective·seed·예산을 바꾸지 않았다.

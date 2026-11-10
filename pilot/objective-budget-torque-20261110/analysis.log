@@ -1,0 +1,74 @@
+{
+  "candidate_count": 88064,
+  "optimizer_runs": 104,
+  "selected_rollouts": 1416,
+  "failed_numerical_candidates": 107,
+  "candidate_tracking_feasible": 82166,
+  "same_initial_populations": true,
+  "selection_matches_archive": true,
+  "monotonic_own_training": true,
+  "final_gain_boundary_fraction": {
+    "kp1": 0.0,
+    "ki1": 0.875,
+    "kd1": 0.0,
+    "kp2": 0.45,
+    "ki2": 0.25,
+    "kd2": 0.0
+  },
+  "confirmatory_test_numerical_failures": 0
+}
+                              rmse       iae  saturation_duty  tracking_feasible
+task condition objective                                                        
+1    nominal   IAE        0.105953  0.480394          0.00462                1.0
+               ISE        0.096764  0.496135          0.00621                1.0
+               ITAE       0.104875  0.487438          0.00459                1.0
+               ITSE       0.098425  0.492179          0.00609                1.0
+     reduced   IAE        0.130896  0.635682          0.01681                1.0
+               ISE        0.127832  0.611093          0.01516                1.0
+               ITAE       0.132152  0.656457          0.01733                1.0
+               ITSE       0.129283  0.619873          0.01674                1.0
+2    nominal   IAE        0.147023  1.119312          0.00000                1.0
+               ISE        0.108924  0.789202          0.00000                1.0
+               ITAE       0.140407  1.074046          0.00000                1.0
+               ITSE       0.115825  0.851862          0.00000                1.0
+     reduced   IAE        0.160648  1.283055          0.01686                1.0
+               ISE        0.195010  1.760771          0.01994                0.9
+               ITAE       0.153867  1.226051          0.01495                1.0
+               ITSE       0.169135  1.385796          0.01928                1.0
+       phase  task metric  budget   a    b                    contrast  n      mean    ci_low   ci_high  sign_flip_p   holm_p
+confirmatory     1   rmse      32 IAE ITAE                     nominal 10  0.003816  0.000000  0.011275     0.500000 1.000000
+confirmatory     1   rmse      32 IAE ITAE                     reduced 10  0.000000  0.000000  0.000000     1.000000 1.000000
+confirmatory     1   rmse      32 IAE ITAE          objective_x_torque 10 -0.003816 -0.011102  0.000000     0.500000 1.000000
+confirmatory     1   rmse     128 IAE ITAE                     nominal 10  0.001744  0.000221  0.003410     0.093750 0.257812
+confirmatory     1   rmse     128 IAE ITAE                     reduced 10  0.000456 -0.001614  0.002907     0.632812 1.000000
+confirmatory     1   rmse     128 IAE ITAE          objective_x_torque 10 -0.001288 -0.003920  0.001693     0.417969 0.835938
+confirmatory     1   rmse     256 IAE ITAE                     nominal 10  0.002127  0.000322  0.004434     0.048828 0.048828
+confirmatory     1   rmse     256 IAE ITAE                     reduced 10 -0.000117 -0.001633  0.000875     0.988281 0.988281
+confirmatory     1   rmse     256 IAE ITAE          objective_x_torque 10 -0.002245 -0.004851  0.000023     0.136719 0.273438
+confirmatory     1   rmse     512 IAE ITAE                     nominal 10 -0.000195 -0.000894  0.000399     0.595703 0.595703
+confirmatory     1   rmse     512 IAE ITAE                     reduced 10  0.000960  0.000398  0.001488     0.017578 0.070312
+confirmatory     1   rmse     512 IAE ITAE          objective_x_torque 10  0.001155  0.000785  0.001493     0.001953 0.011719
+confirmatory     1   rmse    1024 IAE ITAE                     nominal 10 -0.001077 -0.001747 -0.000444     0.011719 0.011719
+confirmatory     1   rmse    1024 IAE ITAE                     reduced 10  0.001256  0.000774  0.001749     0.003906 0.015625
+confirmatory     1   rmse    1024 IAE ITAE          objective_x_torque 10  0.002333  0.001635  0.003093     0.001953 0.011719
+confirmatory     1   rmse    1024 IAE ITAE  objective_x_budget_nominal 10 -0.004893 -0.011995 -0.000986     0.001953 0.011719
+confirmatory     1   rmse    1024 IAE ITAE  objective_x_budget_reduced 10  0.001256  0.000767  0.001755     0.003906 0.015625
+confirmatory     1   rmse    1024 IAE ITAE objective_x_torque_x_budget 10  0.006149  0.002346  0.013135     0.001953 0.011719
+confirmatory     2   rmse      32 IAE ITAE                     nominal 10  0.013022  0.000000  0.036236     0.500000 1.000000
+confirmatory     2   rmse      32 IAE ITAE                     reduced 10  0.000000  0.000000  0.000000     1.000000 1.000000
+confirmatory     2   rmse      32 IAE ITAE          objective_x_torque 10 -0.013022 -0.036236  0.000000     0.500000 1.000000
+confirmatory     2   rmse     128 IAE ITAE                     nominal 10  0.007492 -0.000967  0.018403     0.164062 0.328125
+confirmatory     2   rmse     128 IAE ITAE                     reduced 10 -0.008159 -0.026729  0.004216     0.578125 1.000000
+confirmatory     2   rmse     128 IAE ITAE          objective_x_torque 10 -0.015651 -0.036248  0.001076     0.203125 0.406250
+confirmatory     2   rmse     256 IAE ITAE                     nominal 10  0.005569 -0.000650  0.012891     0.138672 0.138672
+confirmatory     2   rmse     256 IAE ITAE                     reduced 10 -0.014017 -0.031910 -0.001455     0.054688 0.218750
+confirmatory     2   rmse     256 IAE ITAE          objective_x_torque 10 -0.019586 -0.038122 -0.005616     0.019531 0.039062
+confirmatory     2   rmse     512 IAE ITAE                     nominal 10 -0.002281 -0.005500  0.000634     0.222656 0.222656
+confirmatory     2   rmse     512 IAE ITAE                     reduced 10 -0.004722 -0.007649 -0.001871     0.013672 0.041016
+confirmatory     2   rmse     512 IAE ITAE          objective_x_torque 10 -0.002441 -0.008048  0.003447     0.437500 0.437500
+confirmatory     2   rmse    1024 IAE ITAE                     nominal 10 -0.006616 -0.009569 -0.003939     0.001953 0.011719
+confirmatory     2   rmse    1024 IAE ITAE                     reduced 10 -0.006781 -0.009715 -0.003878     0.003906 0.011719
+confirmatory     2   rmse    1024 IAE ITAE          objective_x_torque 10 -0.000165 -0.004587  0.004602     0.953125 0.953125
+confirmatory     2   rmse    1024 IAE ITAE  objective_x_budget_nominal 10 -0.019638 -0.042312 -0.006006     0.001953 0.011719
+confirmatory     2   rmse    1024 IAE ITAE  objective_x_budget_reduced 10 -0.006781 -0.009679 -0.003810     0.003906 0.019531
+confirmatory     2   rmse    1024 IAE ITAE objective_x_torque_x_budget 10  0.012857 -0.002162  0.035983     0.261719 0.867188

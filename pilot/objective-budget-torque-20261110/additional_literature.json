@@ -1,0 +1,16 @@
+{
+  "vanNiekerk2026": {
+    "doi": "10.1016/j.conengprac.2026.106847",
+    "original_pdf_sha256": "ac741e9a73cf3a6f3f8f7c8e102eecb1f6c5d632f66440f9a30fb479dae9402a",
+    "checked": "Original repository PDF section6.8:40 function evaluations, PSO/PPO/BO on nonlinear ore milling MIMO plant; performance-actuator weighting"
+  },
+  "Joyo2019": {
+    "doi": "10.3390/electronics8080826",
+    "checked": "Publisher search-indexed section5 text:independent saturated joints,4 objectives,PSO/ABC. Full page429/PDF403; numerical saturation parameters not recovered."
+  },
+  "Mishra2026": {
+    "url": "https://arxiv.org/html/2601.18639v1",
+    "status": "arXiv preprint; peer-review unverified",
+    "checked": "Original HTML sections4.5 and5; robust IAE with overshoot/saturation-duty/effort penalty,BO,antiwindup; not four-error-integral objective experiment."
+  }
+}

@@ -22,19 +22,19 @@ def deriv(y,u):
     det=M[0,0]*M[1,1]-M[0,1]**2
     return np.array([y[2],y[3],(M[1,1]*r[0]-M[0,1]*r[1])/det,(-M[0,1]*r[0]+M[0,0]*r[1])/det])
 @njit
-def sim(k,lim,task=0,dt=.002,sub=2,trace=False):
+def sim(k,lim,task=0,dt=.002,sub=2,trace=False,derivative_weight=0.):
     n=int(round(10/dt));y=np.zeros(4);z=np.zeros(2);s=np.zeros(4);peakr=0.;peaka=0.;sat=0.;lastbad=-1;over=0.;ok=1.
     data=np.zeros((n if trace else 1,9));target=np.array([1.,.5])
     if task==1:target=np.array([.8,.7])
     if task==2:target=np.array([1.2,.3])
     e=np.zeros(2)
     for i in range(n):
-        t=i*dt;r=target.copy()
+        t=i*dt;r=target.copy();rdot=np.zeros(2)
         if task==2:
-            a=min(t/2.,1.);r=target*(10*a**3-15*a**4+6*a**5)
+            a=min(t/2.,1.);r=target*(10*a**3-15*a**4+6*a**5);rdot=target*(30*a**2-60*a**3+30*a**4)/2.
         e=r-y[:2];u=np.zeros(2);ap=np.zeros(2)
         for j in range(2):
-            u[j]=k[3*j]*e[j]+k[3*j+1]*z[j]-k[3*j+2]*y[j+2]
+            u[j]=k[3*j]*e[j]+k[3*j+1]*z[j]-k[3*j+2]*y[j+2]+derivative_weight*k[3*j+2]*rdot[j]
             ap[j]=min(max(u[j],-lim[j]),lim[j])
             if abs(u[j])<=lim[j] or e[j]*(u[j]-ap[j])<=0:z[j]+=dt*e[j]
             sat+=(1. if abs(u[j])>lim[j] else 0.)

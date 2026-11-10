@@ -16,7 +16,7 @@ int_summary=I.groupby('kind').relative_change.agg(['min','max',lambda x:x.abs().
 budget=pd.read_csv(OUT/'budget_targets_descriptive.csv');T=budget[(budget.phase=='confirmatory')&(budget.target_rmse==.1)].groupby(['task','condition','objective']).first_observed_budget.agg(['count','median','min','max']).reset_index()
 text=f'''# KRoC 주제 엄밀 검토 — 실제 반복 실험 결과
 
-최종 권고와 그 이유는 문서 끝의 판정에 기록한다. 이 보고서는 원문 수치 재현 논문이 아니라, 원문 물리 파라미터를 맞춘 보정 모델의 독립 실험이다. 상세 원문검토·실패원인·설계 이유는 [REVIEW_FOUNDATIONS_KO.md](../REVIEW_FOUNDATIONS_KO.md), 사전 조건은 [PROTOCOL.md](../PROTOCOL.md), 실행은 [README.md](../README.md)를 참조한다.
+**판정: 원래 범위의 제출은 보류하고, 계단 튜닝의 궤적 일반화 문제로 수정 후 조건부 채택을 권한다.** 구체적 이유와 추가 점검은 문서 끝의 판정에 기록한다. 이 보고서는 원문 수치 재현 논문이 아니라, 원문 물리 파라미터를 맞춘 보정 모델의 독립 실험이다. 상세 원문검토·실패원인·설계 이유는 [REVIEW_FOUNDATIONS_KO.md](../REVIEW_FOUNDATIONS_KO.md), 사전 조건은 [PROTOCOL.md](../PROTOCOL.md), 실행은 [README.md](../README.md)를 참조한다.
 
 ## 실제 완료 규모
 
@@ -66,6 +66,8 @@ plant_refined는 controller dt=.002s를 유지하고 RK4 h=.001→.0005s, contro
 
 ## 산출물과 재현
 
+![최종 목적함수 순위](final_ranking.png)
+
 ![예산별 공통 RMSE](budget_rmse.png)
 
 ![IAE–ITAE 토크 교호작용](interaction.png)
@@ -80,7 +82,10 @@ plant_refined는 controller dt=.002s를 유지하고 RK4 h=.001→.0005s, contro
 
 1페이지: 문제와 기존 연구 중복, 제한된 토크 여유/평가예산에서 목적함수 선택이라는 질문. 2페이지: 보정 모델·PID·고정GA·조건·독립seed·train/test와 통계. 3페이지: 공통 RMSE의 budget곡선과 최종 feasibility/포화 표. 4페이지: paired 교호작용과 해석·한계·결론·참고문헌. 원문 재현 성공이나 신규최적화알고리즘을 주장하지 않는다. 표와그림을 줄여도 seed수/조건 선택 근거/재현범위는 생략하지 않는다.
 
+추가 문헌에서도 Joyo(2019)의4종objective+관절포화, vanNiekerk(2026)의40회budget, Mishra(2026 preprint)의torque-aware IAE와antiwindup이 확인됐다. 상세접근수준과출처는 REVIEW_FOUNDATIONS_KO.md 및 additional_literature.json에 기록했다. 이 때문에 조건추가만으로 최초성·충분한신규성을 주장할 수 없다.
+
 실물 검증이 없고 한point-mass plant·두test궤적·한GA·고정bounds에 한정된다. 현실의 마찰,모터전기동역학,기어/센서/전류/열·충돌 제약을 검증하지 않았다. 토크값은 하드웨어 식별값이 아니다. 목표 진폭과 horizon 변경·gain bounds 민감도도 아직 검증하지 않았다. 따라서 보정모델에서 큰효과가 보여도 일반적인 로봇팔 목적함수 추천으로 확장할 수 없다.
 '''
+if (ROOT/'VERDICT_KO.md').exists():text+='\n'+(ROOT/'VERDICT_KO.md').read_text()
 (OUT/'REPORT_KO.md').write_text(text)
 print('Wrote',OUT/'REPORT_KO.md')
