@@ -1,0 +1,15 @@
+{
+  "printed_gravity_mixed_partial_gap": -0.4896829086526924,
+  "min_mass_eigenvalue": 0.022805681767028085,
+  "max_energy_identity_residual": 1.1504246860694067e-10,
+  "gravity_gradient_error": 1.6112373657506396e-09,
+  "printed_C_energy_residual": 0.003504765069217617,
+  "deterministic_trace": true,
+  "saturation_verified": true,
+  "zero_gain_scores": [
+    46.77838911161004,
+    241.43574728589743,
+    299.02619564775085,
+    1880.482947802726
+  ]
+}

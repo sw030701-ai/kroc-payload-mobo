@@ -1,0 +1,19 @@
+{
+  "candidate_count": 88064,
+  "optimizer_runs": 104,
+  "selected_rollouts": 1416,
+  "failed_numerical_candidates": 107,
+  "candidate_tracking_feasible": 82166,
+  "same_initial_populations": true,
+  "selection_matches_archive": true,
+  "monotonic_own_training": true,
+  "final_gain_boundary_fraction": {
+    "kp1": 0.0,
+    "ki1": 0.875,
+    "kd1": 0.0,
+    "kp2": 0.45,
+    "ki2": 0.25,
+    "kd2": 0.0
+  },
+  "confirmatory_test_numerical_failures": 0
+}
