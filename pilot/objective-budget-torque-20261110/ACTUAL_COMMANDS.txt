@@ -1,0 +1,8 @@
+# Executed from the parent project workspace, using existing venv:
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python objective-budget-study/pilot/objective-budget-torque-20261110/run.py > objective-budget-study/pilot/objective-budget-torque-20261110/execution.log 2>&1
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python objective-budget-study/pilot/objective-budget-torque-20261110/validate.py > objective-budget-study/pilot/objective-budget-torque-20261110/model_validation.log 2>&1
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python objective-budget-study/pilot/objective-budget-torque-20261110/paper_sanity.py > objective-budget-study/pilot/objective-budget-torque-20261110/paper_sanity.log 2>&1
+# Final analysis commands use same venv (see analysis.log):
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python objective-budget-study/pilot/objective-budget-torque-20261110/analyze.py
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python objective-budget-study/pilot/objective-budget-torque-20261110/build_report.py
+# README.md has portable repository-root equivalents and pinned dependency install.

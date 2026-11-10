@@ -1,0 +1,35 @@
+                                                                   rmse  saturation_duty
+training_torque deployment_torque derivative_weight objective                           
+nominal         nominal           0.0               IAE        0.147023          0.00000
+                                                    ISE        0.108924          0.00000
+                                                    ITAE       0.140407          0.00000
+                                                    ITSE       0.115825          0.00000
+                                  1.0               IAE        0.118974          0.00000
+                                                    ISE        0.092505          0.00000
+                                                    ITAE       0.111258          0.00000
+                                                    ITSE       0.094361          0.00000
+                reduced           0.0               IAE        0.148034          0.01562
+                                                    ISE        0.116255          0.02480
+                                                    ITAE       0.140895          0.01365
+                                                    ITSE       0.118866          0.01953
+                                  1.0               IAE        0.121252          0.01841
+                                                    ISE        0.101870          0.02693
+                                                    ITAE       0.112692          0.01632
+                                                    ITSE       0.099178          0.02226
+reduced         nominal           0.0               IAE        0.159011          0.00000
+                                                    ISE        0.192665          0.00000
+                                                    ITAE       0.152835          0.00000
+                                                    ITSE       0.166517          0.00000
+                                  1.0               IAE        0.131040          0.00000
+                                                    ISE        0.164731          0.00000
+                                                    ITAE       0.123884          0.00000
+                                                    ITSE       0.139961          0.00000
+                reduced           0.0               IAE        0.160648          0.01686
+                                                    ISE        0.195010          0.01994
+                                                    ITAE       0.153867          0.01495
+                                                    ITSE       0.169135          0.01928
+                                  1.0               IAE        0.133842          0.01947
+                                                    ISE        0.167599          0.02200
+                                                    ITAE       0.126096          0.01772
+                                                    ITSE       0.143650          0.02160
+{'posthoc': True, 'no_reoptimization': True, 'simulator_calls': 320, 'default_simulator_matches_all_original_final_smooth_results': True, 'iae_ise_interaction_min_leave_one_out': 0.0683135551194979, 'max_leave_one_out': 0.07442132520279973, 'per_seed_interaction': {'201': 0.07252271543074769, '202': 0.08185343324225641, '203': 0.10978653288550122, '204': 0.07703973479948181, '205': 0.06162447492070679, '206': 0.06318471802858783, '207': 0.056401606619508535, '208': 0.054816602135784626, '209': 0.08125200381618967, '210': 0.06612670708221771}}

@@ -1,0 +1,16 @@
+{
+  "base_commit": "d18b00d2e7093cf5cb1b9cb10e9d70c4e3a9038e",
+  "model": "separate corrected planar two-point-mass arm; not canonical motor",
+  "physical_source": "Eltayeb 2024 Table 2 (nominal frictionless scenario)",
+  "l1_m": 0.2, "l2_m": 0.1, "m1_kg": 10, "m2_kg": 5, "gravity_m_s2": 9.81,
+  "gain_order": ["kp1", "ki1", "kd1", "kp2", "ki2", "kd2"],
+  "lower_bounds": [0,0,0,0,0,0], "upper_bounds": [200,50,10,200,50,10],
+  "actuator_limits_Nm": {"nominal":[70,10],"reduced":[42,6]},
+  "dt_s": 0.002, "rk4_substeps": 2, "duration_s": 10,
+  "train_step_rad": [1,0.5], "test_step_rad":[0.8,0.7], "test_quintic_rad":[1.2,0.3], "quintic_move_s":2,
+  "objectives":["IAE","ISE","ITAE","ITSE"], "population":32,
+  "exploratory_seeds":[101,102,103], "exploratory_budget":256,
+  "confirmatory_seeds":[201,202,203,204,205,206,207,208,209,210], "confirmatory_budget":1024,
+  "checkpoints":[32,128,256,512,1024], "bootstrap_seed":441, "bootstrap_resamples":10000,
+  "phase_policy":"No condition/objective/plant changes after viewing outcomes; fixed validation seeds separate from exploratory seeds. Still one selected benchmark, not multi-plant evidence."
+}
