@@ -24,5 +24,6 @@ M,C,G=terms(q,v);h=.1*np.sin(q[1]);wrong=C.copy();wrong[1]=h*v[1]**2
 mdot=(terms(q+eps*v,v)[0]-terms(q-eps*v,v)[0])/(2*eps)
 # failure penalty remains finite and archived
 failed=sim(np.zeros(6),lim)[0]
-summary=dict(min_mass_eigenvalue=min(x[0] for x in res),max_energy_identity_residual=max(x[1] for x in res),gravity_gradient_error=float(np.max(np.abs(grad-G))),printed_C_energy_residual=float(v@wrong-.5*v@mdot@v),deterministic_trace=True,saturation_verified=True,zero_gain_scores=failed.tolist())
+printed_gravity_mixed_partial_gap=4.905*(np.sin(q[0])*np.cos(q[1])-np.cos(q[0])*np.sin(q[1]))
+summary=dict(printed_gravity_mixed_partial_gap=float(printed_gravity_mixed_partial_gap),min_mass_eigenvalue=min(x[0] for x in res),max_energy_identity_residual=max(x[1] for x in res),gravity_gradient_error=float(np.max(np.abs(grad-G))),printed_C_energy_residual=float(v@wrong-.5*v@mdot@v),deterministic_trace=True,saturation_verified=True,zero_gain_scores=failed.tolist())
 (OUT/'model_checks.json').write_text(json.dumps(summary,indent=2));print(summary)
