@@ -1,0 +1,10 @@
+All commands run locally from /Users/seong-uuimac/.codex/.chatgpt-projects/g-p-6aa21eb937b081919c7ea83a3de525af
+Existing compatible environment kroc-payload-mobo/.venv reused. No dependency changes to other studies.
+
+git -C objective-budget-study worktree add ../trajectory-generalization-study -b pilot/trajectory-generalization-20261110 367544e
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python trajectory-generalization-study/pilot/trajectory-generalization-20261110/run_followup.py > trajectory-generalization-study/pilot/trajectory-generalization-20261110/execution.log 2>&1
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python trajectory-generalization-study/pilot/trajectory-generalization-20261110/validate_followup.py
+kroc-payload-mobo/.venv/bin/pip freeze > trajectory-generalization-study/pilot/trajectory-generalization-20261110/environment-freeze.txt
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python trajectory-generalization-study/pilot/trajectory-generalization-20261110/analyze_followup.py > trajectory-generalization-study/pilot/trajectory-generalization-20261110/analysis.log 2>&1
+MPLCONFIGDIR=/tmp/kroc-mpl kroc-payload-mobo/.venv/bin/python trajectory-generalization-study/pilot/trajectory-generalization-20261110/trace_diagnostic.py
+kroc-payload-mobo/.venv/bin/python trajectory-generalization-study/pilot/trajectory-generalization-20261110/build_report.py

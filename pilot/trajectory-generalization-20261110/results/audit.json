@@ -1,0 +1,11 @@
+{
+  "archive_selection_verified": true,
+  "shared_normalized_initial_populations": true,
+  "ga_runs": 128,
+  "training_rollouts": 32768,
+  "gain_candidates": 24576,
+  "failed_candidates": 45,
+  "failed_test_rollouts": 0,
+  "failed_refinement_rollouts": 0,
+  "maximum_absolute_refinement_relative_change": 1.7433733219361703e-10
+}

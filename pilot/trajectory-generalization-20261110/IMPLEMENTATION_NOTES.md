@@ -1,0 +1,4 @@
+# Verification correction retained
+The first analyze_followup.py execution failed before showing test summaries: the CSV normalized-initial-population comparison used absolute tolerance2e-16. Maximum measured serialization/reading error across all arms was2.220446049250313e-16 (one binary floating-point ulp). The tolerance was changed to1e-14 and the full audit and analysis rerun. No simulation condition, optimizer, random seed, budget, archive or selected gain was changed. The optimization itself completed once without restart. The executed analysis log is analysis.log. This is a verification tolerance correction, not a scientific negative result.
+
+The step test tradeoff table was added to supplementary analysis after the primary results were inspected. It does not alter the four primary comparisons or their Holm family. Its paired intervals and raw p-values are unadjusted exploratory statistics.

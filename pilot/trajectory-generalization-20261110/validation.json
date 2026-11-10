@@ -1,0 +1,8 @@
+{
+  "original_three_task_outputs_bitwise_equal": true,
+  "new_smooth_endpoints_and_real_actuator_clipping": true,
+  "minimum_mass_eigenvalue": 0.02280776727251839,
+  "max_energy_identity_residual": 4.255449326251437e-10,
+  "gravity_gradient_verified": true,
+  "validation_simulator_calls": 9
+}
