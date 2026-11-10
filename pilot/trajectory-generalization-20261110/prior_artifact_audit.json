@@ -1,0 +1,10 @@
+{
+  "prior_commit": "367544e21558e3b9031c7b228a33b6cfc1bcdbc4",
+  "artifact_hashes_checked": 47,
+  "hash_mismatches": [],
+  "prior_candidate_count": 88064,
+  "prior_ga_runs": 104,
+  "prior_final_smooth_IAE_ISE_reversal_seeds": 10,
+  "prior_optimizer_seeds": 10,
+  "newly_executed": false
+}

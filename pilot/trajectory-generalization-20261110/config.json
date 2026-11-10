@@ -1,0 +1,66 @@
+{
+  "seeds": [
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308
+  ],
+  "objectives": [
+    "IAE",
+    "ISE"
+  ],
+  "training": {
+    "step": [
+      0
+    ],
+    "mixed": [
+      0,
+      2
+    ]
+  },
+  "bounds": {
+    "paper": [
+      200,
+      50,
+      10,
+      200,
+      50,
+      10
+    ],
+    "double": [
+      400,
+      100,
+      20,
+      400,
+      100,
+      20
+    ]
+  },
+  "limits": {
+    "nominal": [
+      70,
+      10
+    ],
+    "reduced": [
+      42,
+      6
+    ]
+  },
+  "rollout_budgets": [
+    128,
+    256
+  ],
+  "population": 32,
+  "test_tasks": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "base_commit": "367544e21558e3b9031c7b228a33b6cfc1bcdbc4",
+  "source_sha256": "8560a88417bc3ced34133e0066635dd57acef024453d3771d2e614dcf6c53a7d"
+}

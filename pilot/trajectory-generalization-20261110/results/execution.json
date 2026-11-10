@@ -1,0 +1,10 @@
+{
+  "ga_runs": 128,
+  "gain_candidates": 24576,
+  "training_simulator_calls": 32768,
+  "test_simulator_calls": 1024,
+  "refinement_simulator_calls": 512,
+  "training_seconds": 441.02523016929626,
+  "total_seconds": 466.96120715141296,
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O"
+}

@@ -1,0 +1,17 @@
+{
+  "objective-pilot": {
+    "head": "90b1c52bdbb8c912566dd1eac8b266763928860b",
+    "status": ""
+  },
+  "objective-budget-study": {
+    "head": "367544e21558e3b9031c7b228a33b6cfc1bcdbc4",
+    "status": ""
+  },
+  "kroc-payload-mobo": {
+    "head": "9a27fd0569f2bb9f03b21666192028a53e3298fa",
+    "status": ""
+  },
+  "remote_main_at_start": "d18b00d2e7093cf5cb1b9cb10e9d70c4e3a9038e",
+  "new_branch": "pilot/trajectory-generalization-20261110",
+  "other_work_turns": "Related prior Codex turns confirmed completed, remote PR1/PR2 draft open; no edits made there."
+}

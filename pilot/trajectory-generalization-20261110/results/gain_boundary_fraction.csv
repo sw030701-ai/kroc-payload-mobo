@@ -1,0 +1,17 @@
+objective,condition,bound,training,kp1,ki1,kd1,kp2,ki2,kd2
+IAE,nominal,double,mixed,0.125,0.25,0.125,0.125,0.0,0.0
+IAE,nominal,double,step,0.0,0.375,0.0,0.125,0.0,0.0
+IAE,nominal,paper,mixed,0.125,0.375,0.125,0.125,0.0,0.0
+IAE,nominal,paper,step,0.0,1.0,0.0,0.25,0.125,0.0
+IAE,reduced,double,mixed,0.125,0.125,0.125,0.25,0.0,0.0
+IAE,reduced,double,step,0.0,0.125,0.0,0.125,0.0,0.0
+IAE,reduced,paper,mixed,0.0,0.375,0.125,0.0,0.0,0.0
+IAE,reduced,paper,step,0.0,0.625,0.125,0.25,0.125,0.0
+ISE,nominal,double,mixed,0.0,0.125,0.375,0.125,0.0,0.0
+ISE,nominal,double,step,0.0,0.25,0.0,0.0,0.0,0.0
+ISE,nominal,paper,mixed,0.25,0.0,0.125,0.0,0.125,0.0
+ISE,nominal,paper,step,0.0,0.875,0.0,0.0,0.0,0.0
+ISE,reduced,double,mixed,0.0,0.375,0.25,0.25,0.0,0.0
+ISE,reduced,double,step,0.0,0.0,0.0,0.125,0.125,0.0
+ISE,reduced,paper,mixed,0.125,0.125,0.375,0.25,0.125,0.0
+ISE,reduced,paper,step,0.0,0.5,0.0,0.125,0.0,0.0

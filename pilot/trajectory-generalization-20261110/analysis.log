@@ -1,0 +1,33 @@
+{
+  "archive_selection_verified": true,
+  "shared_normalized_initial_populations": true,
+  "ga_runs": 128,
+  "training_rollouts": 32768,
+  "gain_candidates": 24576,
+  "failed_candidates": 45,
+  "failed_test_rollouts": 0,
+  "failed_refinement_rollouts": 0,
+  "maximum_absolute_refinement_relative_change": 1.7433733219361703e-10
+}
+objective  bound condition  budget  step_rmse  mixed_rmse  relative_change_percent  primary  n      mean    ci_low   ci_high  sign_flip_p  negative_seeds  holm_primary_p
+      IAE  paper   reduced     256   0.130397    0.085055               -34.772715     True  8 -0.045343 -0.052841 -0.036743     0.007812               8         0.03125
+      IAE double   reduced     256   0.092307    0.050279               -45.530260     True  8 -0.042028 -0.053605 -0.032149     0.007812               8         0.03125
+      ISE  paper   reduced     256   0.137053    0.085743               -37.437919     True  8 -0.051310 -0.058001 -0.045239     0.007812               8         0.03125
+      ISE double   reduced     256   0.108762    0.061494               -43.459460     True  8 -0.047267 -0.058172 -0.036851     0.007812               8         0.03125
+             bound         training  budget                          kind  n      mean    ci_low   ci_high  sign_flip_p  negative_seeds
+             paper             step     128            objective_x_torque  8  0.020392  0.007685  0.036722     0.015625               0
+             paper             step     256            objective_x_torque  8  0.022660  0.011662  0.036002     0.007812               0
+             paper            mixed     128            objective_x_torque  8 -0.001587 -0.005762  0.003091     0.500000               5
+             paper            mixed     256            objective_x_torque  8  0.000495 -0.004575  0.005797     0.859375               4
+            double             step     128            objective_x_torque  8  0.014669  0.003301  0.026409     0.062500               1
+            double             step     256            objective_x_torque  8  0.016253  0.004440  0.029190     0.062500               3
+            double            mixed     128            objective_x_torque  8  0.000007 -0.009627  0.009590     1.000000               4
+            double            mixed     256            objective_x_torque  8  0.000704 -0.007228  0.005720     0.937500               1
+             paper mixed-minus-step     256 training_x_objective_x_torque  8 -0.022166 -0.037098 -0.012218     0.007812               8
+             paper             step     256   budget_x_objective_x_torque  8  0.002269 -0.013309  0.016266     0.789062               4
+             paper            mixed     256   budget_x_objective_x_torque  8  0.002082 -0.003945  0.007996     0.546875               4
+            double mixed-minus-step     256 training_x_objective_x_torque  8 -0.015549 -0.027895 -0.003464     0.054688               6
+            double             step     256   budget_x_objective_x_torque  8  0.001584 -0.008995  0.013892     0.835938               4
+            double            mixed     256   budget_x_objective_x_torque  8  0.000696 -0.006442  0.007726     0.929688               5
+double-minus-paper             step     256   bounds_x_objective_x_torque  8 -0.006407 -0.025827  0.015214     0.539062               6
+double-minus-paper            mixed     256   bounds_x_objective_x_torque  8  0.000209 -0.011238  0.008561     1.000000               2
