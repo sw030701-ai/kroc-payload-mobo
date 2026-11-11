@@ -12,3 +12,6 @@
 - main핵심Gulbahce원문PDF는timeout·resume미지원·인증HTML로실패했다.이후ResearchGate의publisher제공전문으로방법절·표·식접근을보완했다.PDF파일로보존했다고주장하지않는다.
 - 통계 설계의 제한: n=8의 양측 exact sign-flip 최솟값은2/256=.0078125다. primary8개 Holm의 첫 단계는최소.0625이므로5%familywise기각은불가능하다. CI는보정하지않은탐색적기술구간으로해석한다. 결과를본뒤표본수나primaryfamily를바꾸지않았다. p비유의를동등성증거로해석하지않는다.
 - PEN의 overshoot 벌점은 step 학습에만 적용된다. Quintic은 step overshoot를 정의하지 않아0으로 처리한다. 이는실행전experiment.py에고정된동작이며,실행후수식이나점수를변경하지않았다. smooth에서오버슈트를전혀평가하지않아도좋다는일반적제어지침은아니다.
+
+- 로컬 GitHub 로그인 경로로 별도 연구 브랜치 push와 [초안 PR #4](https://github.com/sw030701-ai/kroc-payload-mobo/pull/4) 생성을 완료했다. GitHub 연결 도구의 403은 위에 보존했다. 원격 main SHA는 작업 전후 동일하다.
+- Git 검사에서 원본 PDF를 텍스트로 판정하고 CSV의 CRLF를 공백 오류로 오인해, 이 폴더에만 `.gitattributes`를 추가했다. 원본 PDF와 raw CSV의 바이트는 수정하지 않았다.

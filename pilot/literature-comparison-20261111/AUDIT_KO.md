@@ -32,4 +32,4 @@ main 설명의 user-specified motor/gear 수치는 실물식별·제조사 독�
 
 ## 접근 및 쓰기 상태
 
-GitHub 읽기는 성공했다. metadata의 push=true와 달리 원격 branch create는403 `Resource not accessible by integration`이다. 로컬 gh는 일반 제한 환경에서 invalid token을 표시했으나 네트워크 허용 환경에서는 기존 로그인이 정상으로 확인됐다. 따라서 로컬 Git 경로로 게시를 진행하며, 성공 여부는 최종 원격 SHA 및 PR로 별도 검증한다. 일반 네트워크 clone DNS실패 후 허용된 네트워크 경로에서 clone 성공. 도구별 오류와 이후 상태는 `IMPLEMENTATION_NOTES_KO.md` 및 최종 게시 상태를 참고한다.
+GitHub 읽기는 성공했다. metadata의 push=true와 달리 원격 branch create는403 `Resource not accessible by integration`이다. 로컬 gh는 일반 제한 환경에서 invalid token을 표시했으나 네트워크 허용 환경에서는 기존 로그인이 정상으로 확인됐다. 로컬 Git 경로로 [초안 PR #4](https://github.com/sw030701-ai/kroc-payload-mobo/pull/4)를 게시했다. 원격 main SHA는 작업 전후 동일하며 PR은 병합하지 않았다. 일반 네트워크 clone DNS실패 후 허용된 네트워크 경로에서 clone 성공. 도구별 오류와 이후 상태는 `IMPLEMENTATION_NOTES_KO.md` 및 최종 게시 상태를 참고한다.
