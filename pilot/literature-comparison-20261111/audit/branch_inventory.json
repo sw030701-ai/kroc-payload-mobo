@@ -1,0 +1,86 @@
+[
+  {
+    "ref": "origin/main",
+    "sha": "d18b00d2e7093cf5cb1b9cb10e9d70c4e3a9038e",
+    "file_count": 215,
+    "stage_matches": [],
+    "zip_files": [
+      "pilot/diagnostic-20261023/reproducibility.zip",
+      "reports/canonical-final/raw-results.zip",
+      "reports/heavy-diagnostics-20261001/raw-results.zip"
+    ]
+  },
+  {
+    "ref": "origin/pilot/objective-budget-torque-20261110",
+    "sha": "367544e21558e3b9031c7b228a33b6cfc1bcdbc4",
+    "file_count": 263,
+    "stage_matches": [],
+    "zip_files": [
+      "pilot/diagnostic-20261023/reproducibility.zip",
+      "reports/canonical-final/raw-results.zip",
+      "reports/heavy-diagnostics-20261001/raw-results.zip"
+    ]
+  },
+  {
+    "ref": "origin/pilot/objective-effort-20261110",
+    "sha": "90b1c52bdbb8c912566dd1eac8b266763928860b",
+    "file_count": 355,
+    "stage_matches": [],
+    "zip_files": [
+      "pilot/diagnostic-20261023/reproducibility.zip",
+      "reports/canonical-final/raw-results.zip",
+      "reports/heavy-diagnostics-20261001/raw-results.zip"
+    ]
+  },
+  {
+    "ref": "origin/pilot/trajectory-generalization-20261110",
+    "sha": "ad5b82d5dc810a861c4d6ab3255129052dc23e94",
+    "file_count": 307,
+    "stage_matches": [],
+    "zip_files": [
+      "pilot/diagnostic-20261023/reproducibility.zip",
+      "reports/canonical-final/raw-results.zip",
+      "reports/heavy-diagnostics-20261001/raw-results.zip"
+    ]
+  },
+  {
+    "ref": "origin/revision/budget80-bounds800-20260927",
+    "sha": "83e88835e127d456e3a06233cd1ec6605016b1a1",
+    "file_count": 305,
+    "stage_matches": [],
+    "zip_files": [
+      "reports/archive/canonical-final-20260923/canonical-results-and-source.zip",
+      "reports/archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+      "reports/archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+      "reports/archive/canonical-final-20260924-budget40/raw-results.zip",
+      "reports/canonical-final/raw-results.zip"
+    ]
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "sha": "9a27fd0569f2bb9f03b21666192028a53e3298fa",
+    "file_count": 458,
+    "stage_matches": [],
+    "zip_files": [
+      "reports/archive/canonical-final-20260923/canonical-results-and-source.zip",
+      "reports/archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+      "reports/archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+      "reports/archive/canonical-final-20260924-budget40/raw-results.zip",
+      "reports/archive/canonical-final-20260927-budget80/raw-results.zip",
+      "reports/canonical-final/raw-results.zip",
+      "reports/heavy-diagnostics-20261001/raw-results.zip"
+    ]
+  },
+  {
+    "ref": "origin/revision/practical-bound-sensitivity-20260924-github",
+    "sha": "87a982634e781ef77b4b9f7e3ee6f4a567bd05de",
+    "file_count": 189,
+    "stage_matches": [],
+    "zip_files": [
+      "reports/archive/canonical-final-20260923/canonical-results-and-source.zip",
+      "reports/archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+      "reports/archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+      "reports/canonical-final/raw-results.zip"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+Working directory:
+Task workspace root (local absolute path omitted from the public bundle)
+
+Read-only repository audit:
+python3 work/study/audit_repository.py --repo work/repo > work/study/audit_execution.log 2>&1
+
+Scientific validation before new optimizations:
+work/venv/bin/python work/study/validate.py > work/study/validation.log 2>&1
+
+Actual new optimization launch (one process, E1 then E2 then E3 then E4):
+work/venv/bin/python -u - <<'PY' > work/study/execution.log 2>&1
+import sys,json,hashlib,time
+from pathlib import Path
+sys.path.insert(0,'work/study')
+from experiment import run
+p=Path('work/study')
+(p/'pre_execution_fingerprint.json').write_text(json.dumps({x.name:hashlib.sha256(x.read_bytes()).hexdigest() for x in [p/'experiment.py',p/'PROTOCOL_KO.md',p/'validate.py',p/'analyze.py']},indent=2))
+print('START_UTC',time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),flush=True)
+for e in range(1,5):run(e)
+print('COMPLETE_UTC',time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),flush=True)
+PY
+
+Analysis and report generation after all four experiment summaries exist:
+work/venv/bin/python work/study/analyze.py > work/study/analysis.log 2>&1
+work/venv/bin/python work/study/build_report.py > work/study/report_build.log 2>&1
+
+Portable clean reproduction:
+See README.md and run_all.py --output /a/new/directory.
+The original simulator code did not change during the four runs. Analysis-only
+fixes/additions after the initial fingerprint are listed in IMPLEMENTATION_NOTES_KO.md.

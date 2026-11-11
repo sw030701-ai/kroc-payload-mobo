@@ -1,0 +1,38 @@
+[
+  {
+    "family": 0,
+    "mass": 5.0,
+    "min_eigenvalue": 0.022799816298897307,
+    "potential_gradient_max": 5.632735167182545e-09,
+    "energy_identity_max": 8.929545991520627e-11,
+    "independent_solver_max": 2.282618538629322e-12,
+    "active_saturation_duty": 0.0338
+  },
+  {
+    "family": 0,
+    "mass": 6.0,
+    "min_eigenvalue": 0.02463486101492621,
+    "potential_gradient_max": 6.734438784405938e-09,
+    "energy_identity_max": 1.2815098981988626e-10,
+    "independent_solver_max": 4.1380232573828835e-12,
+    "active_saturation_duty": 0.0483
+  },
+  {
+    "family": 1,
+    "mass": 5.0,
+    "min_eigenvalue": 0.006642855199086837,
+    "potential_gradient_max": 3.608668919241609e-09,
+    "energy_identity_max": 7.40649486186129e-11,
+    "independent_solver_max": 1.1961098778101587e-11,
+    "active_saturation_duty": 0.2095
+  },
+  {
+    "family": 1,
+    "mass": 6.0,
+    "min_eigenvalue": 0.007432097309348683,
+    "potential_gradient_max": 4.695287714184815e-09,
+    "energy_identity_max": 3.913894902618509e-11,
+    "independent_solver_max": 1.4630963107720163e-11,
+    "active_saturation_duty": 0.142
+  }
+]

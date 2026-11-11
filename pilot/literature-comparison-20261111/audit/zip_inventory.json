@@ -1,0 +1,198 @@
+[
+  {
+    "ref": "origin/main",
+    "path": "pilot/diagnostic-20261023/reproducibility.zip",
+    "sha256": "8bee82085ac7ad290e95a9dfbd24603919742a878615f2668b6fa32a8b36d48d",
+    "entries": 616,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/main",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/main",
+    "path": "reports/heavy-diagnostics-20261001/raw-results.zip",
+    "sha256": "d80561076de28eacebaec333b5e205cd0fc2ad77254a133a1e5f2059c5038c6f",
+    "entries": 214,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/objective-budget-torque-20261110",
+    "path": "pilot/diagnostic-20261023/reproducibility.zip",
+    "sha256": "8bee82085ac7ad290e95a9dfbd24603919742a878615f2668b6fa32a8b36d48d",
+    "entries": 616,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/objective-budget-torque-20261110",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/objective-budget-torque-20261110",
+    "path": "reports/heavy-diagnostics-20261001/raw-results.zip",
+    "sha256": "d80561076de28eacebaec333b5e205cd0fc2ad77254a133a1e5f2059c5038c6f",
+    "entries": 214,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/objective-effort-20261110",
+    "path": "pilot/diagnostic-20261023/reproducibility.zip",
+    "sha256": "8bee82085ac7ad290e95a9dfbd24603919742a878615f2668b6fa32a8b36d48d",
+    "entries": 616,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/objective-effort-20261110",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/objective-effort-20261110",
+    "path": "reports/heavy-diagnostics-20261001/raw-results.zip",
+    "sha256": "d80561076de28eacebaec333b5e205cd0fc2ad77254a133a1e5f2059c5038c6f",
+    "entries": 214,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/trajectory-generalization-20261110",
+    "path": "pilot/diagnostic-20261023/reproducibility.zip",
+    "sha256": "8bee82085ac7ad290e95a9dfbd24603919742a878615f2668b6fa32a8b36d48d",
+    "entries": 616,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/trajectory-generalization-20261110",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/pilot/trajectory-generalization-20261110",
+    "path": "reports/heavy-diagnostics-20261001/raw-results.zip",
+    "sha256": "d80561076de28eacebaec333b5e205cd0fc2ad77254a133a1e5f2059c5038c6f",
+    "entries": 214,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/budget80-bounds800-20260927",
+    "path": "reports/archive/canonical-final-20260923/canonical-results-and-source.zip",
+    "sha256": "4f1d11adbad57f8c7118689450cad3e5e6c233e6210f5b65f51bcc3be7f9ea57",
+    "entries": 289,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/budget80-bounds800-20260927",
+    "path": "reports/archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+    "sha256": "cd41dfcd01653012ef98af2a8839beef15b7fcc38a0ba5f07ecbffafd039f592",
+    "entries": 27,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/budget80-bounds800-20260927",
+    "path": "reports/archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+    "sha256": "fb3441e71d8acb6ba08539283dfdad3a217f1231d513173db744029c1220fc0b",
+    "entries": 27,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/budget80-bounds800-20260927",
+    "path": "reports/archive/canonical-final-20260924-budget40/raw-results.zip",
+    "sha256": "82edfcca021a137dbb69889a59b0ed31855e032571d44e7da6ffd347165fe8a4",
+    "entries": 420,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/budget80-bounds800-20260927",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/archive/canonical-final-20260923/canonical-results-and-source.zip",
+    "sha256": "4f1d11adbad57f8c7118689450cad3e5e6c233e6210f5b65f51bcc3be7f9ea57",
+    "entries": 289,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+    "sha256": "cd41dfcd01653012ef98af2a8839beef15b7fcc38a0ba5f07ecbffafd039f592",
+    "entries": 27,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+    "sha256": "fb3441e71d8acb6ba08539283dfdad3a217f1231d513173db744029c1220fc0b",
+    "entries": 27,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/archive/canonical-final-20260924-budget40/raw-results.zip",
+    "sha256": "82edfcca021a137dbb69889a59b0ed31855e032571d44e7da6ffd347165fe8a4",
+    "entries": 420,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/archive/canonical-final-20260927-budget80/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "9f960d6ddfcd2c8ffc6cf46e9f4f44c3b9b4cd18b2af6956e26a36859deac416",
+    "entries": 366,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/heavy-payload-diagnostics-20261001",
+    "path": "reports/heavy-diagnostics-20261001/raw-results.zip",
+    "sha256": "d80561076de28eacebaec333b5e205cd0fc2ad77254a133a1e5f2059c5038c6f",
+    "entries": 214,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/practical-bound-sensitivity-20260924-github",
+    "path": "reports/archive/canonical-final-20260923/canonical-results-and-source.zip",
+    "sha256": "4f1d11adbad57f8c7118689450cad3e5e6c233e6210f5b65f51bcc3be7f9ea57",
+    "entries": 289,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/practical-bound-sensitivity-20260924-github",
+    "path": "reports/archive/canonical-final-20260923/canonical-traces-r00-r02.zip",
+    "sha256": "cd41dfcd01653012ef98af2a8839beef15b7fcc38a0ba5f07ecbffafd039f592",
+    "entries": 27,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/practical-bound-sensitivity-20260924-github",
+    "path": "reports/archive/canonical-final-20260923/canonical-traces-r03-r04-and-pilot.zip",
+    "sha256": "fb3441e71d8acb6ba08539283dfdad3a217f1231d513173db744029c1220fc0b",
+    "entries": 27,
+    "stage_matches": []
+  },
+  {
+    "ref": "origin/revision/practical-bound-sensitivity-20260924-github",
+    "path": "reports/canonical-final/raw-results.zip",
+    "sha256": "82edfcca021a137dbb69889a59b0ed31855e032571d44e7da6ffd347165fe8a4",
+    "entries": 420,
+    "stage_matches": []
+  }
+]

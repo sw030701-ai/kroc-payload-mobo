@@ -1,0 +1,14 @@
+{
+  "repository": "sw030701-ai/kroc-payload-mobo",
+  "branch": "research/literature-comparison-20261111",
+  "base": "main",
+  "base_sha": "d18b00d2e7093cf5cb1b9cb10e9d70c4e3a9038e",
+  "remote_branch_created": false,
+  "remote_pr_created": false,
+  "connector_read_success": true,
+  "metadata_push_permission": true,
+  "create_branch_error": "GitHub API error 403: Resource not accessible by integration",
+  "local_gh_auth": "valid in network-enabled execution; initial restricted-environment check failed",
+  "main_modified": false,
+  "status": "local publication path verified; final commit and push pending"
+}
