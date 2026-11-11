@@ -1,0 +1,32 @@
+[
+  {
+    "file": "eltayeb2024.pdf",
+    "authors": "Ahmed Eltayeb et al.",
+    "title": "Comparative Analysis: Fractional PID vs. PID Controllers for Robotic Arm Using Genetic Algorithm Optimization",
+    "original_url": "https://mdpi-res.com/d_attachment/automation/automation-05-00014/article_deploy/automation-05-00014.pdf",
+    "doi": "10.3390/automation5030014",
+    "sha256": "9bc6f993e71ccc7689fcf08741c39c9f138dd470bad6e0dcc6a322353c3091f4",
+    "license": "CC BY 4.0; original unchanged; extracted text is an automated derivative",
+    "accessed": "2026-11-11"
+  },
+  {
+    "file": "azeez2023.pdf",
+    "authors": "Muhammad I. Azeez et al.",
+    "title": "Optimization of PID trajectory tracking controller for a 3-DOF robotic manipulator using enhanced Artificial Bee Colony algorithm",
+    "original_url": "https://www.nature.com/articles/s41598-023-37895-3.pdf",
+    "doi": "10.1038/s41598-023-37895-3",
+    "sha256": "b601d2751ee6d62113bf54caa0a991a0ab29e9a981d4c9e78e152a017c44bdef",
+    "license": "CC BY 4.0; original unchanged; extracted text is an automated derivative",
+    "accessed": "2026-11-11"
+  },
+  {
+    "file": "mishra2026v3.pdf",
+    "authors": "Ojasva Mishra, Xiaolong Wu, Min Xu",
+    "title": "Constraint-Aware Discrete-Time PID Gain Optimization for Robotic Joint Control Under Actuator Saturation",
+    "original_url": "https://arxiv.org/pdf/2601.18639v3",
+    "doi": "10.48550/arXiv.2601.18639",
+    "sha256": "e61183f033a62254559a5c4ddf2e438e1d913a4db88c2492808b41d65e6292eb",
+    "license": "CC BY 4.0; original unchanged; extracted text is an automated derivative",
+    "accessed": "2026-11-11"
+  }
+]

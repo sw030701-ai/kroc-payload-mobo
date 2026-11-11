@@ -1,0 +1,51 @@
+[
+  {
+    "experiment": 1,
+    "train_failures": 37,
+    "test_failures": 0,
+    "max_selected_gain_discrepancy": 0.0,
+    "initial_rng_match": true,
+    "max_fixed_dt_refinement_rmse_change": 1.3284623401332851e-11,
+    "code_sha256": "b0c45fbbb9e49145999be4f4a30a252bbd57595e570c218319b97325ccc5a298",
+    "active_tight_test_fraction": 0.575
+  },
+  {
+    "experiment": 2,
+    "train_failures": 17,
+    "test_failures": 0,
+    "max_selected_gain_discrepancy": 0.0,
+    "initial_rng_match": true,
+    "max_fixed_dt_refinement_rmse_change": 1.0968570496316944e-10,
+    "code_sha256": "b0c45fbbb9e49145999be4f4a30a252bbd57595e570c218319b97325ccc5a298",
+    "active_tight_test_fraction": 0.9916666666666667
+  },
+  {
+    "experiment": 3,
+    "train_failures": 12,
+    "test_failures": 0,
+    "max_selected_gain_discrepancy": 0.0,
+    "initial_rng_match": true,
+    "max_fixed_dt_refinement_rmse_change": 1.0319119571980742e-05,
+    "code_sha256": "b0c45fbbb9e49145999be4f4a30a252bbd57595e570c218319b97325ccc5a298",
+    "active_tight_test_fraction": 0.6833333333333333
+  },
+  {
+    "experiment": 4,
+    "train_failures": 2,
+    "test_failures": 0,
+    "max_selected_gain_discrepancy": 0.0,
+    "initial_rng_match": true,
+    "max_fixed_dt_refinement_rmse_change": 8.5342899414087e-11,
+    "code_sha256": "b0c45fbbb9e49145999be4f4a30a252bbd57595e570c218319b97325ccc5a298",
+    "active_tight_test_fraction": 1.0
+  }
+]
+ experiment limit taskgroup contrast metric  n      mean    ci_low   ci_high  negative_seeds  sign_flip_p  primary  holm_primary_p
+          1 tight       all  ISE-IAE   rmse  8  0.006407  0.004699  0.008296               0     0.007812     True          0.0625
+          1 tight       all  PEN-IAE   rmse  8  0.015524  0.007162  0.027918               0     0.007812     True          0.0625
+          2 tight       all  ISE-IAE   rmse  8  0.000043 -0.001162  0.001194               3     0.921875     True          1.0000
+          2 tight       all  PEN-IAE   rmse  8  0.001630  0.001053  0.002230               0     0.007812     True          0.0625
+          3 tight       all  ISE-IAE   rmse  8  0.011716  0.009963  0.013268               0     0.007812     True          0.0625
+          3 tight       all  PEN-IAE   rmse  8 -0.000397 -0.002088  0.001316               4     0.671875     True          1.0000
+          4 tight       all  ISE-IAE   rmse  8 -0.001472 -0.001988 -0.000925               8     0.007812     True          0.0625
+          4 tight       all  PEN-IAE   rmse  8  0.001012  0.000724  0.001325               0     0.007812     True          0.0625

@@ -1,0 +1,50 @@
+{
+  "experiment": 3,
+  "family": 1,
+  "actual_parameters": [
+    10.0,
+    5.0,
+    0.2,
+    0.1,
+    0.1,
+    0.05,
+    0.03333333333333334,
+    0.0041666666666666675,
+    9.81
+  ],
+  "compensation_parameters": [
+    10.0,
+    5.0,
+    0.2,
+    0.1,
+    0.1,
+    0.05,
+    0.03333333333333334,
+    0.0041666666666666675,
+    9.81
+  ],
+  "limits_tight": [
+    27.590625000000003,
+    3.0656250000000003
+  ],
+  "seeds": [
+    110301,
+    110302,
+    110303,
+    110304,
+    110305,
+    110306,
+    110307,
+    110308
+  ],
+  "budget": 256,
+  "optimizations": 40,
+  "candidate_evaluations": 10240,
+  "training_rollouts": 20480,
+  "test_rollouts": 264,
+  "refinement_rollouts": 240,
+  "elapsed_s": 298.5068390369415,
+  "python": "3.13.1 (v3.13.1:06714517797, Dec  3 2024, 14:00:22) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "code_sha256": "b0c45fbbb9e49145999be4f4a30a252bbd57595e570c218319b97325ccc5a298"
+}

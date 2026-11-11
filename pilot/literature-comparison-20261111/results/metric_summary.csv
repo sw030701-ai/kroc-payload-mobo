@@ -1,0 +1,1729 @@
+experiment,limit,taskgroup,method,metric,n,mean,ci_low,ci_high,ci_type
+1,tight,all,IAE,rmse,8,0.07494124796331326,0.07378276815390661,0.07621290096237007,optimizer seed percentile bootstrap
+1,tight,all,IAE,iae,8,0.3517642991100449,0.3502103741694997,0.35368921754579813,optimizer seed percentile bootstrap
+1,tight,all,IAE,torque_rms,8,16.971595978638486,16.96271267635158,16.98008137348034,optimizer seed percentile bootstrap
+1,tight,all,IAE,saturation_duty,8,0.02178333333333333,0.02141239583333333,0.022208333333333333,optimizer seed percentile bootstrap
+1,tight,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,ISE,rmse,8,0.08134831526821552,0.08036480841445115,0.08258075344213031,optimizer seed percentile bootstrap
+1,tight,all,ISE,iae,8,0.5604572881035027,0.5410327751505578,0.5780253985187682,optimizer seed percentile bootstrap
+1,tight,all,ISE,torque_rms,8,16.85675850856893,16.778211312988237,16.940959427365264,optimizer seed percentile bootstrap
+1,tight,all,ISE,saturation_duty,8,0.008625,0.008125,0.009158333333333334,optimizer seed percentile bootstrap
+1,tight,all,ISE,tracking_feasible,8,0.8333333333333333,0.7083333333333333,0.9583333333333333,optimizer seed percentile bootstrap
+1,tight,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,ITAE,rmse,8,0.07469052011860658,0.07338693951597702,0.07589109186863005,optimizer seed percentile bootstrap
+1,tight,all,ITAE,iae,8,0.3484016936953168,0.34024425955220433,0.35604632946457104,optimizer seed percentile bootstrap
+1,tight,all,ITAE,torque_rms,8,16.97896057149407,16.97065088305301,16.98727895249081,optimizer seed percentile bootstrap
+1,tight,all,ITAE,saturation_duty,8,0.022008333333333335,0.0212375,0.022754166666666666,optimizer seed percentile bootstrap
+1,tight,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,ITSE,rmse,8,0.07076711619421429,0.0702114476334924,0.07128035351940434,optimizer seed percentile bootstrap
+1,tight,all,ITSE,iae,8,0.41716960211034365,0.4092876581872692,0.4252780333070828,optimizer seed percentile bootstrap
+1,tight,all,ITSE,torque_rms,8,16.902426539685102,16.863134476685282,16.937543285227136,optimizer seed percentile bootstrap
+1,tight,all,ITSE,saturation_duty,8,0.015395833333333333,0.014929166666666667,0.015883333333333333,optimizer seed percentile bootstrap
+1,tight,all,ITSE,tracking_feasible,8,0.9166666666666666,0.7916666666666666,1.0,optimizer seed percentile bootstrap
+1,tight,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,PEN,rmse,8,0.0904650206969965,0.08153468404715693,0.10348679794148771,optimizer seed percentile bootstrap
+1,tight,all,PEN,iae,8,0.6147659114236887,0.49428026449897877,0.7676759231614865,optimizer seed percentile bootstrap
+1,tight,all,PEN,torque_rms,8,17.04922538283998,16.94458115778992,17.20013269544343,optimizer seed percentile bootstrap
+1,tight,all,PEN,saturation_duty,8,0.011595833333333333,0.0070875,0.0166875,optimizer seed percentile bootstrap
+1,tight,all,PEN,tracking_feasible,8,0.9583333333333333,0.875,1.0,optimizer seed percentile bootstrap
+1,tight,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,all,PAPER_IAE,rmse,0,0.06986714731177243,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_IAE,iae,0,0.4169612183152868,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_IAE,torque_rms,0,16.79294771886748,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_IAE,saturation_duty,0,0.016366666666666665,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ISE,rmse,0,0.07261190668844952,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ISE,iae,0,0.38338902984260503,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ISE,torque_rms,0,16.903564126033643,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ISE,saturation_duty,0,0.019966666666666664,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITAE,rmse,0,0.07131140036380637,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITAE,iae,0,0.40592407182700985,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITAE,torque_rms,0,16.8576428714696,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITAE,saturation_duty,0,0.016966666666666668,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITSE,rmse,0,0.0770439374178783,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITSE,iae,0,0.4023751452299515,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITSE,torque_rms,0,16.911669511829846,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITSE,saturation_duty,0,0.020566666666666667,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,IAE,rmse,8,0.14164885648853823,0.140281649072494,0.1431899867436539,optimizer seed percentile bootstrap
+1,tight,step,IAE,iae,8,0.54915049405671,0.5408296781549651,0.5583171233725822,optimizer seed percentile bootstrap
+1,tight,step,IAE,torque_rms,8,17.32461678457868,17.321018853746175,17.329131316904302,optimizer seed percentile bootstrap
+1,tight,step,IAE,saturation_duty,8,0.03446250000000001,0.03421250000000001,0.034775,optimizer seed percentile bootstrap
+1,tight,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,ISE,rmse,8,0.11557219915461049,0.1145874666339532,0.11642328111361853,optimizer seed percentile bootstrap
+1,tight,step,ISE,iae,8,0.5239651535463601,0.4959122289211279,0.5493193056383117,optimizer seed percentile bootstrap
+1,tight,step,ISE,torque_rms,8,17.180554461272607,17.137920207141043,17.226542387419418,optimizer seed percentile bootstrap
+1,tight,step,ISE,saturation_duty,8,0.02515,0.02415,0.026075,optimizer seed percentile bootstrap
+1,tight,step,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,ITAE,rmse,8,0.14146730820110143,0.1397806525738931,0.14291521421534403,optimizer seed percentile bootstrap
+1,tight,step,ITAE,iae,8,0.5467713019473799,0.5390862671084796,0.553507448891704,optimizer seed percentile bootstrap
+1,tight,step,ITAE,torque_rms,8,17.327955024493136,17.316946857509045,17.33954977208071,optimizer seed percentile bootstrap
+1,tight,step,ITAE,saturation_duty,8,0.0351875,0.034062499999999996,0.0365875,optimizer seed percentile bootstrap
+1,tight,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,ITSE,rmse,8,0.12755166235331336,0.12640630393198193,0.12864704368244206,optimizer seed percentile bootstrap
+1,tight,step,ITSE,iae,8,0.5192092961009998,0.5109101126027688,0.5276535983396926,optimizer seed percentile bootstrap
+1,tight,step,ITSE,torque_rms,8,17.257362112156745,17.248497376959662,17.266187038059535,optimizer seed percentile bootstrap
+1,tight,step,ITSE,saturation_duty,8,0.0301375,0.0296871875,0.030637499999999998,optimizer seed percentile bootstrap
+1,tight,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,PEN,rmse,8,0.1231708764335813,0.11445687843868219,0.13444773155741596,optimizer seed percentile bootstrap
+1,tight,step,PEN,iae,8,0.5443937659531844,0.4967308957924733,0.5912258093948976,optimizer seed percentile bootstrap
+1,tight,step,PEN,torque_rms,8,17.305445383667404,17.250315338260286,17.382788432285682,optimizer seed percentile bootstrap
+1,tight,step,PEN,saturation_duty,8,0.0241,0.0187625,0.028687499999999998,optimizer seed percentile bootstrap
+1,tight,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,step,PAPER_IAE,rmse,0,0.1267919263567498,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_IAE,iae,0,0.5372508751017909,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_IAE,torque_rms,0,17.22488793497304,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_IAE,saturation_duty,0,0.0326,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ISE,rmse,0,0.1376170940764481,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ISE,iae,0,0.5356406842647548,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ISE,torque_rms,0,17.294644264938572,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ISE,saturation_duty,0,0.0329,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITAE,rmse,0,0.1306367778452863,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITAE,iae,0,0.5480661892481078,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITAE,torque_rms,0,17.249536393629498,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITAE,saturation_duty,0,0.0307,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITSE,rmse,0,0.141580744074987,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITSE,iae,0,0.5600912032413766,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITSE,torque_rms,0,17.30419171524879,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITSE,saturation_duty,0,0.0329,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,IAE,rmse,8,0.06950592149016929,0.0666090597993635,0.07267737538164597,optimizer seed percentile bootstrap
+1,tight,fast,IAE,iae,8,0.2683423265449989,0.2623086927995059,0.2751368355771615,optimizer seed percentile bootstrap
+1,tight,fast,IAE,torque_rms,8,11.352113973159689,11.328270704621827,11.375538061324534,optimizer seed percentile bootstrap
+1,tight,fast,IAE,saturation_duty,8,0.0308875,0.030012499999999998,0.0318625,optimizer seed percentile bootstrap
+1,tight,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,ISE,rmse,8,0.07466769990224217,0.07285477120662903,0.07687469845915398,optimizer seed percentile bootstrap
+1,tight,fast,ISE,iae,8,0.4140539543360946,0.36446345011159736,0.46015604494131757,optimizer seed percentile bootstrap
+1,tight,fast,ISE,torque_rms,8,11.128063778986194,11.007041623567812,11.260614527809118,optimizer seed percentile bootstrap
+1,tight,fast,ISE,saturation_duty,8,0.000725,0.0,0.00195,optimizer seed percentile bootstrap
+1,tight,fast,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,ITAE,rmse,8,0.06897983346961407,0.06521472144440424,0.07224185078235847,optimizer seed percentile bootstrap
+1,tight,fast,ITAE,iae,8,0.26279568766434525,0.25228470102946654,0.2724678823408506,optimizer seed percentile bootstrap
+1,tight,fast,ITAE,torque_rms,8,11.366737091976828,11.346498372442742,11.38632267889657,optimizer seed percentile bootstrap
+1,tight,fast,ITAE,saturation_duty,8,0.030837499999999997,0.0295,0.0319375,optimizer seed percentile bootstrap
+1,tight,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,ITSE,rmse,8,0.054655944661440525,0.054173801808176006,0.05517496517264165,optimizer seed percentile bootstrap
+1,tight,fast,ITSE,iae,8,0.2771861100783158,0.24761477284097677,0.30865001414669474,optimizer seed percentile bootstrap
+1,tight,fast,ITSE,torque_rms,8,11.211864022630072,11.161251841022688,11.260548360112917,optimizer seed percentile bootstrap
+1,tight,fast,ITSE,saturation_duty,8,0.01605,0.0151,0.0170375,optimizer seed percentile bootstrap
+1,tight,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,PEN,rmse,8,0.08751185047005636,0.07543296824459769,0.10458306812974973,optimizer seed percentile bootstrap
+1,tight,fast,PEN,iae,8,0.4099065265318924,0.32634153588163617,0.5198993006706758,optimizer seed percentile bootstrap
+1,tight,fast,PEN,torque_rms,8,11.448489963507784,11.283180419525927,11.68709391951083,optimizer seed percentile bootstrap
+1,tight,fast,PEN,saturation_duty,8,0.010687499999999999,0.00355,0.021337500000000002,optimizer seed percentile bootstrap
+1,tight,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,fast,PAPER_IAE,rmse,0,0.0568272216727148,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_IAE,iae,0,0.3438794339004038,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_IAE,torque_rms,0,11.092856956651053,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_IAE,saturation_duty,0,0.0165,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ISE,rmse,0,0.0615274986323631,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ISE,iae,0,0.2857053252311125,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ISE,torque_rms,0,11.232034568730183,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ISE,saturation_duty,0,0.027,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITAE,rmse,0,0.0622748248103472,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITAE,iae,0,0.3476372593510595,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITAE,torque_rms,0,11.251454583950167,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITAE,saturation_duty,0,0.0202,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITSE,rmse,0,0.0688906019367604,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITSE,iae,0,0.2858908192973176,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITSE,torque_rms,0,11.234683309863962,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITSE,saturation_duty,0,0.0288,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,IAE,rmse,8,0.013668965911232287,0.012764698698826675,0.01448109853281225,optimizer seed percentile bootstrap
+1,tight,sine,IAE,iae,8,0.23780007672842593,0.22202925037305415,0.25035241693741045,optimizer seed percentile bootstrap
+1,tight,sine,IAE,torque_rms,8,22.238057178177087,22.233983095464517,22.242930774660366,optimizer seed percentile bootstrap
+1,tight,sine,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,tight,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,ISE,rmse,8,0.053805046747793905,0.05169310413456714,0.056347403563864536,optimizer seed percentile bootstrap
+1,tight,sine,ISE,iae,8,0.7433527564280533,0.7071893676325631,0.7905556877910704,optimizer seed percentile bootstrap
+1,tight,sine,ISE,torque_rms,8,22.261657285447995,22.18663833836706,22.337038929394293,optimizer seed percentile bootstrap
+1,tight,sine,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,tight,sine,ISE,tracking_feasible,8,0.5,0.125,0.875,optimizer seed percentile bootstrap
+1,tight,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,ITAE,rmse,8,0.013624418685104226,0.012051089776591925,0.015414544938948387,optimizer seed percentile bootstrap
+1,tight,sine,ITAE,iae,8,0.23563809147422513,0.2086277207663233,0.26557960659680857,optimizer seed percentile bootstrap
+1,tight,sine,ITAE,torque_rms,8,22.24218959801225,22.236276340264485,22.248578815339435,optimizer seed percentile bootstrap
+1,tight,sine,ITAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,tight,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,ITSE,rmse,8,0.030093741567888986,0.027280738556499026,0.03259504243868591,optimizer seed percentile bootstrap
+1,tight,sine,ITSE,iae,8,0.4551134001517154,0.41344906937817644,0.490805430497769,optimizer seed percentile bootstrap
+1,tight,sine,ITSE,torque_rms,8,22.238053484268498,22.174038004371848,22.291080095531093,optimizer seed percentile bootstrap
+1,tight,sine,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,tight,sine,ITSE,tracking_feasible,8,0.75,0.375,1.0,optimizer seed percentile bootstrap
+1,tight,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,PEN,rmse,8,0.06071233518735187,0.037556473626450815,0.08856114719720418,optimizer seed percentile bootstrap
+1,tight,sine,PEN,iae,8,0.889997441785989,0.5874402927951917,1.251998113441596,optimizer seed percentile bootstrap
+1,tight,sine,PEN,torque_rms,8,22.393740801344748,22.279815116145723,22.54203576715344,optimizer seed percentile bootstrap
+1,tight,sine,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,tight,sine,PEN,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+1,tight,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,tight,sine,PAPER_IAE,rmse,0,0.0259822939058527,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_IAE,iae,0,0.3697533459436657,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_IAE,torque_rms,0,22.06109826497835,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ISE,rmse,0,0.0186911273565374,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ISE,iae,0,0.328821080031948,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ISE,torque_rms,0,22.184013544432176,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ISE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITAE,rmse,0,0.0210225984357856,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITAE,iae,0,0.3220687668818623,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITAE,torque_rms,0,22.071937636829137,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITSE,rmse,0,0.0206604662418875,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITSE,iae,0,0.3611434131511601,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITSE,torque_rms,0,22.196133510376782,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITSE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,tight,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,all,IAE,rmse,8,0.04354166156870132,0.04330672883272291,0.043791770775719135,optimizer seed percentile bootstrap
+1,nominal,all,IAE,iae,8,0.2178192440637229,0.2142501417193057,0.22170033422795,optimizer seed percentile bootstrap
+1,nominal,all,IAE,torque_rms,8,17.045378508021315,17.017985799412134,17.077266080960406,optimizer seed percentile bootstrap
+1,nominal,all,IAE,saturation_duty,8,0.005079166666666667,0.004958333333333333,0.005233333333333333,optimizer seed percentile bootstrap
+1,nominal,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,ISE,rmse,8,0.06844930454640649,0.06710933233143732,0.07015015070681656,optimizer seed percentile bootstrap
+1,nominal,all,ISE,iae,8,0.4956982604010701,0.4735122890979392,0.5160387433669908,optimizer seed percentile bootstrap
+1,nominal,all,ISE,torque_rms,8,16.82702128079835,16.74161277237171,16.918795305978975,optimizer seed percentile bootstrap
+1,nominal,all,ISE,saturation_duty,8,0.001925,0.00175,0.0020666666666666667,optimizer seed percentile bootstrap
+1,nominal,all,ISE,tracking_feasible,8,0.8333333333333333,0.7083333333333333,0.9583333333333333,optimizer seed percentile bootstrap
+1,nominal,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,ITAE,rmse,8,0.043645460514620524,0.0429009017608793,0.04445101317288056,optimizer seed percentile bootstrap
+1,nominal,all,ITAE,iae,8,0.21471159012752106,0.20565417853499032,0.22451377442197268,optimizer seed percentile bootstrap
+1,nominal,all,ITAE,torque_rms,8,17.053757642562445,17.02867803013093,17.077303238327858,optimizer seed percentile bootstrap
+1,nominal,all,ITAE,saturation_duty,8,0.0055125,0.004879166666666666,0.00625,optimizer seed percentile bootstrap
+1,nominal,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,ITSE,rmse,8,0.05277448555829003,0.051626510901064473,0.05389288262911142,optimizer seed percentile bootstrap
+1,nominal,all,ITSE,iae,8,0.3234033634660911,0.3149516377006556,0.33184590077435216,optimizer seed percentile bootstrap
+1,nominal,all,ITSE,torque_rms,8,16.89367902055557,16.850616875372612,16.93239219444814,optimizer seed percentile bootstrap
+1,nominal,all,ITSE,saturation_duty,8,0.0032208333333333334,0.0030624999999999997,0.0033833333333333332,optimizer seed percentile bootstrap
+1,nominal,all,ITSE,tracking_feasible,8,0.9166666666666666,0.7916666666666666,1.0,optimizer seed percentile bootstrap
+1,nominal,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,PEN,rmse,8,0.07348849976414094,0.05782468908813653,0.09263950503781251,optimizer seed percentile bootstrap
+1,nominal,all,PEN,iae,8,0.5306261313427978,0.38294842951994024,0.7098507776416139,optimizer seed percentile bootstrap
+1,nominal,all,PEN,torque_rms,8,17.061954091905648,16.974833309243717,17.2010498273582,optimizer seed percentile bootstrap
+1,nominal,all,PEN,saturation_duty,8,0.0025625,0.0016083333333333336,0.003816666666666667,optimizer seed percentile bootstrap
+1,nominal,all,PEN,tracking_feasible,8,0.9583333333333333,0.875,1.0,optimizer seed percentile bootstrap
+1,nominal,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,all,PAPER_IAE,rmse,0,0.05269687723311597,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_IAE,iae,0,0.32998273676634626,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_IAE,torque_rms,0,16.76838899950283,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_IAE,saturation_duty,0,0.0032666666666666664,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ISE,rmse,0,0.045945071319922905,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ISE,iae,0,0.26622018863668556,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ISE,torque_rms,0,16.92074860004202,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ISE,saturation_duty,0,0.004433333333333333,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITAE,rmse,0,0.05220110509394366,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITAE,iae,0,0.3116675342809882,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITAE,torque_rms,0,16.833473440583163,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITAE,saturation_duty,0,0.0030333333333333336,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITSE,rmse,0,0.046776612037249664,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITSE,iae,0,0.2731027779267396,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITSE,torque_rms,0,16.956866369260773,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITSE,saturation_duty,0,0.0047,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,IAE,rmse,8,0.09552768767075329,0.09365348221448133,0.09769191343213143,optimizer seed percentile bootstrap
+1,nominal,step,IAE,iae,8,0.3129172037707788,0.30077971972340833,0.32800291214203714,optimizer seed percentile bootstrap
+1,nominal,step,IAE,torque_rms,8,17.696070454023285,17.63095292952975,17.78375376530063,optimizer seed percentile bootstrap
+1,nominal,step,IAE,saturation_duty,8,0.0152375,0.014875,0.0157,optimizer seed percentile bootstrap
+1,nominal,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,ISE,rmse,8,0.07687668480200169,0.07649665195530843,0.07734553985423086,optimizer seed percentile bootstrap
+1,nominal,step,ISE,iae,8,0.3294166119791923,0.29299445096650945,0.3629396442988379,optimizer seed percentile bootstrap
+1,nominal,step,ISE,torque_rms,8,17.091464981617506,17.028220730343612,17.16012744103257,optimizer seed percentile bootstrap
+1,nominal,step,ISE,saturation_duty,8,0.005775,0.0052499999999999995,0.0062,optimizer seed percentile bootstrap
+1,nominal,step,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,ITAE,rmse,8,0.09523049685232582,0.09272161827135078,0.09741764636242359,optimizer seed percentile bootstrap
+1,nominal,step,ITAE,iae,8,0.3116732440677041,0.298385076682303,0.32375358499656526,optimizer seed percentile bootstrap
+1,nominal,step,ITAE,torque_rms,8,17.69957796660727,17.612926841250705,17.784051842469324,optimizer seed percentile bootstrap
+1,nominal,step,ITAE,saturation_duty,8,0.0165375,0.0146375,0.018750000000000003,optimizer seed percentile bootstrap
+1,nominal,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,ITSE,rmse,8,0.07854466381446491,0.07759016141413438,0.07954002915922184,optimizer seed percentile bootstrap
+1,nominal,step,ITSE,iae,8,0.2755033654200906,0.26034269271408833,0.2916471906463444,optimizer seed percentile bootstrap
+1,nominal,step,ITSE,torque_rms,8,17.269315884200058,17.256430976011423,17.28252594537598,optimizer seed percentile bootstrap
+1,nominal,step,ITSE,saturation_duty,8,0.0096625,0.0091875,0.01015,optimizer seed percentile bootstrap
+1,nominal,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,PEN,rmse,8,0.089727280859838,0.08309928930854694,0.09660946511763474,optimizer seed percentile bootstrap
+1,nominal,step,PEN,iae,8,0.35119419097362814,0.3012171351622826,0.4061486624238475,optimizer seed percentile bootstrap
+1,nominal,step,PEN,torque_rms,8,17.37812591684753,17.26347587474125,17.499023365477406,optimizer seed percentile bootstrap
+1,nominal,step,PEN,saturation_duty,8,0.0076875,0.004825,0.01145,optimizer seed percentile bootstrap
+1,nominal,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,step,PAPER_IAE,rmse,0,0.0787222461481,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_IAE,iae,0,0.3135877992196895,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_IAE,torque_rms,0,17.19025751472877,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_IAE,saturation_duty,0,0.0098,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ISE,rmse,0,0.0899109010802714,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ISE,iae,0,0.2948177413709409,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ISE,torque_rms,0,17.47255764466443,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ISE,saturation_duty,0,0.0133,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITAE,rmse,0,0.0809921173741124,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITAE,iae,0,0.3215788351758745,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITAE,torque_rms,0,17.237125779534715,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITAE,saturation_duty,0,0.0091,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITSE,rmse,0,0.0959641004085912,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITSE,iae,0,0.3136394142999441,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITSE,torque_rms,0,17.56098828441703,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITSE,saturation_duty,0,0.0141,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,IAE,rmse,8,0.021428331124118377,0.019507349235434946,0.023132879134646258,optimizer seed percentile bootstrap
+1,nominal,fast,IAE,iae,8,0.10274045169196402,0.09339716154624446,0.11283354216084547,optimizer seed percentile bootstrap
+1,nominal,fast,IAE,torque_rms,8,11.202007891863579,11.175971903785026,11.222821053988117,optimizer seed percentile bootstrap
+1,nominal,fast,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,ISE,rmse,8,0.07466618208942394,0.07285082570752793,0.0768733906554683,optimizer seed percentile bootstrap
+1,nominal,fast,ISE,iae,8,0.4143254127959647,0.3645537873130816,0.4605034334757986,optimizer seed percentile bootstrap
+1,nominal,fast,ISE,torque_rms,8,11.127941575329544,11.006699016517238,11.260602536538755,optimizer seed percentile bootstrap
+1,nominal,fast,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,fast,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,ITAE,rmse,8,0.022081466006431513,0.019393063836032325,0.02511074267408165,optimizer seed percentile bootstrap
+1,nominal,fast,ITAE,iae,8,0.09682343484063399,0.08686093278850328,0.1089339642546671,optimizer seed percentile bootstrap
+1,nominal,fast,ITAE,torque_rms,8,11.219505363067807,11.205313976513356,11.234954230791143,optimizer seed percentile bootstrap
+1,nominal,fast,ITAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,ITSE,rmse,8,0.0496850512925162,0.047866112648854375,0.05157708970847745,optimizer seed percentile bootstrap
+1,nominal,fast,ITSE,iae,8,0.23959332482646722,0.2183205049667591,0.2618685473782137,optimizer seed percentile bootstrap
+1,nominal,fast,ITSE,torque_rms,8,11.173667693198158,11.114183213494496,11.230268339615025,optimizer seed percentile bootstrap
+1,nominal,fast,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,PEN,rmse,8,0.07002588324523296,0.04567836389213064,0.0983027217500771,optimizer seed percentile bootstrap
+1,nominal,fast,PEN,iae,8,0.35068676126877574,0.2280128133600149,0.49574542974007507,optimizer seed percentile bootstrap
+1,nominal,fast,PEN,torque_rms,8,11.413995557524657,11.22030712471446,11.667748381418429,optimizer seed percentile bootstrap
+1,nominal,fast,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,fast,PAPER_IAE,rmse,0,0.0533860916453952,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_IAE,iae,0,0.3066070651356836,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_IAE,torque_rms,0,11.05381121880136,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ISE,rmse,0,0.0292331855229599,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ISE,iae,0,0.1750217445071679,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ISE,torque_rms,0,11.105674611029452,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ISE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITAE,rmse,0,0.054588599471933,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITAE,iae,0,0.2913550007852277,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITAE,torque_rms,0,11.19135690538564,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITSE,rmse,0,0.0237052694612703,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITSE,iae,0,0.1445255063291145,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITSE,torque_rms,0,11.11347731298851,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITSE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,IAE,rmse,8,0.013668965911232287,0.012764698698826675,0.01448109853281225,optimizer seed percentile bootstrap
+1,nominal,sine,IAE,iae,8,0.23780007672842593,0.22202925037305415,0.25035241693741045,optimizer seed percentile bootstrap
+1,nominal,sine,IAE,torque_rms,8,22.238057178177087,22.233983095464517,22.242930774660366,optimizer seed percentile bootstrap
+1,nominal,sine,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,ISE,rmse,8,0.053805046747793905,0.05169310413456714,0.056347403563864536,optimizer seed percentile bootstrap
+1,nominal,sine,ISE,iae,8,0.7433527564280533,0.7071893676325631,0.7905556877910704,optimizer seed percentile bootstrap
+1,nominal,sine,ISE,torque_rms,8,22.261657285447995,22.18663833836706,22.337038929394293,optimizer seed percentile bootstrap
+1,nominal,sine,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,sine,ISE,tracking_feasible,8,0.5,0.125,0.875,optimizer seed percentile bootstrap
+1,nominal,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,ITAE,rmse,8,0.013624418685104226,0.012051089776591925,0.015414544938948387,optimizer seed percentile bootstrap
+1,nominal,sine,ITAE,iae,8,0.23563809147422513,0.2086277207663233,0.26557960659680857,optimizer seed percentile bootstrap
+1,nominal,sine,ITAE,torque_rms,8,22.24218959801225,22.236276340264485,22.248578815339435,optimizer seed percentile bootstrap
+1,nominal,sine,ITAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,ITSE,rmse,8,0.030093741567888986,0.027280738556499026,0.03259504243868591,optimizer seed percentile bootstrap
+1,nominal,sine,ITSE,iae,8,0.4551134001517154,0.41344906937817644,0.490805430497769,optimizer seed percentile bootstrap
+1,nominal,sine,ITSE,torque_rms,8,22.238053484268498,22.174038004371848,22.291080095531093,optimizer seed percentile bootstrap
+1,nominal,sine,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,sine,ITSE,tracking_feasible,8,0.75,0.375,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,PEN,rmse,8,0.06071233518735187,0.037556473626450815,0.08856114719720418,optimizer seed percentile bootstrap
+1,nominal,sine,PEN,iae,8,0.889997441785989,0.5874402927951917,1.251998113441596,optimizer seed percentile bootstrap
+1,nominal,sine,PEN,torque_rms,8,22.393740801344748,22.279815116145723,22.54203576715344,optimizer seed percentile bootstrap
+1,nominal,sine,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+1,nominal,sine,PEN,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+1,nominal,sine,PAPER_IAE,rmse,0,0.0259822939058527,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_IAE,iae,0,0.3697533459436657,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_IAE,torque_rms,0,22.06109826497835,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ISE,rmse,0,0.0186911273565374,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ISE,iae,0,0.328821080031948,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ISE,torque_rms,0,22.184013544432176,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ISE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITAE,rmse,0,0.0210225984357856,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITAE,iae,0,0.3220687668818623,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITAE,torque_rms,0,22.071937636829137,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITSE,rmse,0,0.0206604662418875,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITSE,iae,0,0.3611434131511601,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITSE,torque_rms,0,22.196133510376782,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITSE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+1,nominal,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,all,IAE,rmse,8,0.1673519609265991,0.1671331026924579,0.167581949030484,optimizer seed percentile bootstrap
+2,tight,all,IAE,iae,8,0.7330764744879221,0.7275410866525434,0.7372421758060772,optimizer seed percentile bootstrap
+2,tight,all,IAE,torque_rms,8,18.365822060032027,18.354449552789042,18.377159144199506,optimizer seed percentile bootstrap
+2,tight,all,IAE,saturation_duty,8,0.04485416666666667,0.04449583333333333,0.045254166666666665,optimizer seed percentile bootstrap
+2,tight,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,ISE,rmse,8,0.167394668133586,0.16610272826294323,0.16862731282168836,optimizer seed percentile bootstrap
+2,tight,all,ISE,iae,8,1.0093321544666154,0.860997851711537,1.1509576060094422,optimizer seed percentile bootstrap
+2,tight,all,ISE,torque_rms,8,18.58077707245157,18.464296537287783,18.732710126348334,optimizer seed percentile bootstrap
+2,tight,all,ISE,saturation_duty,8,0.03787083333333333,0.03321239583333333,0.043083333333333335,optimizer seed percentile bootstrap
+2,tight,all,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,tight,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,ITAE,rmse,8,0.16811481213696938,0.16735549979099687,0.1693145316193433,optimizer seed percentile bootstrap
+2,tight,all,ITAE,iae,8,0.7310179405831569,0.7201998910057157,0.741257443627519,optimizer seed percentile bootstrap
+2,tight,all,ITAE,torque_rms,8,18.4084947677187,18.389834687088182,18.427168532712873,optimizer seed percentile bootstrap
+2,tight,all,ITAE,saturation_duty,8,0.04654166666666667,0.045625,0.04741666666666666,optimizer seed percentile bootstrap
+2,tight,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,ITSE,rmse,8,0.16730654902586728,0.16701340906553497,0.16768273888940044,optimizer seed percentile bootstrap
+2,tight,all,ITSE,iae,8,0.7469580401357045,0.7366669318192205,0.7588028996987606,optimizer seed percentile bootstrap
+2,tight,all,ITSE,torque_rms,8,18.38649924388678,18.37150700672251,18.4017316771195,optimizer seed percentile bootstrap
+2,tight,all,ITSE,saturation_duty,8,0.0457,0.044625,0.046779270833333324,optimizer seed percentile bootstrap
+2,tight,all,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,PEN,rmse,8,0.16898176807138476,0.1683432734948486,0.16958447392718207,optimizer seed percentile bootstrap
+2,tight,all,PEN,iae,8,0.8225738313175637,0.8028933371883308,0.8457761596043878,optimizer seed percentile bootstrap
+2,tight,all,PEN,torque_rms,8,18.35838945547773,18.337118932170128,18.384527961971454,optimizer seed percentile bootstrap
+2,tight,all,PEN,saturation_duty,8,0.04207916666666667,0.0417875,0.042408333333333326,optimizer seed percentile bootstrap
+2,tight,all,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,all,PAPER_IAE,rmse,0,0.16328870460184855,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_IAE,iae,0,0.8358755327282369,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_IAE,torque_rms,0,18.22593802017728,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_IAE,saturation_duty,0,0.04103333333333334,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ISE,rmse,0,0.16779545796950798,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ISE,iae,0,0.7705426956682918,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ISE,torque_rms,0,18.29589454005671,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ISE,saturation_duty,0,0.04253333333333333,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITAE,rmse,0,0.16793911564488914,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITAE,iae,0,0.8192227278947356,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITAE,torque_rms,0,18.253393756056777,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITAE,saturation_duty,0,0.0415,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITSE,rmse,0,0.16988226489450994,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITSE,iae,0,0.7835504643978508,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITSE,torque_rms,0,18.30426588411459,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITSE,saturation_duty,0,0.042633333333333336,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,IAE,rmse,8,0.24375419309007595,0.24369178980754197,0.24381845947925135,optimizer seed percentile bootstrap
+2,tight,step,IAE,iae,8,1.0495705769131822,1.0431629751097673,1.055250869093421,optimizer seed percentile bootstrap
+2,tight,step,IAE,torque_rms,8,18.77381842777995,18.761517892595997,18.785199800548288,optimizer seed percentile bootstrap
+2,tight,step,IAE,saturation_duty,8,0.049275,0.049175,0.049375,optimizer seed percentile bootstrap
+2,tight,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,ISE,rmse,8,0.22290809908569076,0.2122330397982063,0.23490814702044457,optimizer seed percentile bootstrap
+2,tight,step,ISE,iae,8,1.1509392912310115,1.090156543639711,1.2416214375735473,optimizer seed percentile bootstrap
+2,tight,step,ISE,torque_rms,8,19.001715509808637,18.87004221715862,19.18013691277296,optimizer seed percentile bootstrap
+2,tight,step,ISE,saturation_duty,8,0.04529999999999999,0.042725,0.048450312499999974,optimizer seed percentile bootstrap
+2,tight,step,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,tight,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,ITAE,rmse,8,0.2440632612187748,0.2436915652403402,0.2444973937746061,optimizer seed percentile bootstrap
+2,tight,step,ITAE,iae,8,1.0603526383672033,1.052721298061464,1.0669605880980966,optimizer seed percentile bootstrap
+2,tight,step,ITAE,torque_rms,8,18.830421656883765,18.79965776728494,18.86851326531022,optimizer seed percentile bootstrap
+2,tight,step,ITAE,saturation_duty,8,0.0511625,0.04983749999999999,0.0530625,optimizer seed percentile bootstrap
+2,tight,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,ITSE,rmse,8,0.24368981962216346,0.24362302480383574,0.2437504051892178,optimizer seed percentile bootstrap
+2,tight,step,ITSE,iae,8,1.0621175497922564,1.0559627073374724,1.068571926412991,optimizer seed percentile bootstrap
+2,tight,step,ITSE,torque_rms,8,18.79253828956774,18.780277277286274,18.80629787942624,optimizer seed percentile bootstrap
+2,tight,step,ITSE,saturation_duty,8,0.0497625,0.049062499999999995,0.0505,optimizer seed percentile bootstrap
+2,tight,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,PEN,rmse,8,0.24254147940679435,0.24217615906964102,0.2428795335667692,optimizer seed percentile bootstrap
+2,tight,step,PEN,iae,8,1.0795794319113288,1.0662734765131476,1.097849424572141,optimizer seed percentile bootstrap
+2,tight,step,PEN,torque_rms,8,18.77672994811705,18.752809702291344,18.808485080314732,optimizer seed percentile bootstrap
+2,tight,step,PEN,saturation_duty,8,0.046312500000000006,0.0458,0.0468375,optimizer seed percentile bootstrap
+2,tight,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,step,PAPER_IAE,rmse,0,0.2343585372950469,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_IAE,iae,0,1.022088545623217,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_IAE,torque_rms,0,18.61303019831363,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_IAE,saturation_duty,0,0.0467,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ISE,rmse,0,0.2421829872419539,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ISE,iae,0,1.02911828869339,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ISE,torque_rms,0,18.69506118064856,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ISE,saturation_duty,0,0.0468,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITAE,rmse,0,0.237312850353574,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITAE,iae,0,1.0219432544636706,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITAE,torque_rms,0,18.61592265893095,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITAE,saturation_duty,0,0.0444,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITSE,rmse,0,0.2440011146188646,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITSE,iae,0,1.0550058680067191,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITSE,torque_rms,0,18.729330455659436,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITSE,saturation_duty,0,0.0473,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,IAE,rmse,8,0.20611791036091054,0.20606626728596683,0.2061634228991851,optimizer seed percentile bootstrap
+2,tight,fast,IAE,iae,8,0.7533237044131041,0.7476805754764698,0.7587355567157719,optimizer seed percentile bootstrap
+2,tight,fast,IAE,torque_rms,8,12.113778905134783,12.098886763328016,12.129317307743854,optimizer seed percentile bootstrap
+2,tight,fast,IAE,saturation_duty,8,0.0491125,0.0482125,0.050125,optimizer seed percentile bootstrap
+2,tight,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,ISE,rmse,8,0.20833597900536263,0.20722271358780298,0.20943124812189443,optimizer seed percentile bootstrap
+2,tight,fast,ISE,iae,8,1.0559847413075274,0.901030024211169,1.2009614105624273,optimizer seed percentile bootstrap
+2,tight,fast,ISE,torque_rms,8,12.402535409667056,12.245880731925464,12.618330017916557,optimizer seed percentile bootstrap
+2,tight,fast,ISE,saturation_duty,8,0.047175,0.0437125,0.0512375,optimizer seed percentile bootstrap
+2,tight,fast,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,tight,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,ITAE,rmse,8,0.20622246735448305,0.20543421364278847,0.2073485095104059,optimizer seed percentile bootstrap
+2,tight,fast,ITAE,iae,8,0.7645133155336051,0.751110362390184,0.7786832863146418,optimizer seed percentile bootstrap
+2,tight,fast,ITAE,torque_rms,8,12.184613979560693,12.15838267328702,12.20903811337148,optimizer seed percentile bootstrap
+2,tight,fast,ITAE,saturation_duty,8,0.051949999999999996,0.0501875,0.053649999999999996,optimizer seed percentile bootstrap
+2,tight,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,ITSE,rmse,8,0.2062437469116213,0.20613267899538334,0.20635524154328247,optimizer seed percentile bootstrap
+2,tight,fast,ITSE,iae,8,0.7726310420569826,0.7653860851971231,0.7808953670471677,optimizer seed percentile bootstrap
+2,tight,fast,ITSE,torque_rms,8,12.146168372121124,12.115740438855402,12.17509011670263,optimizer seed percentile bootstrap
+2,tight,fast,ITSE,saturation_duty,8,0.051125000000000004,0.048975000000000005,0.0532875,optimizer seed percentile bootstrap
+2,tight,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,PEN,rmse,8,0.2081004873581439,0.20763793383547238,0.20858808022981973,optimizer seed percentile bootstrap
+2,tight,fast,PEN,iae,8,0.8237618883736801,0.8041084612929722,0.8476190835094674,optimizer seed percentile bootstrap
+2,tight,fast,PEN,torque_rms,8,12.085990993356042,12.055791945346249,12.12266291750106,optimizer seed percentile bootstrap
+2,tight,fast,PEN,saturation_duty,8,0.0452375,0.044975,0.0455375,optimizer seed percentile bootstrap
+2,tight,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,fast,PAPER_IAE,rmse,0,0.2151544818112948,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_IAE,iae,0,1.0108626130093354,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_IAE,torque_rms,0,12.027140730492912,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_IAE,saturation_duty,0,0.0437,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ISE,rmse,0,0.2081874174191614,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ISE,iae,0,0.7930918412869278,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ISE,torque_rms,0,12.026262557731622,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ISE,saturation_duty,0,0.0454,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITAE,rmse,0,0.2164949646278516,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITAE,iae,0,0.9538955399285626,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITAE,torque_rms,0,12.08866929411489,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITAE,saturation_duty,0,0.044,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITSE,rmse,0,0.207154514957322,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITSE,iae,0,0.7612783057510505,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITSE,torque_rms,0,12.00966039785682,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITSE,saturation_duty,0,0.0459,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,IAE,rmse,8,0.052183779328810784,0.05156080570374663,0.05283886852653619,optimizer seed percentile bootstrap
+2,tight,sine,IAE,iae,8,0.3963351421374799,0.388889224587953,0.40238914219945504,optimizer seed percentile bootstrap
+2,tight,sine,IAE,torque_rms,8,24.209868847181347,24.202125797677475,24.2174013074652,optimizer seed percentile bootstrap
+2,tight,sine,IAE,saturation_duty,8,0.036175,0.036087499999999995,0.036275,optimizer seed percentile bootstrap
+2,tight,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,ISE,rmse,8,0.07093992630970464,0.059269667553772644,0.08275817013865897,optimizer seed percentile bootstrap
+2,tight,sine,ISE,iae,8,0.821072430861307,0.5810773549393674,1.0452280509860918,optimizer seed percentile bootstrap
+2,tight,sine,ISE,torque_rms,8,24.338080297879017,24.273321577152696,24.404524098954575,optimizer seed percentile bootstrap
+2,tight,sine,ISE,saturation_duty,8,0.0211375,0.0119125,0.030237499999999997,optimizer seed percentile bootstrap
+2,tight,sine,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,tight,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,ITAE,rmse,8,0.0540587078376503,0.05228000736599488,0.056344407715759895,optimizer seed percentile bootstrap
+2,tight,sine,ITAE,iae,8,0.3681878678486623,0.35019224369398316,0.38703800740195615,optimizer seed percentile bootstrap
+2,tight,sine,ITAE,torque_rms,8,24.210448666711635,24.198950719858935,24.221123718742145,optimizer seed percentile bootstrap
+2,tight,sine,ITAE,saturation_duty,8,0.0365125,0.03635,0.036675,optimizer seed percentile bootstrap
+2,tight,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,ITSE,rmse,8,0.05198608054381715,0.05114169719038727,0.05301888537288691,optimizer seed percentile bootstrap
+2,tight,sine,ITSE,iae,8,0.40612552855787476,0.38431593640827644,0.43312302233450434,optimizer seed percentile bootstrap
+2,tight,sine,ITSE,torque_rms,8,24.220791069971476,24.21520425730304,24.226743565532722,optimizer seed percentile bootstrap
+2,tight,sine,ITSE,saturation_duty,8,0.036212499999999995,0.0357746875,0.0366,optimizer seed percentile bootstrap
+2,tight,sine,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,PEN,rmse,8,0.05630333744921604,0.05480169449937294,0.0577237467076815,optimizer seed percentile bootstrap
+2,tight,sine,PEN,iae,8,0.5643801736676821,0.5337226315531929,0.5950586819908343,optimizer seed percentile bootstrap
+2,tight,sine,PEN,torque_rms,8,24.212447424960096,24.201921930593873,24.22336555674733,optimizer seed percentile bootstrap
+2,tight,sine,PEN,saturation_duty,8,0.034687499999999996,0.034487500000000004,0.0348875,optimizer seed percentile bootstrap
+2,tight,sine,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,tight,sine,PAPER_IAE,rmse,0,0.040353094699204,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_IAE,iae,0,0.4746754395521584,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_IAE,torque_rms,0,24.037643131725307,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_IAE,saturation_duty,0,0.0327,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ISE,rmse,0,0.0530159692474086,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ISE,iae,0,0.489417957024558,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ISE,torque_rms,0,24.16635988178996,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ISE,saturation_duty,0,0.0354,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITAE,rmse,0,0.0500095319532418,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITAE,iae,0,0.4818293892919736,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITAE,torque_rms,0,24.05558931512449,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITAE,saturation_duty,0,0.0361,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITSE,rmse,0,0.0584911651073432,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITSE,iae,0,0.534367219435783,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITSE,torque_rms,0,24.173806798827513,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITSE,saturation_duty,0,0.0347,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,tight,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,all,IAE,rmse,8,0.05303895546490195,0.052870370816579956,0.05315734566879098,optimizer seed percentile bootstrap
+2,nominal,all,IAE,iae,8,0.25223243201543405,0.24948357270005295,0.2543418369283661,optimizer seed percentile bootstrap
+2,nominal,all,IAE,torque_rms,8,18.384053564006095,18.37044107642354,18.39765714361886,optimizer seed percentile bootstrap
+2,nominal,all,IAE,saturation_duty,8,0.006375,0.005958333333333333,0.006804166666666667,optimizer seed percentile bootstrap
+2,nominal,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,ISE,rmse,8,0.07634217291831262,0.06328869282849259,0.08854222448015137,optimizer seed percentile bootstrap
+2,nominal,all,ISE,iae,8,0.541750029121506,0.3849960124032512,0.693619564593299,optimizer seed percentile bootstrap
+2,nominal,all,ISE,torque_rms,8,18.511836111886613,18.434739114916578,18.636418358984674,optimizer seed percentile bootstrap
+2,nominal,all,ISE,saturation_duty,8,0.0043125,0.0026041666666666665,0.006366666666666666,optimizer seed percentile bootstrap
+2,nominal,all,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,nominal,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,ITAE,rmse,8,0.05443656953382928,0.05313050078866935,0.05669388004499,optimizer seed percentile bootstrap
+2,nominal,all,ITAE,iae,8,0.26303259097040843,0.2485328633475566,0.2846085828729058,optimizer seed percentile bootstrap
+2,nominal,all,ITAE,torque_rms,8,18.48467290617572,18.42199242914345,18.582902093354075,optimizer seed percentile bootstrap
+2,nominal,all,ITAE,saturation_duty,8,0.008141666666666665,0.007279166666666666,0.00895,optimizer seed percentile bootstrap
+2,nominal,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,ITSE,rmse,8,0.053616675286183316,0.05324116925467218,0.05408032989278909,optimizer seed percentile bootstrap
+2,nominal,all,ITSE,iae,8,0.2651487449941463,0.2545626890032051,0.2774636706637097,optimizer seed percentile bootstrap
+2,nominal,all,ITSE,torque_rms,8,18.409595209550197,18.391888034940546,18.428245414296484,optimizer seed percentile bootstrap
+2,nominal,all,ITSE,saturation_duty,8,0.007008333333333333,0.0062375,0.007754166666666666,optimizer seed percentile bootstrap
+2,nominal,all,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,PEN,rmse,8,0.057786573459604564,0.056756003496385814,0.0588562920126732,optimizer seed percentile bootstrap
+2,nominal,all,PEN,iae,8,0.34622168841417034,0.3255788665219044,0.37161075701055457,optimizer seed percentile bootstrap
+2,nominal,all,PEN,torque_rms,8,18.3825866986072,18.35617428344962,18.41707387312446,optimizer seed percentile bootstrap
+2,nominal,all,PEN,saturation_duty,8,0.0050708333333333334,0.0049625,0.005187499999999999,optimizer seed percentile bootstrap
+2,nominal,all,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,all,PAPER_IAE,rmse,0,0.06076220283013207,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_IAE,iae,0,0.36634654726550947,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_IAE,torque_rms,0,18.169444351722642,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_IAE,saturation_duty,0,0.004166666666666667,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ISE,rmse,0,0.055582931526766764,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ISE,iae,0,0.30141912655031905,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ISE,torque_rms,0,18.306018542443642,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ISE,saturation_duty,0,0.0052,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITAE,rmse,0,0.0617592045940634,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITAE,iae,0,0.3575192233170441,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITAE,torque_rms,0,18.252608594624295,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITAE,saturation_duty,0,0.003933333333333333,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITSE,rmse,0,0.056896697905678036,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITSE,iae,0,0.3137803928705343,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITSE,torque_rms,0,18.322020504836246,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITSE,saturation_duty,0,0.005333333333333333,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,IAE,rmse,8,0.11975350008563096,0.11943196180294705,0.1200976434856374,optimizer seed percentile bootstrap
+2,nominal,step,IAE,iae,8,0.40956980794878906,0.4027094658129885,0.4158140983033112,optimizer seed percentile bootstrap
+2,nominal,step,IAE,torque_rms,8,18.886382015013798,18.867943004854414,18.906322033351547,optimizer seed percentile bootstrap
+2,nominal,step,IAE,saturation_duty,8,0.019125,0.017875000000000002,0.0204125,optimizer seed percentile bootstrap
+2,nominal,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,ISE,rmse,8,0.10062676402095264,0.0904725765134452,0.11272360689634683,optimizer seed percentile bootstrap
+2,nominal,step,ISE,iae,8,0.4824761651846366,0.4287003615477819,0.5675656586806315,optimizer seed percentile bootstrap
+2,nominal,step,ISE,torque_rms,8,18.94040190207968,18.82732252709702,19.08763029750714,optimizer seed percentile bootstrap
+2,nominal,step,ISE,saturation_duty,8,0.012937500000000001,0.0078125,0.0191,optimizer seed percentile bootstrap
+2,nominal,step,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,nominal,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,ITAE,rmse,8,0.12497014013387685,0.12211651260577527,0.12827018133994184,optimizer seed percentile bootstrap
+2,nominal,step,ITAE,iae,8,0.46421351575379155,0.43793506299235985,0.4935148146446513,optimizer seed percentile bootstrap
+2,nominal,step,ITAE,torque_rms,8,19.01828594942976,18.959084380655497,19.0803694193498,optimizer seed percentile bootstrap
+2,nominal,step,ITAE,saturation_duty,8,0.0233125,0.02105,0.025349999999999998,optimizer seed percentile bootstrap
+2,nominal,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,ITSE,rmse,8,0.12004910054897795,0.11956618087282188,0.12058332767903505,optimizer seed percentile bootstrap
+2,nominal,step,ITSE,iae,8,0.4352935613908092,0.4250090604939112,0.4470322658771607,optimizer seed percentile bootstrap
+2,nominal,step,ITSE,torque_rms,8,18.924632202900035,18.882707362711635,18.963468312466407,optimizer seed percentile bootstrap
+2,nominal,step,ITSE,saturation_duty,8,0.021025000000000002,0.0187125,0.0232625,optimizer seed percentile bootstrap
+2,nominal,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,PEN,rmse,8,0.11600791145371615,0.11452046675326719,0.11746169749929695,optimizer seed percentile bootstrap
+2,nominal,step,PEN,iae,8,0.45799513852130364,0.43972360227323637,0.48162682356253517,optimizer seed percentile bootstrap
+2,nominal,step,PEN,torque_rms,8,18.799389745321488,18.772509888288035,18.83271932370115,optimizer seed percentile bootstrap
+2,nominal,step,PEN,saturation_duty,8,0.0152125,0.0148875,0.0155625,optimizer seed percentile bootstrap
+2,nominal,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,step,PAPER_IAE,rmse,0,0.0922578719194067,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_IAE,iae,0,0.3625142975061624,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_IAE,torque_rms,0,18.51142576210629,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_IAE,saturation_duty,0,0.0125,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ISE,rmse,0,0.1136897061383458,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ISE,iae,0,0.3871370937337587,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ISE,torque_rms,0,18.728600951225275,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ISE,saturation_duty,0,0.0156,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITAE,rmse,0,0.0946424527895808,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITAE,iae,0,0.3856541147065796,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITAE,torque_rms,0,18.550156091696486,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITAE,saturation_duty,0,0.0118,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITSE,rmse,0,0.1223268108189,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITSE,iae,0,0.4282717923769095,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITSE,torque_rms,0,18.760841185473105,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITSE,saturation_duty,0,0.016,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,IAE,rmse,8,0.024269358498513888,0.024085521518008864,0.024457012022232036,optimizer seed percentile bootstrap
+2,nominal,fast,IAE,iae,8,0.1129823835971083,0.10736505375620525,0.11896089669661164,optimizer seed percentile bootstrap
+2,nominal,fast,IAE,torque_rms,8,12.074416211614308,12.057385808876946,12.089710034522945,optimizer seed percentile bootstrap
+2,nominal,fast,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,ISE,rmse,8,0.07090750749062075,0.04386426671494334,0.0940580180060875,optimizer seed percentile bootstrap
+2,nominal,fast,ISE,iae,8,0.38479197423891454,0.22940479629995936,0.5321058181309318,optimizer seed percentile bootstrap
+2,nominal,fast,ISE,torque_rms,8,12.264432008283258,12.145926360062493,12.454043793649427,optimizer seed percentile bootstrap
+2,nominal,fast,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,fast,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,ITAE,rmse,8,0.0249928324708217,0.021561572480226603,0.030286563275547563,optimizer seed percentile bootstrap
+2,nominal,fast,ITAE,iae,8,0.12985184158593424,0.10325853221619877,0.17495062851826804,optimizer seed percentile bootstrap
+2,nominal,fast,ITAE,torque_rms,8,12.244735780951178,12.109705504301248,12.4908782465844,optimizer seed percentile bootstrap
+2,nominal,fast,ITAE,saturation_duty,8,0.0011125,0.0,0.0026625,optimizer seed percentile bootstrap
+2,nominal,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,ITSE,rmse,8,0.024656405612554853,0.02439375887479005,0.024947415082827638,optimizer seed percentile bootstrap
+2,nominal,fast,ITSE,iae,8,0.11457548094314499,0.10713895238723904,0.12197403149481212,optimizer seed percentile bootstrap
+2,nominal,fast,ITSE,torque_rms,8,12.10182931032691,12.082944206900649,12.123315286341995,optimizer seed percentile bootstrap
+2,nominal,fast,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,PEN,rmse,8,0.033101912700893,0.031190707552592126,0.03515854728166488,optimizer seed percentile bootstrap
+2,nominal,fast,PEN,iae,8,0.17378949809272148,0.15468535923094173,0.1991931115830984,optimizer seed percentile bootstrap
+2,nominal,fast,PEN,torque_rms,8,12.153568831543666,12.109180907201038,12.213704886777059,optimizer seed percentile bootstrap
+2,nominal,fast,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,fast,PAPER_IAE,rmse,0,0.0608499949372775,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_IAE,iae,0,0.3422547594299996,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_IAE,torque_rms,0,11.970199080579752,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ISE,rmse,0,0.0330802990868379,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ISE,iae,0,0.1828179756460252,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ISE,torque_rms,0,12.040609786544708,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ISE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITAE,rmse,0,0.0651570478819885,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITAE,iae,0,0.3396604378929063,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITAE,torque_rms,0,12.170714407349356,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITSE,rmse,0,0.0268847307770318,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITSE,iae,0,0.1490882541655797,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITSE,torque_rms,0,12.048809226732509,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITSE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,IAE,rmse,8,0.015094007810561024,0.014656626365588824,0.015479384688284288,optimizer seed percentile bootstrap
+2,nominal,sine,IAE,iae,8,0.2341451045004048,0.22718604906917106,0.23955154132352413,optimizer seed percentile bootstrap
+2,nominal,sine,IAE,torque_rms,8,24.191362465390178,24.18357729487841,24.198897738839722,optimizer seed percentile bootstrap
+2,nominal,sine,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,ISE,rmse,8,0.057492247243364485,0.03372986789084464,0.0791553907043202,optimizer seed percentile bootstrap
+2,nominal,sine,ISE,iae,8,0.757981947940967,0.4611261065907656,1.0266732022152976,optimizer seed percentile bootstrap
+2,nominal,sine,ISE,torque_rms,8,24.330674425296895,24.26054287513485,24.402200251345626,optimizer seed percentile bootstrap
+2,nominal,sine,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,sine,ISE,tracking_feasible,8,0.875,0.625,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,ITAE,rmse,8,0.013346735996789299,0.011902047670560889,0.014723434843672788,optimizer seed percentile bootstrap
+2,nominal,sine,ITAE,iae,8,0.19503241557149947,0.17273668261561795,0.21815275569529927,optimizer seed percentile bootstrap
+2,nominal,sine,ITAE,torque_rms,8,24.190996988146225,24.17943879779006,24.201763208296608,optimizer seed percentile bootstrap
+2,nominal,sine,ITAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,ITSE,rmse,8,0.016144519697017135,0.015280584760046439,0.017137110278251988,optimizer seed percentile bootstrap
+2,nominal,sine,ITSE,iae,8,0.2455771926484847,0.22416518083639536,0.27195843069879294,optimizer seed percentile bootstrap
+2,nominal,sine,ITSE,torque_rms,8,24.202324115423654,24.196671228845517,24.20827639549566,optimizer seed percentile bootstrap
+2,nominal,sine,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,sine,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,PEN,rmse,8,0.024249896224204537,0.022488326594199748,0.026124568206144026,optimizer seed percentile bootstrap
+2,nominal,sine,PEN,iae,8,0.40688042862848606,0.3767218634751634,0.437665868513028,optimizer seed percentile bootstrap
+2,nominal,sine,PEN,torque_rms,8,24.19480151895644,24.184169481748487,24.20586915594172,optimizer seed percentile bootstrap
+2,nominal,sine,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+2,nominal,sine,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+2,nominal,sine,PAPER_IAE,rmse,0,0.029178741633712,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_IAE,iae,0,0.3942705848603665,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_IAE,torque_rms,0,24.026708212481893,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ISE,rmse,0,0.0199787893551166,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ISE,iae,0,0.3343023102711732,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ISE,torque_rms,0,24.148844889560948,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ISE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITAE,rmse,0,0.0254781131106209,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITAE,iae,0,0.3472431173516464,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITAE,torque_rms,0,24.036955284827044,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITSE,rmse,0,0.0214785521211023,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITSE,iae,0,0.3639811320691137,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITSE,torque_rms,0,24.15641110230312,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITSE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+2,nominal,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,all,IAE,rmse,8,0.07226552182509419,0.07080173918979035,0.07392862118653806,optimizer seed percentile bootstrap
+3,tight,all,IAE,iae,8,0.3051071892476391,0.3020641482672727,0.3077852778012632,optimizer seed percentile bootstrap
+3,tight,all,IAE,torque_rms,8,10.97724575671674,10.963482901175297,11.002127649890177,optimizer seed percentile bootstrap
+3,tight,all,IAE,saturation_duty,8,0.030345833333333336,0.016200000000000003,0.058304166666666664,optimizer seed percentile bootstrap
+3,tight,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,ISE,rmse,8,0.08398157047873797,0.08337488759503323,0.08458051694223732,optimizer seed percentile bootstrap
+3,tight,all,ISE,iae,8,0.5888756785689482,0.5544581836817112,0.6230062575848762,optimizer seed percentile bootstrap
+3,tight,all,ISE,torque_rms,8,10.945259348275659,10.897935614186034,10.989779132391991,optimizer seed percentile bootstrap
+3,tight,all,ISE,saturation_duty,8,0.026629166666666666,0.006945833333333333,0.05987083333333333,optimizer seed percentile bootstrap
+3,tight,all,ISE,tracking_feasible,8,0.875,0.75,0.9583333333333333,optimizer seed percentile bootstrap
+3,tight,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,ITAE,rmse,8,0.07637267338627568,0.07322776011363155,0.07924459315661689,optimizer seed percentile bootstrap
+3,tight,all,ITAE,iae,8,0.32006904381836776,0.31037912633265596,0.32996106785536333,optimizer seed percentile bootstrap
+3,tight,all,ITAE,torque_rms,8,10.992729003557534,10.970900301897892,11.026103260536594,optimizer seed percentile bootstrap
+3,tight,all,ITAE,saturation_duty,8,0.037275,0.017695625,0.06724999999999999,optimizer seed percentile bootstrap
+3,tight,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,ITSE,rmse,8,0.07016824377366021,0.06944328303863231,0.0709508910687291,optimizer seed percentile bootstrap
+3,tight,all,ITSE,iae,8,0.3787253781177513,0.36889422756834556,0.3902858732046044,optimizer seed percentile bootstrap
+3,tight,all,ITSE,torque_rms,8,10.970749628723645,10.958837153978362,10.979924206789596,optimizer seed percentile bootstrap
+3,tight,all,ITSE,saturation_duty,8,0.014754166666666665,0.012400000000000001,0.0189625,optimizer seed percentile bootstrap
+3,tight,all,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,PEN,rmse,8,0.0718682598118758,0.07087049411012378,0.07278969650362124,optimizer seed percentile bootstrap
+3,tight,all,PEN,iae,8,0.3767357924106165,0.3600021967285481,0.3999162301979652,optimizer seed percentile bootstrap
+3,tight,all,PEN,torque_rms,8,10.942668250106397,10.931963935419205,10.953727688756462,optimizer seed percentile bootstrap
+3,tight,all,PEN,saturation_duty,8,0.014695833333333335,0.013970833333333333,0.015308333333333334,optimizer seed percentile bootstrap
+3,tight,all,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,all,PAPER_IAE,rmse,0,0.06884037719428877,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_IAE,iae,0,0.3913000264752082,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_IAE,torque_rms,0,10.862769974930444,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_IAE,saturation_duty,0,0.013166666666666667,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ISE,rmse,0,0.07023384849647571,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ISE,iae,0,0.38031991768054524,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ISE,torque_rms,0,11.059852760675332,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ISE,saturation_duty,0,0.2323666666666667,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITAE,rmse,0,0.06862696723718732,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITAE,iae,0,0.37421484465220756,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITAE,torque_rms,0,10.883881445565846,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITAE,saturation_duty,0,0.013866666666666666,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITSE,rmse,0,0.07483388977575406,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITSE,iae,0,0.4053639908186155,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITSE,torque_rms,0,11.067850070180052,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITSE,saturation_duty,0,0.23296666666666668,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,IAE,rmse,8,0.1515663636432785,0.1502227436635169,0.15313242934300642,optimizer seed percentile bootstrap
+3,tight,step,IAE,iae,8,0.5232967021734523,0.5184628616411887,0.5293586001938545,optimizer seed percentile bootstrap
+3,tight,step,IAE,torque_rms,8,11.329486612463452,11.32764083184286,11.331513379552733,optimizer seed percentile bootstrap
+3,tight,step,IAE,saturation_duty,8,0.030637499999999998,0.030425,0.0309625,optimizer seed percentile bootstrap
+3,tight,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,ISE,rmse,8,0.11421825182279077,0.11326773131878955,0.11521455080923058,optimizer seed percentile bootstrap
+3,tight,step,ISE,iae,8,0.5114196415081751,0.47646818633530746,0.546058587254566,optimizer seed percentile bootstrap
+3,tight,step,ISE,torque_rms,8,11.235860188395815,11.205936350814257,11.267665675900659,optimizer seed percentile bootstrap
+3,tight,step,ISE,saturation_duty,8,0.0211,0.02035,0.0220625,optimizer seed percentile bootstrap
+3,tight,step,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,ITAE,rmse,8,0.1546664876459541,0.15197748621597357,0.15730174548662268,optimizer seed percentile bootstrap
+3,tight,step,ITAE,iae,8,0.5476948309158205,0.5277651444505305,0.5693861155127846,optimizer seed percentile bootstrap
+3,tight,step,ITAE,torque_rms,8,11.335686130541674,11.32902992592915,11.34356039745723,optimizer seed percentile bootstrap
+3,tight,step,ITAE,saturation_duty,8,0.0311625,0.030425,0.03205,optimizer seed percentile bootstrap
+3,tight,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,ITSE,rmse,8,0.13458587571432631,0.13350504009103095,0.1356502311489523,optimizer seed percentile bootstrap
+3,tight,step,ITSE,iae,8,0.48990053096426955,0.4850508374511776,0.4951315398230786,optimizer seed percentile bootstrap
+3,tight,step,ITSE,torque_rms,8,11.301453970456826,11.29732893161549,11.304999666377817,optimizer seed percentile bootstrap
+3,tight,step,ITSE,saturation_duty,8,0.0266125,0.025937500000000002,0.0273,optimizer seed percentile bootstrap
+3,tight,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,PEN,rmse,8,0.14706305158374888,0.14349919774494005,0.15013312382294175,optimizer seed percentile bootstrap
+3,tight,step,PEN,iae,8,0.547820822881405,0.52879489291801,0.5643678859878165,optimizer seed percentile bootstrap
+3,tight,step,PEN,torque_rms,8,11.300331239864994,11.290403960565897,11.307423954125706,optimizer seed percentile bootstrap
+3,tight,step,PEN,saturation_duty,8,0.0282375,0.027299999999999998,0.0290375,optimizer seed percentile bootstrap
+3,tight,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,step,PAPER_IAE,rmse,0,0.1336105676789914,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_IAE,iae,0,0.5224566678962203,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_IAE,torque_rms,0,11.261705049077744,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_IAE,saturation_duty,0,0.0279,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ISE,rmse,0,0.1469018549113038,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ISE,iae,0,0.5406882829040189,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ISE,torque_rms,0,11.425973331385327,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ISE,saturation_duty,0,0.2085,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITAE,rmse,0,0.1381638933729543,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITAE,iae,0,0.5243538087096192,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITAE,torque_rms,0,11.27124112776399,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITAE,saturation_duty,0,0.027,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITSE,rmse,0,0.1518624543651417,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITSE,iae,0,0.5692825531120539,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITSE,torque_rms,0,11.43375756293803,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITSE,saturation_duty,0,0.2021,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,IAE,rmse,8,0.05318314108286459,0.049594613356741375,0.05723963550474236,optimizer seed percentile bootstrap
+3,tight,fast,IAE,iae,8,0.18431676635501865,0.17600391256058207,0.19221165995965472,optimizer seed percentile bootstrap
+3,tight,fast,IAE,torque_rms,8,7.334937477335735,7.295846570880557,7.405612890449914,optimizer seed percentile bootstrap
+3,tight,fast,IAE,saturation_duty,8,0.038400000000000004,0.018162499999999998,0.07795,optimizer seed percentile bootstrap
+3,tight,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,ISE,rmse,8,0.07743866361904707,0.07631387117635534,0.07853542473165608,optimizer seed percentile bootstrap
+3,tight,fast,ISE,iae,8,0.4363969164086655,0.37958460151485884,0.49064246900697606,optimizer seed percentile bootstrap
+3,tight,fast,ISE,torque_rms,8,7.314397775481741,7.240245376305633,7.385799203060849,optimizer seed percentile bootstrap
+3,tight,fast,ISE,saturation_duty,8,0.028587500000000002,0.0,0.0840125,optimizer seed percentile bootstrap
+3,tight,fast,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,ITAE,rmse,8,0.06261916692427749,0.054945580447813835,0.06935902238671467,optimizer seed percentile bootstrap
+3,tight,fast,ITAE,iae,8,0.21317242679658754,0.1887642229024461,0.23559986741792216,optimizer seed percentile bootstrap
+3,tight,fast,ITAE,torque_rms,8,7.378249580252922,7.317777022450456,7.470642564216057,optimizer seed percentile bootstrap
+3,tight,fast,ITAE,saturation_duty,8,0.0436625,0.019925,0.08845,optimizer seed percentile bootstrap
+3,tight,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,ITSE,rmse,8,0.044918114582508877,0.04318718700342482,0.04672398985595307,optimizer seed percentile bootstrap
+3,tight,fast,ITSE,iae,8,0.1854156234921484,0.17480295491279124,0.19823149824665842,optimizer seed percentile bootstrap
+3,tight,fast,ITSE,torque_rms,8,7.30954580444338,7.28456456149482,7.3297452816078135,optimizer seed percentile bootstrap
+3,tight,fast,ITSE,saturation_duty,8,0.0113125,0.0105875,0.011962500000000001,optimizer seed percentile bootstrap
+3,tight,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,PEN,rmse,8,0.04751083372581544,0.045049848904996664,0.049779582758814896,optimizer seed percentile bootstrap
+3,tight,fast,PEN,iae,8,0.21453246905655032,0.19747905973686364,0.23569084608859578,optimizer seed percentile bootstrap
+3,tight,fast,PEN,torque_rms,8,7.264008314736778,7.244713216758679,7.285127836840708,optimizer seed percentile bootstrap
+3,tight,fast,PEN,saturation_duty,8,0.01585,0.014612187499999998,0.0168875,optimizer seed percentile bootstrap
+3,tight,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,fast,PAPER_IAE,rmse,0,0.0472127579977016,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_IAE,iae,0,0.2842594726654199,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_IAE,torque_rms,0,7.174418043388138,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_IAE,saturation_duty,0,0.0116,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ISE,rmse,0,0.0452993901689208,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ISE,iae,0,0.2743426253580145,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ISE,torque_rms,0,7.507179135035538,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ISE,saturation_duty,0,0.3317,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITAE,rmse,0,0.0472290758034531,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITAE,iae,0,0.2790197341443942,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITAE,torque_rms,0,7.2194310258862044,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITAE,saturation_duty,0,0.0146,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITSE,rmse,0,0.0522354814358305,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITSE,iae,0,0.2896721678095889,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITSE,torque_rms,0,7.514776202354555,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITSE,saturation_duty,0,0.3378,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,IAE,rmse,8,0.01204706074913946,0.011391799471322479,0.012658774622934344,optimizer seed percentile bootstrap
+3,tight,sine,IAE,iae,8,0.20770809921444633,0.19787895167737582,0.2165565482430067,optimizer seed percentile bootstrap
+3,tight,sine,IAE,torque_rms,8,14.267313180351035,14.263860372950017,14.27099804818929,optimizer seed percentile bootstrap
+3,tight,sine,IAE,saturation_duty,8,0.022,0.0,0.066,optimizer seed percentile bootstrap
+3,tight,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,ISE,rmse,8,0.06028779599437607,0.05867225120516517,0.06175303270541467,optimizer seed percentile bootstrap
+3,tight,sine,ISE,iae,8,0.8188104777900038,0.7967978170545742,0.8402524204472424,optimizer seed percentile bootstrap
+3,tight,sine,ISE,torque_rms,8,14.285520080949421,14.225666315088386,14.337525684006796,optimizer seed percentile bootstrap
+3,tight,sine,ISE,saturation_duty,8,0.0302,0.0,0.07435,optimizer seed percentile bootstrap
+3,tight,sine,ISE,tracking_feasible,8,0.625,0.25,0.875,optimizer seed percentile bootstrap
+3,tight,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,ITAE,rmse,8,0.011832365588595462,0.010780693829954537,0.012935886566565961,optimizer seed percentile bootstrap
+3,tight,sine,ITAE,iae,8,0.19933987374269538,0.17956338488586757,0.22070546449221806,optimizer seed percentile bootstrap
+3,tight,sine,ITAE,torque_rms,8,14.264251299878003,14.260718572515055,14.268212260265907,optimizer seed percentile bootstrap
+3,tight,sine,ITAE,saturation_duty,8,0.037,0.00345,0.08135,optimizer seed percentile bootstrap
+3,tight,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,ITSE,rmse,8,0.031000741024145424,0.029480837653990975,0.03258684990916797,optimizer seed percentile bootstrap
+3,tight,sine,ITSE,iae,8,0.46085997989683597,0.42938609988308407,0.4947490731974384,optimizer seed percentile bootstrap
+3,tight,sine,ITSE,torque_rms,8,14.301249111270728,14.293752020715605,14.30718890337445,optimizer seed percentile bootstrap
+3,tight,sine,ITSE,saturation_duty,8,0.0063375,0.0,0.0190125,optimizer seed percentile bootstrap
+3,tight,sine,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,PEN,rmse,8,0.021030894126063127,0.017960045815030596,0.02456195196603703,optimizer seed percentile bootstrap
+3,tight,sine,PEN,iae,8,0.3678540852938941,0.31901701613059397,0.42396197341689457,optimizer seed percentile bootstrap
+3,tight,sine,PEN,torque_rms,8,14.263665195717422,14.256830828136088,14.273487905562721,optimizer seed percentile bootstrap
+3,tight,sine,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+3,tight,sine,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,tight,sine,PAPER_IAE,rmse,0,0.0256978059061733,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_IAE,iae,0,0.3671839388639843,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_IAE,torque_rms,0,14.152186832325455,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ISE,rmse,0,0.0185003004092025,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ISE,iae,0,0.3259288447796022,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ISE,torque_rms,0,14.246405815605131,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ISE,saturation_duty,0,0.1569,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITAE,rmse,0,0.0204879325351546,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITAE,iae,0,0.3192709911026093,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITAE,torque_rms,0,14.160972183047344,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITSE,rmse,0,0.02040373352629,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITSE,iae,0,0.3571372515342037,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITSE,torque_rms,0,14.25501644524757,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITSE,saturation_duty,0,0.159,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,tight,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,all,IAE,rmse,8,0.04398529919033273,0.04384085247327546,0.04412902834483958,optimizer seed percentile bootstrap
+3,nominal,all,IAE,iae,8,0.1873772818837064,0.1837320998396055,0.19091357258287506,optimizer seed percentile bootstrap
+3,nominal,all,IAE,torque_rms,8,11.037823332096705,10.99491441897307,11.11632230194952,optimizer seed percentile bootstrap
+3,nominal,all,IAE,saturation_duty,8,0.018924999999999997,0.004516666666666666,0.0476375,optimizer seed percentile bootstrap
+3,nominal,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,ISE,rmse,8,0.07093797994116324,0.07006598786331968,0.07176981956350549,optimizer seed percentile bootstrap
+3,nominal,all,ISE,iae,8,0.5286679621543908,0.4919421636124478,0.5650695371119429,optimizer seed percentile bootstrap
+3,nominal,all,ISE,torque_rms,8,10.95883070171066,10.899868447712384,11.018770157190623,optimizer seed percentile bootstrap
+3,nominal,all,ISE,saturation_duty,8,0.022833333333333334,0.0015708333333333334,0.059574999999999996,optimizer seed percentile bootstrap
+3,nominal,all,ISE,tracking_feasible,8,0.875,0.75,0.9583333333333333,optimizer seed percentile bootstrap
+3,nominal,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,ITAE,rmse,8,0.044771145409736875,0.04418001594016176,0.04530110068379371,optimizer seed percentile bootstrap
+3,nominal,all,ITAE,iae,8,0.19500595932549933,0.18829742907798974,0.20135692719629503,optimizer seed percentile bootstrap
+3,nominal,all,ITAE,torque_rms,8,11.077610064994246,11.012392371413586,11.171899347147663,optimizer seed percentile bootstrap
+3,nominal,all,ITAE,saturation_duty,8,0.0313,0.005662500000000001,0.07335833333333333,optimizer seed percentile bootstrap
+3,nominal,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,ITSE,rmse,8,0.05169789403838092,0.050919186095347235,0.05251250666853185,optimizer seed percentile bootstrap
+3,nominal,all,ITSE,iae,8,0.29163325367204995,0.2815139999701479,0.3032236014829838,optimizer seed percentile bootstrap
+3,nominal,all,ITSE,torque_rms,8,10.977997938044785,10.96502602615277,10.988499213157624,optimizer seed percentile bootstrap
+3,nominal,all,ITSE,saturation_duty,8,0.005270833333333333,0.0030583333333333335,0.009520833333333333,optimizer seed percentile bootstrap
+3,nominal,all,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,PEN,rmse,8,0.04808997090919698,0.046932407243553645,0.04943532256769985,optimizer seed percentile bootstrap
+3,nominal,all,PEN,iae,8,0.2708005202571907,0.2487881590394062,0.29970710523820676,optimizer seed percentile bootstrap
+3,nominal,all,PEN,torque_rms,8,10.96061016772288,10.945251403344843,10.9731279743586,optimizer seed percentile bootstrap
+3,nominal,all,PEN,saturation_duty,8,0.0038541666666666663,0.0034916666666666664,0.004149999999999999,optimizer seed percentile bootstrap
+3,nominal,all,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,all,PAPER_IAE,rmse,0,0.05061101856121053,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_IAE,iae,0,0.3104667889004688,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_IAE,torque_rms,0,10.85937425720264,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_IAE,saturation_duty,0,0.0031666666666666666,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ISE,rmse,0,0.0469534570991141,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ISE,iae,0,0.287423937300799,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ISE,torque_rms,0,11.350305898324265,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ISE,saturation_duty,0,0.22416666666666665,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITAE,rmse,0,0.048262178776586895,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITAE,iae,0,0.2831132022705774,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITAE,torque_rms,0,10.879181947415434,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITAE,saturation_duty,0,0.0031333333333333335,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITSE,rmse,0,0.04934414718023394,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITSE,iae,0,0.31071662022955604,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITSE,torque_rms,0,11.36708296451838,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITSE,saturation_duty,0,0.22556666666666667,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,IAE,rmse,8,0.10356975569397214,0.101357816948321,0.10618117793801118,optimizer seed percentile bootstrap
+3,nominal,step,IAE,iae,8,0.28348462321889817,0.27614457155860134,0.2929974973252796,optimizer seed percentile bootstrap
+3,nominal,step,IAE,torque_rms,8,11.507014178165006,11.480428867650982,11.538901774324287,optimizer seed percentile bootstrap
+3,nominal,step,IAE,saturation_duty,8,0.014025000000000001,0.01355,0.0146625,optimizer seed percentile bootstrap
+3,nominal,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,ISE,rmse,8,0.0750835318493154,0.07452492268627484,0.07569187636415742,optimizer seed percentile bootstrap
+3,nominal,step,ISE,iae,8,0.33036399740916234,0.2889052067002512,0.3707900169767836,optimizer seed percentile bootstrap
+3,nominal,step,ISE,torque_rms,8,11.19679612957935,11.15987040427105,11.23641530992434,optimizer seed percentile bootstrap
+3,nominal,step,ISE,saturation_duty,8,0.0049250000000000006,0.0045000000000000005,0.0054,optimizer seed percentile bootstrap
+3,nominal,step,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,ITAE,rmse,8,0.10815059391144535,0.10411113176390022,0.11202908892373528,optimizer seed percentile bootstrap
+3,nominal,step,ITAE,iae,8,0.32015539182814173,0.2913555780377209,0.34974694844839105,optimizer seed percentile bootstrap
+3,nominal,step,ITAE,torque_rms,8,11.613860781090242,11.525466550266621,11.711212934870513,optimizer seed percentile bootstrap
+3,nominal,step,ITAE,saturation_duty,8,0.0160125,0.0140125,0.0182625,optimizer seed percentile bootstrap
+3,nominal,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,ITSE,rmse,8,0.0799489418018787,0.07880446907344364,0.08106230268169332,optimizer seed percentile bootstrap
+3,nominal,step,ITSE,iae,8,0.23546786809490225,0.2293500876816879,0.2432364789678556,optimizer seed percentile bootstrap
+3,nominal,step,ITSE,torque_rms,8,11.323718898786531,11.316500316199196,11.331072502758849,optimizer seed percentile bootstrap
+3,nominal,step,ITSE,saturation_duty,8,0.009325,0.0088125,0.0098,optimizer seed percentile bootstrap
+3,nominal,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,PEN,rmse,8,0.09737803164881295,0.09168691839109801,0.1022607418635519,optimizer seed percentile bootstrap
+3,nominal,step,PEN,iae,8,0.30540001273435036,0.2822929738934136,0.32445454661567136,optimizer seed percentile bootstrap
+3,nominal,step,PEN,torque_rms,8,11.38554599586628,11.34811402674957,11.41587763441367,optimizer seed percentile bootstrap
+3,nominal,step,PEN,saturation_duty,8,0.0115625,0.010475,0.01245,optimizer seed percentile bootstrap
+3,nominal,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,step,PAPER_IAE,rmse,0,0.0794815626644505,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_IAE,iae,0,0.2891937659992879,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_IAE,torque_rms,0,11.25657577442899,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_IAE,saturation_duty,0,0.0095,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ISE,rmse,0,0.0962947484190453,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ISE,iae,0,0.3119914840436577,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ISE,torque_rms,0,11.762627995177386,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ISE,saturation_duty,0,0.1937,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITAE,rmse,0,0.0815238563541752,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITAE,iae,0,0.2872999264269958,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITAE,torque_rms,0,11.276372282295531,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITAE,saturation_duty,0,0.0094,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITSE,rmse,0,0.10502219867874,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITSE,iae,0,0.3475914287481582,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITSE,torque_rms,0,11.798570958572393,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITSE,saturation_duty,0,0.1874,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,IAE,rmse,8,0.016343313711983474,0.014375805952870538,0.01805271871637416,optimizer seed percentile bootstrap
+3,nominal,fast,IAE,iae,8,0.07105004507716434,0.06212012138713575,0.07886546989972812,optimizer seed percentile bootstrap
+3,nominal,fast,IAE,torque_rms,8,7.32432248146249,7.232149591845098,7.501958397260015,optimizer seed percentile bootstrap
+3,nominal,fast,IAE,saturation_duty,8,0.02085,0.0,0.06255,optimizer seed percentile bootstrap
+3,nominal,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,ISE,rmse,8,0.07744236118962393,0.07631810238224794,0.07853758275335368,optimizer seed percentile bootstrap
+3,nominal,fast,ISE,iae,8,0.4369461995767024,0.37958460151485884,0.4917005973869688,optimizer seed percentile bootstrap
+3,nominal,fast,ISE,torque_rms,8,7.372963890952563,7.246106086511097,7.543332448173867,optimizer seed percentile bootstrap
+3,nominal,fast,ISE,saturation_duty,8,0.0336125,0.0,0.0994375,optimizer seed percentile bootstrap
+3,nominal,fast,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,ITAE,rmse,8,0.01432554507983775,0.01171300793912565,0.017090883252370286,optimizer seed percentile bootstrap
+3,nominal,fast,ITAE,iae,8,0.06559859983061411,0.05875392058837896,0.07300492786128887,optimizer seed percentile bootstrap
+3,nominal,fast,ITAE,torque_rms,8,7.32974357237177,7.239018171770865,7.504520761950067,optimizer seed percentile bootstrap
+3,nominal,fast,ITAE,saturation_duty,8,0.0408625,0.000275,0.1199375,optimizer seed percentile bootstrap
+3,nominal,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,ITSE,rmse,8,0.04414350954846237,0.04222193706521338,0.04613711354372129,optimizer seed percentile bootstrap
+3,nominal,fast,ITSE,iae,8,0.17855879243961037,0.16794635902442512,0.19043570365790233,optimizer seed percentile bootstrap
+3,nominal,fast,ITSE,torque_rms,8,7.30470327517158,7.278023401835542,7.326727884987493,optimizer seed percentile bootstrap
+3,nominal,fast,ITSE,saturation_duty,8,0.000575,0.0,0.001725,optimizer seed percentile bootstrap
+3,nominal,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,PEN,rmse,8,0.025860986952714875,0.020864845464514035,0.03193476135724292,optimizer seed percentile bootstrap
+3,nominal,fast,PEN,iae,8,0.13914746274332768,0.11081868673899667,0.17524694629687665,optimizer seed percentile bootstrap
+3,nominal,fast,PEN,torque_rms,8,7.232619311584935,7.213927338194068,7.258028845093271,optimizer seed percentile bootstrap
+3,nominal,fast,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+3,nominal,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,fast,PAPER_IAE,rmse,0,0.0466536871130078,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_IAE,iae,0,0.275022661838134,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_IAE,torque_rms,0,7.169360164853477,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ISE,rmse,0,0.0259654369069701,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ISE,iae,0,0.2273660737171756,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ISE,torque_rms,0,7.9338827975432835,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ISE,saturation_duty,0,0.3225,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITAE,rmse,0,0.0427747474404309,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITAE,iae,0,0.2427686892821271,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITAE,torque_rms,0,7.200201376903433,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITSE,rmse,0,0.0223434683446089,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITSE,iae,0,0.2304891706545778,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITSE,torque_rms,0,7.938864905642539,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITSE,saturation_duty,0,0.3288,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,IAE,rmse,8,0.01204282816504255,0.011383112590757874,0.012658748208057267,optimizer seed percentile bootstrap
+3,nominal,sine,IAE,iae,8,0.20759717735505673,0.1976003830617433,0.2165565482430067,optimizer seed percentile bootstrap
+3,nominal,sine,IAE,torque_rms,8,14.282133336662621,14.263872852477144,14.315389674832128,optimizer seed percentile bootstrap
+3,nominal,sine,IAE,saturation_duty,8,0.0219,0.0,0.0657,optimizer seed percentile bootstrap
+3,nominal,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,ISE,rmse,8,0.06028804678455041,0.05867371057562186,0.06175303270541467,optimizer seed percentile bootstrap
+3,nominal,sine,ISE,iae,8,0.8186936894773079,0.7968043654423733,0.8399038012746979,optimizer seed percentile bootstrap
+3,nominal,sine,ISE,torque_rms,8,14.30673208460007,14.265529712437429,14.341269932497347,optimizer seed percentile bootstrap
+3,nominal,sine,ISE,saturation_duty,8,0.029962500000000003,0.0,0.0740375,optimizer seed percentile bootstrap
+3,nominal,sine,ISE,tracking_feasible,8,0.625,0.25,0.875,optimizer seed percentile bootstrap
+3,nominal,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,ITAE,rmse,8,0.011837297237927525,0.010789062956630364,0.012937204422543213,optimizer seed percentile bootstrap
+3,nominal,sine,ITAE,iae,8,0.19926388631774214,0.1794073234864381,0.22068506706538238,optimizer seed percentile bootstrap
+3,nominal,sine,ITAE,torque_rms,8,14.289225841520732,14.265941449914326,14.32010495850308,optimizer seed percentile bootstrap
+3,nominal,sine,ITAE,saturation_duty,8,0.037024999999999995,0.0030375,0.0822,optimizer seed percentile bootstrap
+3,nominal,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,ITSE,rmse,8,0.031001230764801675,0.02948131215490269,0.032587364136857026,optimizer seed percentile bootstrap
+3,nominal,sine,ITSE,iae,8,0.4608731004816373,0.42938609988308407,0.4947680134934606,optimizer seed percentile bootstrap
+3,nominal,sine,ITSE,torque_rms,8,14.305571640176245,14.294553217676537,14.318636986804565,optimizer seed percentile bootstrap
+3,nominal,sine,ITSE,saturation_duty,8,0.0059125,0.0,0.0177375,optimizer seed percentile bootstrap
+3,nominal,sine,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,PEN,rmse,8,0.021030894126063127,0.017960045815030596,0.02456195196603703,optimizer seed percentile bootstrap
+3,nominal,sine,PEN,iae,8,0.3678540852938941,0.31901701613059397,0.42396197341689457,optimizer seed percentile bootstrap
+3,nominal,sine,PEN,torque_rms,8,14.263665195717422,14.256830828136088,14.273487905562721,optimizer seed percentile bootstrap
+3,nominal,sine,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+3,nominal,sine,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+3,nominal,sine,PAPER_IAE,rmse,0,0.0256978059061733,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_IAE,iae,0,0.3671839388639843,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_IAE,torque_rms,0,14.152186832325455,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ISE,rmse,0,0.0186001859713269,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ISE,iae,0,0.3229142541415638,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ISE,torque_rms,0,14.354406902252128,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ISE,saturation_duty,0,0.1563,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITAE,rmse,0,0.0204879325351546,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITAE,iae,0,0.3192709911026093,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITAE,torque_rms,0,14.160972183047344,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITSE,rmse,0,0.0206667745173529,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITSE,iae,0,0.3540692612859321,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITSE,torque_rms,0,14.363813029340204,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITSE,saturation_duty,0,0.1605,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+3,nominal,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,all,IAE,rmse,8,0.14652697213147403,0.14629829462903632,0.14673310044983626,optimizer seed percentile bootstrap
+4,tight,all,IAE,iae,8,0.6259911205559505,0.6198075898939638,0.6319829317611438,optimizer seed percentile bootstrap
+4,tight,all,IAE,torque_rms,8,12.207052403627557,12.198726402181162,12.214961800668242,optimizer seed percentile bootstrap
+4,tight,all,IAE,saturation_duty,8,0.03877083333333333,0.038225,0.0393625,optimizer seed percentile bootstrap
+4,tight,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,ISE,rmse,8,0.14505516309261302,0.14463415616162512,0.14553819127252657,optimizer seed percentile bootstrap
+4,tight,all,ISE,iae,8,0.7504027434877831,0.7148225702096954,0.7827905372008951,optimizer seed percentile bootstrap
+4,tight,all,ISE,torque_rms,8,12.197331445741153,12.163168960669683,12.22806825461157,optimizer seed percentile bootstrap
+4,tight,all,ISE,saturation_duty,8,0.0347875,0.0335125,0.03641666666666667,optimizer seed percentile bootstrap
+4,tight,all,ISE,tracking_feasible,8,0.875,0.75,0.9583333333333333,optimizer seed percentile bootstrap
+4,tight,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,ITAE,rmse,8,0.1477070762677164,0.14674568365150248,0.14883081207180698,optimizer seed percentile bootstrap
+4,tight,all,ITAE,iae,8,0.6007739585920143,0.5912897800404848,0.6099219767942622,optimizer seed percentile bootstrap
+4,tight,all,ITAE,torque_rms,8,12.228688323268946,12.220014697343185,12.240129145538761,optimizer seed percentile bootstrap
+4,tight,all,ITAE,saturation_duty,8,0.041320833333333334,0.041104166666666664,0.0415875,optimizer seed percentile bootstrap
+4,tight,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,ITSE,rmse,8,0.14631525643248333,0.14618649140076423,0.14645739155211385,optimizer seed percentile bootstrap
+4,tight,all,ITSE,iae,8,0.624364887133209,0.6162152308085098,0.6333445531099069,optimizer seed percentile bootstrap
+4,tight,all,ITSE,torque_rms,8,12.201585219543487,12.192305229372852,12.209547472305328,optimizer seed percentile bootstrap
+4,tight,all,ITSE,saturation_duty,8,0.038675,0.0382875,0.039079166666666665,optimizer seed percentile bootstrap
+4,tight,all,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,PEN,rmse,8,0.14753858631289588,0.14707116574462753,0.14798962851641823,optimizer seed percentile bootstrap
+4,tight,all,PEN,iae,8,0.6479499507539561,0.6370942158853217,0.6595799934567275,optimizer seed percentile bootstrap
+4,tight,all,PEN,torque_rms,8,12.180871962771601,12.171861012331956,12.190913504264692,optimizer seed percentile bootstrap
+4,tight,all,PEN,saturation_duty,8,0.037470833333333335,0.03718333333333333,0.0377625,optimizer seed percentile bootstrap
+4,tight,all,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,all,PAPER_IAE,rmse,0,0.14416149833433925,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_IAE,iae,0,0.7079039489055079,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_IAE,torque_rms,0,12.107070117640221,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_IAE,saturation_duty,0,0.036599999999999994,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ISE,rmse,0,0.14738369495520384,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ISE,iae,0,0.6601373673757541,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ISE,torque_rms,0,12.27104237952994,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ISE,saturation_duty,0,0.2762,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITAE,rmse,0,0.14780911293770002,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITAE,iae,0,0.6923368405767691,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITAE,torque_rms,0,12.125274804498098,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITAE,saturation_duty,0,0.0371,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITSE,rmse,0,0.1489556122605134,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITSE,iae,0,0.6742769056719209,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITSE,torque_rms,0,12.240480873600397,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITSE,saturation_duty,0,0.20049999999999998,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,IAE,rmse,8,0.2195402539091131,0.21945420442055785,0.21961177589713862,optimizer seed percentile bootstrap
+4,tight,step,IAE,iae,8,0.8784424116673004,0.8721456320344699,0.884450257701205,optimizer seed percentile bootstrap
+4,tight,step,IAE,torque_rms,8,12.589764955988809,12.581120785056944,12.597824125828414,optimizer seed percentile bootstrap
+4,tight,step,IAE,saturation_duty,8,0.041675000000000004,0.04150000000000001,0.0418375,optimizer seed percentile bootstrap
+4,tight,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,ISE,rmse,8,0.21179288179226774,0.20919803426645378,0.21425163095768945,optimizer seed percentile bootstrap
+4,tight,step,ISE,iae,8,0.8969414029411509,0.8717747272698285,0.921598983152455,optimizer seed percentile bootstrap
+4,tight,step,ISE,torque_rms,8,12.593849513142999,12.560067858164306,12.62549481387518,optimizer seed percentile bootstrap
+4,tight,step,ISE,saturation_duty,8,0.0396625,0.03895,0.040537500000000004,optimizer seed percentile bootstrap
+4,tight,step,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,ITAE,rmse,8,0.21998611689969266,0.21966194184630247,0.22041362478495646,optimizer seed percentile bootstrap
+4,tight,step,ITAE,iae,8,0.8643920578557505,0.8573274298656698,0.871207114773978,optimizer seed percentile bootstrap
+4,tight,step,ITAE,torque_rms,8,12.606341118890242,12.597723698214043,12.617815136821315,optimizer seed percentile bootstrap
+4,tight,step,ITAE,saturation_duty,8,0.042774999999999994,0.0423125,0.043262499999999995,optimizer seed percentile bootstrap
+4,tight,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,ITSE,rmse,8,0.2193751085154297,0.2192618847490273,0.21947452879477947,optimizer seed percentile bootstrap
+4,tight,step,ITSE,iae,8,0.8745633574001206,0.8657803952692015,0.8827368841789401,optimizer seed percentile bootstrap
+4,tight,step,ITSE,torque_rms,8,12.582000837285467,12.571658927456717,12.591073963751018,optimizer seed percentile bootstrap
+4,tight,step,ITSE,saturation_duty,8,0.041662500000000005,0.041525,0.0417875,optimizer seed percentile bootstrap
+4,tight,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,PEN,rmse,8,0.21971921162108077,0.21950348297431974,0.21994869647515763,optimizer seed percentile bootstrap
+4,tight,step,PEN,iae,8,0.8810691163933835,0.8726899765185328,0.8889475475830163,optimizer seed percentile bootstrap
+4,tight,step,PEN,torque_rms,8,12.565957870686576,12.556481696935219,12.576310501751824,optimizer seed percentile bootstrap
+4,tight,step,PEN,saturation_duty,8,0.04064999999999999,0.040275,0.041025,optimizer seed percentile bootstrap
+4,tight,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,step,PAPER_IAE,rmse,0,0.2140309847956914,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_IAE,iae,0,0.8607075578774585,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_IAE,torque_rms,0,12.49917823419477,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_IAE,saturation_duty,0,0.0401,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ISE,rmse,0,0.2190999640074588,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ISE,iae,0,0.8609209265419272,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ISE,torque_rms,0,12.636330157842275,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ISE,saturation_duty,0,0.2749,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITAE,rmse,0,0.2158253683993972,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITAE,iae,0,0.8513432596248146,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITAE,torque_rms,0,12.50309800128437,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITAE,saturation_duty,0,0.0389,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITSE,rmse,0,0.2204789972718669,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITSE,iae,0,0.8788966213161085,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITSE,torque_rms,0,12.549334324205956,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITSE,saturation_duty,0,0.0455,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,IAE,rmse,8,0.17069136497220427,0.17049449196357927,0.1708904759333157,optimizer seed percentile bootstrap
+4,tight,fast,IAE,iae,8,0.6063683112606393,0.5995404280248542,0.6132559876752994,optimizer seed percentile bootstrap
+4,tight,fast,IAE,torque_rms,8,8.155982063602693,8.143248291250128,8.168262742284707,optimizer seed percentile bootstrap
+4,tight,fast,IAE,saturation_duty,8,0.04385,0.0424625,0.0453875,optimizer seed percentile bootstrap
+4,tight,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,ISE,rmse,8,0.17824066066003963,0.176599146528014,0.17981653321630187,optimizer seed percentile bootstrap
+4,tight,fast,ISE,iae,8,0.7859001809099405,0.7218190239629709,0.8502664973943679,optimizer seed percentile bootstrap
+4,tight,fast,ISE,torque_rms,8,8.121314579864736,8.080103196393676,8.159928662037277,optimizer seed percentile bootstrap
+4,tight,fast,ISE,saturation_duty,8,0.0379625,0.0359,0.040650000000000006,optimizer seed percentile bootstrap
+4,tight,fast,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,ITAE,rmse,8,0.17139988095115588,0.17069328814508627,0.17232113780726377,optimizer seed percentile bootstrap
+4,tight,fast,ITAE,iae,8,0.6065001332424662,0.5974313569233434,0.6159494720743408,optimizer seed percentile bootstrap
+4,tight,fast,ITAE,torque_rms,8,8.212020394626158,8.19016652691343,8.238723833209491,optimizer seed percentile bootstrap
+4,tight,fast,ITAE,saturation_duty,8,0.0502,0.0496375,0.0508625,optimizer seed percentile bootstrap
+4,tight,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,ITSE,rmse,8,0.17105177159261045,0.170806712860471,0.17133853608754623,optimizer seed percentile bootstrap
+4,tight,fast,ITSE,iae,8,0.606609635288517,0.5979681550855589,0.6157559931563656,optimizer seed percentile bootstrap
+4,tight,fast,ITSE,torque_rms,8,8.149274010558056,8.137582062035188,8.159044198636764,optimizer seed percentile bootstrap
+4,tight,fast,ITSE,saturation_duty,8,0.0434625,0.042475,0.0444875,optimizer seed percentile bootstrap
+4,tight,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,PEN,rmse,8,0.17136813404317677,0.1710586893193908,0.1717405442719625,optimizer seed percentile bootstrap
+4,tight,fast,PEN,iae,8,0.6157739871334962,0.6060852423171683,0.6256120356140894,optimizer seed percentile bootstrap
+4,tight,fast,PEN,torque_rms,8,8.11286275008113,8.099297762961651,8.128014334911164,optimizer seed percentile bootstrap
+4,tight,fast,PEN,saturation_duty,8,0.041575,0.041175,0.042,optimizer seed percentile bootstrap
+4,tight,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,fast,PAPER_IAE,rmse,0,0.1794877585141739,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_IAE,iae,0,0.8007071296251458,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_IAE,torque_rms,0,8.062645143960754,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_IAE,saturation_duty,0,0.0399,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ISE,rmse,0,0.1729583184586382,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ISE,iae,0,0.6484435929549182,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ISE,torque_rms,0,8.328636457490603,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ISE,saturation_duty,0,0.3592,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITAE,rmse,0,0.1787929011372813,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITAE,iae,0,0.7553146270814598,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITAE,torque_rms,0,8.10151232463337,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITAE,saturation_duty,0,0.0394,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITSE,rmse,0,0.1722798878797663,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITSE,iae,0,0.634286546860028,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITSE,torque_rms,0,8.317884349813589,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITSE,saturation_duty,0,0.3545,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,IAE,rmse,8,0.04934929751310474,0.0486122753168411,0.049968362651147805,optimizer seed percentile bootstrap
+4,tight,sine,IAE,iae,8,0.3931626387399116,0.38212511273850563,0.4045822127840498,optimizer seed percentile bootstrap
+4,tight,sine,IAE,torque_rms,8,15.875410191291175,15.870962185796952,15.879478296022283,optimizer seed percentile bootstrap
+4,tight,sine,IAE,saturation_duty,8,0.030787500000000002,0.030675,0.0309,optimizer seed percentile bootstrap
+4,tight,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,ISE,rmse,8,0.04513194682553168,0.04330930609982746,0.04765174331024202,optimizer seed percentile bootstrap
+4,tight,sine,ISE,iae,8,0.5683666466122579,0.5169690481830015,0.6139895021899305,optimizer seed percentile bootstrap
+4,tight,sine,ISE,torque_rms,8,15.876830244215725,15.847207594055668,15.901322956721334,optimizer seed percentile bootstrap
+4,tight,sine,ISE,saturation_duty,8,0.026737499999999997,0.0244125,0.028725,optimizer seed percentile bootstrap
+4,tight,sine,ISE,tracking_feasible,8,0.625,0.25,0.875,optimizer seed percentile bootstrap
+4,tight,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,ITAE,rmse,8,0.05173523095230065,0.04972413405386361,0.05386549472328644,optimizer seed percentile bootstrap
+4,tight,sine,ITAE,iae,8,0.3314296846778262,0.3166471238101592,0.3462806103240048,optimizer seed percentile bootstrap
+4,tight,sine,ITAE,torque_rms,8,15.867703456290437,15.862251964029094,15.87316428289989,optimizer seed percentile bootstrap
+4,tight,sine,ITAE,saturation_duty,8,0.030987499999999998,0.030775,0.031175,optimizer seed percentile bootstrap
+4,tight,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,ITSE,rmse,8,0.04851888918940982,0.04805457052347914,0.04900960240035655,optimizer seed percentile bootstrap
+4,tight,sine,ITSE,iae,8,0.3919216687109897,0.38268608644951535,0.402644125375807,optimizer seed percentile bootstrap
+4,tight,sine,ITSE,torque_rms,8,15.873480810786937,15.8673564065522,15.878502541908437,optimizer seed percentile bootstrap
+4,tight,sine,ITSE,saturation_duty,8,0.0309,0.030812500000000003,0.0309875,optimizer seed percentile bootstrap
+4,tight,sine,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,PEN,rmse,8,0.05152841327443016,0.050352244060062716,0.052691956036972215,optimizer seed percentile bootstrap
+4,tight,sine,PEN,iae,8,0.44700674873498847,0.4265092520189443,0.46800397073790084,optimizer seed percentile bootstrap
+4,tight,sine,PEN,torque_rms,8,15.863795267547095,15.858992362839558,15.869091588176715,optimizer seed percentile bootstrap
+4,tight,sine,PEN,saturation_duty,8,0.0301875,0.029875,0.0304875,optimizer seed percentile bootstrap
+4,tight,sine,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,tight,sine,PAPER_IAE,rmse,0,0.0389657516931524,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_IAE,iae,0,0.4622971592139191,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_IAE,torque_rms,0,15.759386974765142,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_IAE,saturation_duty,0,0.0298,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ISE,rmse,0,0.0500928023995145,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ISE,iae,0,0.471047582630417,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ISE,torque_rms,0,15.848160523256944,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ISE,saturation_duty,0,0.1945,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITAE,rmse,0,0.0488090692764216,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITAE,iae,0,0.4703526350240329,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITAE,torque_rms,0,15.771214087576553,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITAE,saturation_duty,0,0.033,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITSE,rmse,0,0.054107951629907,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITSE,iae,0,0.5096475488396263,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITSE,torque_rms,0,15.854223946781646,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITSE,saturation_duty,0,0.2015,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,tight,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,all,IAE,rmse,8,0.05369874814228428,0.05344492779959235,0.05394181108303785,optimizer seed percentile bootstrap
+4,nominal,all,IAE,iae,8,0.24854860673269302,0.24252177921095713,0.2548535135151374,optimizer seed percentile bootstrap
+4,nominal,all,IAE,torque_rms,8,12.18701039964484,12.176792420414813,12.196533824967808,optimizer seed percentile bootstrap
+4,nominal,all,IAE,saturation_duty,8,0.005233333333333333,0.005179166666666667,0.0052875,optimizer seed percentile bootstrap
+4,nominal,all,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,ISE,rmse,8,0.06203248830910287,0.05956952788586307,0.06461789866974342,optimizer seed percentile bootstrap
+4,nominal,all,ISE,iae,8,0.37300825856291375,0.3379939963551454,0.4045569393714083,optimizer seed percentile bootstrap
+4,nominal,all,ISE,torque_rms,8,12.151519720697898,12.11478639283662,12.184617883241552,optimizer seed percentile bootstrap
+4,nominal,all,ISE,saturation_duty,8,0.0038958333333333336,0.003604166666666667,0.004291666666666667,optimizer seed percentile bootstrap
+4,nominal,all,ISE,tracking_feasible,8,0.875,0.75,0.9583333333333333,optimizer seed percentile bootstrap
+4,nominal,all,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,ITAE,rmse,8,0.05241148280983392,0.051947687483926266,0.052861752909477824,optimizer seed percentile bootstrap
+4,nominal,all,ITAE,iae,8,0.21609256199538315,0.20794072875096273,0.22434071850074774,optimizer seed percentile bootstrap
+4,nominal,all,ITAE,torque_rms,8,12.202326549519741,12.194640088093909,12.21321061687922,optimizer seed percentile bootstrap
+4,nominal,all,ITAE,saturation_duty,8,0.006541666666666666,0.006137500000000001,0.006933437499999992,optimizer seed percentile bootstrap
+4,nominal,all,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,ITSE,rmse,8,0.05371729597075331,0.05341973637084739,0.05406215961168048,optimizer seed percentile bootstrap
+4,nominal,all,ITSE,iae,8,0.24889924964695465,0.2422236122144886,0.2564346956622145,optimizer seed percentile bootstrap
+4,nominal,all,ITSE,torque_rms,8,12.1789718148138,12.167231078700203,12.189086545574167,optimizer seed percentile bootstrap
+4,nominal,all,ITSE,saturation_duty,8,0.005187499999999999,0.0051333333333333335,0.0052375,optimizer seed percentile bootstrap
+4,nominal,all,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,PEN,rmse,8,0.05518324170953614,0.054517679625516985,0.055861886352173915,optimizer seed percentile bootstrap
+4,nominal,all,PEN,iae,8,0.2747547403574833,0.2636537290380614,0.28668937390423055,optimizer seed percentile bootstrap
+4,nominal,all,PEN,torque_rms,8,12.15798619039065,12.147228527436999,12.169545845295637,optimizer seed percentile bootstrap
+4,nominal,all,PEN,saturation_duty,8,0.0049791666666666665,0.0048916666666666666,0.005058333333333334,optimizer seed percentile bootstrap
+4,nominal,all,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,all,PAPER_IAE,rmse,0,0.058324168062441735,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_IAE,iae,0,0.33715944243156554,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_IAE,torque_rms,0,12.053607227295847,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_IAE,saturation_duty,0,0.004,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_IAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ISE,rmse,0,0.055625489218723734,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ISE,iae,0,0.29403290163277235,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ISE,torque_rms,0,12.481649540476262,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ISE,saturation_duty,0,0.25566666666666665,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITAE,rmse,0,0.0572345434420028,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITAE,iae,0,0.3141999779214299,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITAE,torque_rms,0,12.077135878285048,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITAE,saturation_duty,0,0.003933333333333333,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITAE,tracking_feasible,0,0.6666666666666666,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITSE,rmse,0,0.05775567837975807,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITSE,iae,0,0.31467879751755096,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITSE,torque_rms,0,12.387222901159868,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITSE,saturation_duty,0,0.1761,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,all,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,IAE,rmse,8,0.1250439138124941,0.12411726731502556,0.12589797482019272,optimizer seed percentile bootstrap
+4,nominal,step,IAE,iae,8,0.396966789141199,0.38922000599005824,0.4046805682924413,optimizer seed percentile bootstrap
+4,nominal,step,IAE,torque_rms,8,12.654848245740679,12.640839170224837,12.66796048062863,optimizer seed percentile bootstrap
+4,nominal,step,IAE,saturation_duty,8,0.0157,0.0155375,0.0158625,optimizer seed percentile bootstrap
+4,nominal,step,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,ISE,rmse,8,0.09422796549312229,0.08915303161526728,0.10009506975585541,optimizer seed percentile bootstrap
+4,nominal,step,ISE,iae,8,0.3319423555119444,0.3093398583121812,0.3552786977700352,optimizer seed percentile bootstrap
+4,nominal,step,ISE,torque_rms,8,12.549160317694692,12.503954029099358,12.590706064652242,optimizer seed percentile bootstrap
+4,nominal,step,ISE,saturation_duty,8,0.0116875,0.010812500000000001,0.012875,optimizer seed percentile bootstrap
+4,nominal,step,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,ITAE,rmse,8,0.1304005543858259,0.12718259071423507,0.13370194896325668,optimizer seed percentile bootstrap
+4,nominal,step,ITAE,iae,8,0.4023752747538634,0.39344866664654066,0.4133329677486418,optimizer seed percentile bootstrap
+4,nominal,step,ITAE,torque_rms,8,12.725680756658317,12.697274887916667,12.76218582209578,optimizer seed percentile bootstrap
+4,nominal,step,ITAE,saturation_duty,8,0.019625,0.0184125,0.020800312499999973,optimizer seed percentile bootstrap
+4,nominal,step,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,ITSE,rmse,8,0.12326873009306497,0.1221998422176656,0.12420027614113138,optimizer seed percentile bootstrap
+4,nominal,step,ITSE,iae,8,0.3899940057161811,0.38117884295226123,0.39880796377931604,optimizer seed percentile bootstrap
+4,nominal,step,ITSE,torque_rms,8,12.644172559433667,12.632375299254242,12.654617821015776,optimizer seed percentile bootstrap
+4,nominal,step,ITSE,saturation_duty,8,0.0155625,0.0154,0.0157125,optimizer seed percentile bootstrap
+4,nominal,step,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,PEN,rmse,8,0.12567891807002834,0.12379925742350621,0.12760801361492982,optimizer seed percentile bootstrap
+4,nominal,step,PEN,iae,8,0.4081380735741591,0.39336369671230276,0.4227171296824961,optimizer seed percentile bootstrap
+4,nominal,step,PEN,torque_rms,8,12.604395248643023,12.587940419018606,12.62133115207326,optimizer seed percentile bootstrap
+4,nominal,step,PEN,saturation_duty,8,0.0149375,0.014675,0.015175000000000001,optimizer seed percentile bootstrap
+4,nominal,step,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,step,PAPER_IAE,rmse,0,0.0951403338450606,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_IAE,iae,0,0.3299934720829093,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_IAE,torque_rms,0,12.450637575006134,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_IAE,saturation_duty,0,0.012,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ISE,rmse,0,0.1194377145240337,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ISE,iae,0,0.3568547997931466,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ISE,torque_rms,0,12.883161352213298,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ISE,saturation_duty,0,0.258,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITAE,rmse,0,0.0983953004200581,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITAE,iae,0,0.3310779985462198,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITAE,torque_rms,0,12.465901047202992,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITAE,saturation_duty,0,0.0118,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITSE,rmse,0,0.1289797167481825,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITSE,iae,0,0.4051814949151395,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITSE,torque_rms,0,12.585726317777924,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITSE,saturation_duty,0,0.0219,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,step,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,IAE,rmse,8,0.020530140668873535,0.019737923821759422,0.021363563714757082,optimizer seed percentile bootstrap
+4,nominal,fast,IAE,iae,8,0.09768864164447968,0.09249238748387965,0.10336417060154136,optimizer seed percentile bootstrap
+4,nominal,fast,IAE,torque_rms,8,8.036462340350306,8.022647846166244,8.04964041399559,optimizer seed percentile bootstrap
+4,nominal,fast,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,fast,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,ISE,rmse,8,0.053982392795125275,0.046483603413561406,0.06119541941129747,optimizer seed percentile bootstrap
+4,nominal,fast,ISE,iae,8,0.2770887498233565,0.2221906029555185,0.33353869302928135,optimizer seed percentile bootstrap
+4,nominal,fast,ISE,torque_rms,8,8.031608473069749,7.993256016865777,8.070002493305994,optimizer seed percentile bootstrap
+4,nominal,fast,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,fast,ISE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,ITAE,rmse,8,0.015375706669586275,0.012776540578962499,0.01802824893944735,optimizer seed percentile bootstrap
+4,nominal,fast,ITAE,iae,8,0.06926383825857474,0.0608699065947743,0.07815499420411813,optimizer seed percentile bootstrap
+4,nominal,fast,ITAE,torque_rms,8,8.018819937903729,8.009119992034305,8.028313243755779,optimizer seed percentile bootstrap
+4,nominal,fast,ITAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,fast,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,ITSE,rmse,8,0.021999211696255714,0.02101928701953221,0.023145358538858973,optimizer seed percentile bootstrap
+4,nominal,fast,ITSE,iae,8,0.10402009899162838,0.09902888157909462,0.10918077029244926,optimizer seed percentile bootstrap
+4,nominal,fast,ITSE,torque_rms,8,8.02512078733264,8.00762377112175,8.041874541730472,optimizer seed percentile bootstrap
+4,nominal,fast,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,fast,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,PEN,rmse,8,0.022089231242812712,0.020874519435544237,0.023492016565838738,optimizer seed percentile bootstrap
+4,nominal,fast,PEN,iae,8,0.1135426610056047,0.10279397634312445,0.1259863855502631,optimizer seed percentile bootstrap
+4,nominal,fast,PEN,torque_rms,8,8.011271473524623,7.99848924167248,8.024778897611004,optimizer seed percentile bootstrap
+4,nominal,fast,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,fast,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,fast,PAPER_IAE,rmse,0,0.0517755282440529,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_IAE,iae,0,0.2962850121629722,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_IAE,torque_rms,0,7.955024163907361,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_IAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ISE,rmse,0,0.0279167352042503,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ISE,iae,0,0.1941236741585222,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ISE,torque_rms,0,8.641778248179325,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ISE,saturation_duty,0,0.3325,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITAE,rmse,0,0.0496024382901203,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITAE,iae,0,0.2714184939211602,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITAE,torque_rms,0,8.001261309218876,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITAE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITSE,rmse,0,0.0230970317382055,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITSE,iae,0,0.1784987615149326,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITSE,torque_rms,0,8.647387246041683,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITSE,saturation_duty,0,0.3274,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,fast,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,IAE,rmse,8,0.015522189945485185,0.014858555094799261,0.01616206136641931,optimizer seed percentile bootstrap
+4,nominal,sine,IAE,iae,8,0.2509903894124005,0.23927791913986712,0.26281964790956497,optimizer seed percentile bootstrap
+4,nominal,sine,IAE,torque_rms,8,15.86972061284354,15.865319237789844,15.873761397202339,optimizer seed percentile bootstrap
+4,nominal,sine,IAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,sine,IAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,IAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,ISE,rmse,8,0.037887106639061044,0.032174173170511834,0.043509090018385106,optimizer seed percentile bootstrap
+4,nominal,sine,ISE,iae,8,0.5099936703534401,0.4408011807873858,0.573358116823706,optimizer seed percentile bootstrap
+4,nominal,sine,ISE,torque_rms,8,15.873790371329257,15.844231616963384,15.898420601713418,optimizer seed percentile bootstrap
+4,nominal,sine,ISE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,sine,ISE,tracking_feasible,8,0.625,0.25,0.875,optimizer seed percentile bootstrap
+4,nominal,sine,ISE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,ITAE,rmse,8,0.011458187374089563,0.009923870063575738,0.01303402235701215,optimizer seed percentile bootstrap
+4,nominal,sine,ITAE,iae,8,0.17663857297371124,0.15581196513491385,0.19809373631209348,optimizer seed percentile bootstrap
+4,nominal,sine,ITAE,torque_rms,8,15.862478953997176,15.857534720763796,15.867397352909482,optimizer seed percentile bootstrap
+4,nominal,sine,ITAE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,sine,ITAE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,ITAE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,ITSE,rmse,8,0.015883946122939252,0.015123172315829238,0.016772285685163237,optimizer seed percentile bootstrap
+4,nominal,sine,ITSE,iae,8,0.25268364423305434,0.24251935374518935,0.264888065516079,optimizer seed percentile bootstrap
+4,nominal,sine,ITSE,torque_rms,8,15.86762209767509,15.861538033386477,15.872666437196894,optimizer seed percentile bootstrap
+4,nominal,sine,ITSE,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,sine,ITSE,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,ITSE,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,PEN,rmse,8,0.017781575815767336,0.01680292258636166,0.018823423843098624,optimizer seed percentile bootstrap
+4,nominal,sine,PEN,iae,8,0.30258348649268607,0.2829192411924045,0.3231862159370865,optimizer seed percentile bootstrap
+4,nominal,sine,PEN,torque_rms,8,15.858291849004303,15.85355986224555,15.863507532674525,optimizer seed percentile bootstrap
+4,nominal,sine,PEN,saturation_duty,8,0.0,0.0,0.0,optimizer seed percentile bootstrap
+4,nominal,sine,PEN,tracking_feasible,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,PEN,numerical_ok,8,1.0,1.0,1.0,optimizer seed percentile bootstrap
+4,nominal,sine,PAPER_IAE,rmse,0,0.0280566420982117,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_IAE,iae,0,0.3851998430488151,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_IAE,torque_rms,0,15.75515994297405,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_IAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_IAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_IAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ISE,rmse,0,0.0195220179278872,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ISE,iae,0,0.3311202309466483,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ISE,torque_rms,0,15.920009021036163,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ISE,saturation_duty,0,0.1765,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ISE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ISE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITAE,rmse,0,0.02370589161583,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITAE,iae,0,0.3401034412969098,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITAE,torque_rms,0,15.76424527843328,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITAE,saturation_duty,0,0.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITAE,tracking_feasible,0,0.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITAE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITSE,rmse,0,0.0211902866528862,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITSE,iae,0,0.3603561361225808,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITSE,torque_rms,0,15.928555139660002,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITSE,saturation_duty,0,0.179,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITSE,tracking_feasible,0,1.0,,,deterministic fixed gain; no seed CI
+4,nominal,sine,PAPER_ITSE,numerical_ok,0,1.0,,,deterministic fixed gain; no seed CI

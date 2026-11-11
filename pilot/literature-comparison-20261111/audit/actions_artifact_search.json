@@ -1,0 +1,422 @@
+[
+  {
+    "run": {
+      "id": 42833059602,
+      "branch": "pilot/trajectory-generalization-20261110",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-10T14:20:19Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42832927173,
+      "branch": "pilot/trajectory-generalization-20261110",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-10T14:19:34Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42732526534,
+      "branch": "pilot/objective-budget-torque-20261110",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-10T01:00:06Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42732416558,
+      "branch": "pilot/objective-budget-torque-20261110",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-10T00:59:10Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42650620832,
+      "branch": "pilot/objective-effort-20261110",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-09T16:02:03Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42650503514,
+      "branch": "pilot/objective-effort-20261110",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-09T16:01:22Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42380969981,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-07T14:18:22Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42374419144,
+      "branch": "archive/pre-final-20261107",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-07T12:52:55Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 42374419053,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-11-07T12:52:55Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 37027657140,
+      "branch": "revision/heavy-payload-diagnostics-20261001",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-10-02T15:32:09Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 36317621288,
+      "branch": "revision/budget80-bounds800-20260927",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-27T12:01:33Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 36090007542,
+      "branch": "revision/practical-bound-sensitivity-20260924-github",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-25T03:21:09Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35804021016,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-23T00:53:52Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35803748607,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-23T00:50:00Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35803684807,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-23T00:49:03Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35803551676,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-23T00:47:07Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35749294263,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-22T15:43:19Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35748960828,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-22T15:40:05Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35748507925,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-22T15:36:11Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  },
+  {
+    "run": {
+      "id": 35660889138,
+      "branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created": "2026-09-21T22:06:04Z"
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "artifacts": []
+      },
+      "isError": false
+    }
+  }
+]
